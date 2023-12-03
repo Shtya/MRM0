@@ -1,0 +1,251 @@
+.PORTFOLIO_SLIDER .container-slider {
+  min-height: 80vh;
+  padding: 10px 0;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.PORTFOLIO_SLIDER .container-slider .slider-wrapper {
+  box-shadow: 0 0 20px #000, 0 0 20px #000 inset;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 80vh;
+  overflow-x: scroll;
+  left: 0;
+  transition: 0.3s;
+}
+.PORTFOLIO_SLIDER .container-slider .slider-wrapper::-webkit-scrollbar {
+  height: 3px;
+}
+.PORTFOLIO_SLIDER .container-slider .slider-wrapper .coverImg {
+  flex: 0 0 400px;
+  height: 90% !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.PORTFOLIO_SLIDER .container-slider .slider-wrapper .coverImg img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--alt-alt-main);
+  box-shadow: 0 0 10px 5px #181818, inset 0 0 10px 5px #181818;
+}
+.PORTFOLIO_SLIDER .container-slider .arrow {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.PORTFOLIO_SLIDER .container-slider .arrow i {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  position: absolute;
+  box-shadow: 0 0 10px #181818, inset 0 0 10px #181840;
+  border: 1px solid var(--alt-alt-main);
+}
+.PORTFOLIO_SLIDER .container-slider .arrow i#prev-slide {
+  left: -50px;
+  display: none;
+}
+.PORTFOLIO_SLIDER .container-slider .arrow i#next-slide {
+  right: -50px;
+}
+.PORTFOLIO_SLIDER .container-slider .arrow i:active, .PORTFOLIO_SLIDER .container-slider .arrow i:hover {
+  background-color: #272424;
+}
+@media (max-width: 800px) {
+  .PORTFOLIO_SLIDER .arrow {
+    top: 100% !important;
+    justify-content: center !important;
+  }
+  .PORTFOLIO_SLIDER .arrow i {
+    right: 0 !important;
+  }
+  .PORTFOLIO_SLIDER .arrow i#prev-slide {
+    left: calc(100% - 100px) !important;
+  }
+}
+
+.BLOG_SLIDER .container-slider {
+  min-height: 80vh;
+  padding: 10px 0;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper {
+  box-shadow: 0 0 20px #000, 0 0 20px #000 inset;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 80vh;
+  overflow-x: scroll;
+  left: 0;
+  transition: 0.3s;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper::-webkit-scrollbar {
+  height: 3px;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper .coverImg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  flex: 0 0 350px;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper .coverImg p {
+  margin: 0;
+  text-align: center;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper .coverImg .date {
+  margin: 20px 0 5px;
+  font-size: 12px;
+  color: #aaa;
+}
+.BLOG_SLIDER .container-slider .slider-wrapper .coverImg img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  border: 1px solid var(--alt-alt-main);
+  cursor: pointer;
+  box-shadow: 0 0 30px 10px #181818;
+}
+.BLOG_SLIDER .container-slider .arrow {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.BLOG_SLIDER .container-slider .arrow i {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  position: absolute;
+  box-shadow: 0 0 10px #181818, inset 0 0 10px #181840;
+  border: 1px solid var(--alt-alt-main);
+}
+.BLOG_SLIDER .container-slider .arrow i#prev-slide {
+  left: -50px;
+  display: none;
+}
+.BLOG_SLIDER .container-slider .arrow i#next-slide {
+  right: -50px;
+}
+.BLOG_SLIDER .container-slider .arrow i:active, .BLOG_SLIDER .container-slider .arrow i:hover {
+  background-color: #272424;
+}
+.BLOG_SLIDER .arrow {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 10px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.BLOG_SLIDER .arrow i {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  position: absolute;
+  box-shadow: 0 0 10px #181818, inset 0 0 10px #181840;
+  border: 1px solid var(--alt-alt-main);
+}
+.BLOG_SLIDER .arrow i#prev-slide {
+  left: -50px;
+  display: none;
+}
+.BLOG_SLIDER .arrow i#next-slide {
+  right: -50px;
+}
+.BLOG_SLIDER .arrow i:active, .BLOG_SLIDER .arrow i:hover {
+  background-color: #272424;
+}
+@media (max-width: 800px) {
+  .BLOG_SLIDER .arrow {
+    top: 100% !important;
+    justify-content: center !important;
+  }
+  .BLOG_SLIDER .arrow i {
+    right: 0 !important;
+  }
+  .BLOG_SLIDER .arrow i#prev-slide {
+    left: calc(100% - 100px) !important;
+  }
+}
+
+.ribbon {
+  --r: .5em; /* control the cutout of the ribbon */
+  --a: 20deg; /* control the angle of the folded part */
+  --w: 100px; /* control the width of the folded part  */
+  --c: var(--alt-alt-main);
+  text-align: center;
+  color: #fff;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 30px;
+  line-height: 2;
+  background-image: linear-gradient(var(--c) 70%, rgba(0, 0, 0, 0) 0), linear-gradient(to bottom left, rgba(0, 0, 0, 0) 50%, color-mix(in srgb, var(--c), #000 40%) 51% 84%, rgba(0, 0, 0, 0) 85%);
+  background-position: 0 0.15lh;
+  background-size: 100% 1lh;
+  position: relative;
+}/*# sourceMappingURL=second.css.map */
