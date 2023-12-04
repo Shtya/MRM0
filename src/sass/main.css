@@ -704,7 +704,7 @@ nav .fa-bars {
 }
 .services .pattern1::after {
   content: "";
-  background: rgba(12, 12, 12, 0.715);
+  background: rgb(12, 12, 12);
   opacity: 0.81;
 }
 .services::after {
