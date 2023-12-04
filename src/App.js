@@ -21,10 +21,8 @@ import S_Gifts from './pages/S_Gifts'
 import S_Exhibition from './pages/S_Exhibition'
 import S_photography from './pages/S_photography';
 
-
 const App = () => {
   
-
   return (
     <div className='App'>
       <Routes>

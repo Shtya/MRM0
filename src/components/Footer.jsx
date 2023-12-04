@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link } from 'react-router-dom'
+import { Pattern6 } from './patterns/Pattern1'
 
 const Footer = () => {
   return (

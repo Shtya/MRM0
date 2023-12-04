@@ -1,6 +1,7 @@
 import Slider_3_Img from "./Slide/Slider_3_Img"
 import { ImgsClients } from "./Images";
 import { useEffect, useState } from "react";
+import { Pattern2, Pattern3, Pattern5} from "./patterns/Pattern1";
 
 
 var settings = {
@@ -57,6 +58,8 @@ const Clients = () => {
 
     return (
     <section className='Clients' id='Clients'>
+      <Pattern3 />
+      <Pattern5 />
       <div className="container">
       <div className="h1">OUR CLIENTS</div>
       </div>

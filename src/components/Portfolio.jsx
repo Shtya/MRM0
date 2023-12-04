@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { ImgsPortfolio } from './Images';
 import Slider_2_Imgs from './Slide/Slider_2_Imgs';
+import { Pattern4 } from './patterns/Pattern1';
 
 var settings = {
   dots: true,
@@ -9,7 +10,7 @@ var settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1 , 
-  autoplay:true ,
+  // autoplay:true ,
   responsive: [
     {
       breakpoint: 1024,
@@ -59,6 +60,7 @@ const Portfolio = ({header  , typeGallery }) => {
 
   return (
     <section className='portfolio' id="Portfolio">
+      <Pattern4 />
       <h2 className='h1' >WORK OF ART</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (

@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import Animation from './helpers/Animation'
+import {Pattern2, Pattern5} from './patterns/Pattern1'
 
 
 
@@ -21,6 +22,7 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
+      <Pattern2 />
       <div className="container1">
         <div className="h1" >WHY CHOOSE US</div>
       </div>

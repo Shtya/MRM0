@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Pattern3, Pattern5 } from './patterns/Pattern1';
 
 const services = [
   {route:"/social",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -17,6 +18,7 @@ export function Services() {
 
   return (
     <section className='services' id='Services'>
+       <Pattern3 />
       <div className="container"> <h2 className='h1' >OUR SERVICES</h2> </div>
       
       <div className="container">

@@ -146,6 +146,13 @@ nav .Img img {
      object-fit: cover;
   cursor: pointer;
 }
+nav .fa-magnifying-glass {
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
 nav > ul {
   display: flex;
   flex: 1;
@@ -154,32 +161,35 @@ nav > ul {
 }
 nav > ul > li {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 nav > ul > li > a, nav > ul > li > i {
   text-transform: uppercase;
   position: relative;
-  padding: 10px 5px;
-  border-radius: 5px;
-  margin-right: 10px;
+  padding: 10px 10px;
+  border-radius: 2px;
+  margin-right: 5px;
   transition: 0.2s;
   z-index: 3;
   font-weight: 600;
   font-size: 15px;
+  font-family: "Noto Sans";
   display: flex;
   align-items: center;
 }
 @media (max-width: 1000px) {
   nav > ul > li > a, nav > ul > li > i {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 nav > ul > li > a:hover, nav > ul > li > i:hover {
-  color: #474646 !important;
+  color: white !important;
 }
 nav > ul > li > a::after, nav > ul > li > i::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, var(--alt-alt-main), var(--second));
+  background: var(--gradient);
   width: 100%;
   height: 0;
   left: 0;
@@ -212,7 +222,7 @@ nav .Li-Services:hover .ul-nested {
 }
 nav .Li-Services i {
   position: absolute;
-  right: 10px;
+  right: -15px;
 }
 nav .ul-nested {
   position: absolute;
@@ -239,18 +249,15 @@ nav .ul-nested a {
   font-size: 16px;
   border-bottom: 2px solid #111;
   position: relative;
-  font-family: "Montserrat";
+  font-family: "Noto Sans";
 }
 nav .ul-nested a.N_link-8, nav .ul-nested a.N_link-9 {
   border-bottom: none;
 }
-nav .ul-nested a:hover {
-  color: #474646 !important;
-}
 nav .ul-nested a::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to right, var(--alt-alt-main), var(--second));
+  background: var(--gradient);
   width: 100%;
   height: 0;
   left: 0;
@@ -268,8 +275,7 @@ nav .fa-bars {
   display: none;
 }
 nav .active {
-  background: var(--gradient-left) !important;
-  color: #474646 !important;
+  background: var(--gradient) !important;
   border-radius: 1px;
 }
 
@@ -358,6 +364,95 @@ nav .active {
     width: 100% !important;
   }
 }
+.slogan {
+  background: var(--third-bg);
+  position: relative;
+}
+.slogan .separator {
+  display: none !important;
+}
+.slogan::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 20% 100%);
+          clip-path: polygon(0 0, 0% 100%, 20% 100%);
+  background-color: #1c1b1b;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.slogan::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(80% 0, 100% 0, 100% 100%);
+          clip-path: polygon(80% 0, 100% 0, 100% 100%);
+  background-color: #1c1b1b;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.slogan .container .box {
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: var(--gradient-top);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .slogan .container .box {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 450px) {
+  .slogan .container .box {
+    display: none;
+  }
+}
+.slogan .slick-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  top: 25px;
+  z-index: 1000;
+  border: none;
+}
+.slogan .slick-arrow:nth-of-type(1) {
+  left: 0;
+}
+.slogan .slick-arrow:nth-of-type(2) {
+  right: 0;
+}
+.slogan .slick-arrow:nth-of-type(2)::before {
+  content: "\f061" !important;
+}
+.slogan .slick-arrow::before {
+  content: "\f060" !important;
+  color: var(--alt-alt-main);
+  font-family: "FontAwesome";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px !important;
+  position: relative;
+  top: 0;
+  font-size: 20px !important;
+  width: 40px;
+  height: 40px;
+}
+
 /*================================ WHO ================================*/
 .Who {
   min-height: 60vh;
@@ -367,6 +462,9 @@ nav .active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.Who .p {
+  text-align: justify;
 }
 .Who .container {
   display: flex;
@@ -387,14 +485,6 @@ nav .active {
   -o-object-fit: contain;
      object-fit: contain;
   animation: 2s up-down ease-in-out infinite;
-}
-@keyframes up-down {
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 .Who .container .box {
   flex: 1.5;
@@ -494,8 +584,11 @@ nav .active {
   justify-content: space-between;
   gap: 20px;
   color: white;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 600px;
   align-items: stretch;
+}
+.Why .container .Img {
+  height: 600px;
 }
 .Why .container .Img img {
   transition: 0.3s;
@@ -534,12 +627,14 @@ nav .active {
 .Why .container .boxs .box .group i {
   font-size: 30px;
   color: var(--alt-alt-main);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 100%;
-  text-shadow: 0 0 3px var(--alt-alt-main);
 }
 .Why .container .boxs .box .group h3 {
   text-transform: capitalize;
@@ -549,6 +644,11 @@ nav .active {
   position: relative;
   color: var(--alt-alt-main);
   text-align: center;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  font-weight: 500;
 }
 .Why .container .boxs .box .group h3 i {
   margin-left: 10px;
@@ -570,13 +670,21 @@ nav .active {
 .Why .container .boxs .box span.showMore {
   -webkit-line-clamp: 10;
 }
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
+  .Why .container {
+    grid-template-columns: 1fr 1fr 400px !important;
+  }
+  .Why .Img {
+    height: 400px !important;
+  }
+}
+@media (max-width: 1120px) {
   .Why .container {
     grid-template-columns: 1fr 1fr !important;
   }
   .Why .Img {
     grid-column: 2 span;
-    height: 500px;
+    height: 600px !important;
     order: -1;
   }
 }
@@ -783,21 +891,6 @@ nav .active {
   padding: 50px 0;
   position: relative;
   background: var(--third-bg);
-  z-index: 102;
-}
-.Clients::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -25%;
-  top: 0;
-  z-index: -1;
-  display: block;
-  height: 45px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
-  background-position: 0 0;
-  background-color: var(--third-bg);
 }
 .Clients .CLIENTS_SLIDER {
   width: 100%;
@@ -907,9 +1000,6 @@ nav .active {
   position: relative;
   height: 100%;
 }
-.Clients .Slider_2_Imgs .container .cover {
-  box-shadow: 0 0 50px #000, 0 0 30px #181818;
-}
 .Clients .Slider_2_Imgs .container .box {
   display: flex;
   align-items: center;
@@ -931,7 +1021,7 @@ nav .active {
        user-select: none;
   pointer-events: none;
   margin-bottom: 20px;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 0 50px #000 inset, 0 0 30px #181818 inset;
 }
 .Clients .Slider_2_Imgs .slick-arrow {
   width: 40px !important;
@@ -999,15 +1089,34 @@ nav .active {
   text-align: center;
 }
 .Contact .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 600px 1fr;
   align-items: center;
   gap: 20px;
-  justify-content: space-between;
-  align-items: stretch;
   position: relative;
 }
+@media (max-width: 1100px) {
+  .Contact .container {
+    grid-template-columns: 400px 1fr;
+  }
+  .Contact .container .box:nth-child(1) {
+    height: 500px !important;
+  }
+}
+@media (max-width: 800px) {
+  .Contact .container {
+    grid-template-columns: 1fr;
+  }
+  .Contact .container .box:nth-child(1) {
+    height: 400px !important;
+  }
+}
+@media (max-width: 500px) {
+  .Contact .container .box:nth-child(1) {
+    height: 300px !important;
+  }
+}
 .Contact .container .box:nth-child(1) {
-  flex: 1;
   padding: 0;
   height: 500px;
 }
@@ -1020,7 +1129,6 @@ nav .active {
   box-shadow: 0 0 10px #000;
 }
 .Contact .container .box:nth-child(2) {
-  flex: 1.5;
   border-radius: 4px;
   align-items: fles;
   display: flex;
@@ -1107,17 +1215,6 @@ nav .active {
 .Contact .container .box:nth-child(2) button {
   width: 100%;
 }
-@media (max-width: 770px) {
-  .Contact .container {
-    flex-direction: column;
-  }
-  .Contact .box-img img {
-    height: 400px !important;
-  }
-  .Contact .h2 {
-    display: none;
-  }
-}
 
 /*================================== BLOG ================================*/
 .blog {
@@ -1170,6 +1267,7 @@ footer .container .top {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  z-index: 10;
 }
 footer .container .top ul {
   display: flex;
@@ -1223,6 +1321,8 @@ footer .container .center {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  z-index: 10;
+  position: relative;
 }
 footer .container .center ul h2 {
   text-transform: capitalize;
@@ -1290,6 +1390,7 @@ footer .container .bottom {
   position: relative;
   border-top: 1px solid var(--alt-alt-main) !important;
   width: 100%;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7321,7 +7422,7 @@ footer .container .bottom .last a {
 
 .Slider_2_Imgs {
   margin-top: 20px;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7351,12 +7452,12 @@ footer .container .bottom .last a {
   position: relative;
   width: calc(100% - 20px) !important;
   margin-left: 10px;
-  height: 80vh;
+  height: 90vh;
 }
 .Slider_2_Imgs .container .box img {
   border: 1px solid var(--alt-alt-main);
   width: 100%;
-  height: calc(40vh - 10px);
+  height: calc(45vh - 10px);
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
@@ -7737,7 +7838,7 @@ footer .container .bottom .last a {
 .header1 li {
   width: 110px;
   height: 33px;
-  background: linear-gradient(to right, var(--alt-alt-main), var(--second));
+  background: var(--gradient);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7820,12 +7921,13 @@ footer .container .bottom .last a {
   text-transform: capitalize;
   position: relative;
   z-index: 3;
-  color: var(--alt-alt-main) !important;
   text-align: center;
   margin-bottom: 20px;
   font-family: "Noto Sans";
   /* text-decoration: underline; */
-  text-shadow: 1px 1px 3px var(--alt-alt-main);
+  background: var(--gradient-top);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1170px) {
   .h1 {
@@ -7842,14 +7944,15 @@ footer .container .bottom .last a {
   font-size: 1.5rem;
   position: relative;
   z-index: 3;
-  color: var(--alt-alt-main);
   text-transform: uppercase;
-  text-shadow: 0 0 2px var(--alt-alt-main);
   font-weight: 500;
   font-family: "Poppins";
   line-height: 1.2;
   margin-bottom: 5px;
   text-wrap: balance;
+  background: var(--gradient-top);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1170px) {
   .h2 {
@@ -7911,17 +8014,16 @@ footer .container .bottom .last a {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 30px;
-  background: var(--gradient-left);
+  background: var(--gradient);
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.88);
-  box-shadow: 0 0 20px 1px #000, inset 0 0 2px 1px rgba(220, 188, 67, 0.3882352941);
+  color: white;
   position: relative;
   cursor: pointer;
   transition: 0.3s;
   font-family: "Montserrat";
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 1.2rem;
 }

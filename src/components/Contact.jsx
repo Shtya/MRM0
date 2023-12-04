@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import ImgContact from "../assets/contact/contact.jpg"
 import Animation from './helpers/Animation';
+import { Pattern2, Pattern6 } from './patterns/Pattern1';
 
 
 const Contact = ({title , desc}) => {
@@ -10,6 +11,7 @@ const Contact = ({title , desc}) => {
   return (
     <section className='Contact' id='Contact'>
       <Animation />
+      <Pattern2 />
      <div className="container">  <h2 className='h1'>{title || "We're here to help you."}</h2> </div>
      <div className="container">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">

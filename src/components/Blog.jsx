@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import {motion} from "framer-motion"
 import BLOG_SLIDER from './Slider/BLOG_SLIDER';
 import Slider_1_Img from './Slide/Slider_1_Img';
+import { Pattern3 } from './patterns/Pattern1';
 
 var settings = {
   dots: true,
@@ -43,17 +44,18 @@ var settings = {
 
 const Blog = () => {
   let blogs = [
-    {img:"./blog1.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog4.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog5.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-    {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+    {img:"./blog1.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog4.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog5.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
+    {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
   ]
 
   return (
     <section className='blog' id='Blog'>
+      <Pattern3 />
       <div className="container"> <div className="h1">BLOGS</div> </div>
       <p className="p" >Latest Insights and News to Keep Your Strategies Alive </p>
 
