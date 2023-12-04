@@ -1,6 +1,7 @@
 
 import {motion} from 'framer-motion' ;
 import Navbar from './Navbar';
+import { Pattern7 } from './patterns/Pattern1';
 
 
 const Landing = () => {
@@ -15,6 +16,7 @@ const Landing = () => {
             <source src='ShowreelV010-1.m4v.mp4' type="video/mp4" />
           </video>
         </div>
+        <Pattern7 />
 
       {/* <div className="text"  >
         <motion.h2  variants={Divvariant} initial="hidden" animate="visible" >{

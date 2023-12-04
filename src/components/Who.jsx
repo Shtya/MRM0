@@ -1,7 +1,7 @@
 import React , {useEffect} from 'react'
 import About_us from "../assets/about-us/aboutus.png"
 import Animation  from './helpers/Animation'
-import Pattern1 from './patterns/Pattern1'
+import Pattern1, { Pattern2 } from './patterns/Pattern1'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

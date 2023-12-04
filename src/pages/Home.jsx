@@ -30,14 +30,14 @@ function Home() {
   return (
     <div className="Home">
         <Landing />
-        <div className="slogan">
+        {/* <div className="slogan">
           <Pattern2 />
         <Slider {...settings} className='container' >
           <div className="box"> Lorem ipsum dolor sit, amet consectetur </div>
           <div className="box"> Lorem ipsum, dolor sit amet consectetur </div>
           <div className="box"> Lorem ipsum dolor sit amet, consectetur </div>
           </Slider>
-        </div>
+        </div> */}
         <SlideNav />
         <Who />
         <Why />

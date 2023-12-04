@@ -1,15 +1,17 @@
 import React from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link } from 'react-router-dom'
-import { Pattern6 } from './patterns/Pattern1'
+import { Pattern2, Pattern3, Pattern6, Pattern7 } from './patterns/Pattern1'
 
 const Footer = () => {
   return (
     <footer>
+      <Pattern2 />
+      {/* <Pattern7 /> */}
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />
-        <div className="p">We Don't Create Ads ,We Build Successful Campaigns</div>
+        <div className="p">We Don't Create Ads ,We Build Successful Campaigns</div>
         <ul className="social">
           <li><i className="fa-brands fa-facebook-f"></i></li>
           <li><i className="fa-brands fa-instagram"></i></li>

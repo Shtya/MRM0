@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import Animation from './helpers/Animation'
-import {Pattern2, Pattern5} from './patterns/Pattern1'
+import Pattern1, {Pattern2, Pattern5} from './patterns/Pattern1'
 
 
 

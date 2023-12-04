@@ -17,7 +17,7 @@ export const Pattern1 = () => {
 export const Pattern2 = () => {
   return (
     <div className='pattern1'>
-      <span className='separator'> <h4/>  <h4/>  <h4/>  </span>
+      <div className="divider"> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"></div></div>
 <ul class="screens">
   
   <li class="screen screen2" id="[&quot;screen1&quot;]">1<a class="back-arrow" href="#screen0">
@@ -31,7 +31,7 @@ export const Pattern2 = () => {
 export const Pattern3 = () => {
   return (
     <div className='pattern1'>
-      <div className="separator-left">  <h4/>  <h4/>  <h4/> </div>
+      <div className="divider-left"> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"></div></div>
 <ul class="screens">
 
 
@@ -83,5 +83,34 @@ return (
     <div className="line"> <span/> <span/> <span/> <span/><span/><span/><span/><span/> </div>
   </div>
 )
+}
+
+export const Pattern7 = ()=>{
+  return(
+    <div className="pattern7">
+      <svg class="editorial" href="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z" />
+    </defs>
+    <g class="parallax1">
+      <use href="#gentle-wave" x="50" y="3" fill="#dcbc43" />
+    </g>
+    <g class="parallax2">
+      <use href="#gentle-wave" x="50" y="0" fill="#a17f2f" />
+    </g>
+    <g class="parallax3">
+      <use href="#gentle-wave" x="50" y="9" fill="#65421b" />
+    </g>
+    <g class="parallax4">
+      <use href="#gentle-wave" x="50" y="6" fill="#181818" />
+    </g>
+  </svg>
+</div>
+  )
 }
 export default Pattern1

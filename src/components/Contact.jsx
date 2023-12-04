@@ -12,7 +12,7 @@ const Contact = ({title , desc}) => {
     <section className='Contact' id='Contact'>
       <Animation />
       <Pattern2 />
-     <div className="container">  <h2 className='h1'>{title || "We're here to help you."}</h2> </div>
+     <h2 className='h1'>{title || "We're here to help you."}</h2> 
      <div className="container">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 

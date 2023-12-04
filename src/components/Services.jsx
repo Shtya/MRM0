@@ -17,8 +17,10 @@ const services = [
 export function Services() {
 
   return (
+    <>
     <section className='services' id='Services'>
        <Pattern3 />
+       
       <div className="container"> <h2 className='h1' >OUR SERVICES</h2> </div>
       
       <div className="container">
@@ -36,5 +38,6 @@ export function Services() {
       </ul>
       </div>
     </section>
+    </>
   );
 }
