@@ -18,7 +18,7 @@ const Error = () => {
           <h1>404</h1>
           <h2> Oops! </h2>
           <h3> Looks like you've taken a wrong turn. Don't worry,<br/> even the best of us get lost sometimes.</h3>
-          <div className="group">
+          <div className="group2">
             <input type="text" />
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>

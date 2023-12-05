@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import {motion} from "framer-motion"
 import BLOG_SLIDER from './Slider/BLOG_SLIDER';
 import Slider_1_Img from './Slide/Slider_1_Img';
-import { Pattern3 } from './patterns/Pattern1';
+import { Pattern2, Pattern3 } from './patterns/Pattern1';
 
 var settings = {
   dots: true,
@@ -55,9 +55,9 @@ const Blog = () => {
 
   return (
     <section className='blog' id='Blog'>
-      <Pattern3 />
-      <div className="container"> <div className="h1">BLOGS</div> </div>
-      <p className="p" >Latest Insights and News to Keep Your Strategies Alive </p>
+      <Pattern2 />
+      <div className="container"> <div className="h1 clip hidden-text">BLOGS</div> </div>
+      <p className="p hidden-text" >Latest Insights and News to Keep Your Strategies Alive </p>
 
       {/* <BLOG_SLIDER data={blogs} /> */}
       <Slider_1_Img  data={blogs} settings={settings} />

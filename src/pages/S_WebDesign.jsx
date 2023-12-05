@@ -25,6 +25,7 @@ import Contact from '../components/Contact'
 import WebDesign from '../components/Slide/WebDesign'
 import Portfolio from '../components/Portfolio'
 import Animation from '../components/helpers/Animation'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
 const SocialMedia = [
@@ -55,17 +56,20 @@ const S_WebDesign = () => {
     <Intro classn="WEB_DESIGN" li={li} ImgIntro={ImgIntro} ImgSection={ImgSection} main_title={"Boost the Effectiveness of Your Website's Online Presence."} second_title={"Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development"} desc="" >
     <Animation />
 
-
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
             <div className="container" data-aos="fade-rigth">
-            <p className='h1 hidden-text'>MRM is Your Partner in Web Development <br/> and Design in Dubai, UAE</p>
+            <p className='h2 hidden-text'>MRM is Your Partner in Web Development <br/> and Design in Dubai, UAE</p>
             <p className='h3 '>MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</p>
             </div>
         </div>
 
+        <Divider classn="divider-left" />
         <div className="social-media">
+          <Pattern3 />
         <div className="container">
-            <h3 className='h2 hidden-text'>Our Specializations</h3>
+            <h3 className='h2 hidden-text clip'>Our Specializations</h3>
             <div className="h3 hidden-text">We specialize in the following web design and development services</div> 
             <div className="boxs">
             { SocialMedia.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} /> ))}
@@ -75,8 +79,9 @@ const S_WebDesign = () => {
         {/* <RoadMap /> */}
 
 
-
+        <Divider classn="divider divider-rsize" />
         <div className="our_Approach">
+          <Pattern2 />
             <div className="container">
                 <div className="circle">
                     <div className='text'>
@@ -99,7 +104,8 @@ const S_WebDesign = () => {
                 </div>
             </div>
         </div>
-
+      
+        <Divider classn="divider-left" />
       <Portfolio header={false} typeGallery="Web design" />
 
     </Intro>

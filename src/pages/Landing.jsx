@@ -35,6 +35,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -54,24 +55,24 @@ const Landing = () => {
       
       <div className="home">
         <div className="container">
-          <div className="boxImg" >  <img src={Community} alt="" /> </div>
+          <div className="boxImg hidden-img" >  <img src={Community} alt="" /> </div>
           <div className="boxs" >
-            <h2 className='h1'> Enhance the Effectiveness of Your Social Media Presence.</h2>
-            <p className='h3'>Boost your brand online with our social media management services. </p>
+            <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence.</h2>
+            <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services. </p>
             <div className="inner-boxs" >
 
               <ul className="box">
-                <li className='li'>Social media strategy development</li>
-                <li className='li'>Content creation</li>
-                <li className='li'>Social media advertising</li>
-                <li className='li'>Social media management</li>
+                <li className='li hidden-text' data-aos="fade-left">Social media strategy development</li>
+                <li className='li hidden-text' data-aos="fade-left">Content creation</li>
+                <li className='li hidden-text' data-aos="fade-left">Social media advertising</li>
+                <li className='li hidden-text' data-aos="fade-left">Social media management</li>
               </ul>
 
               <ul className="box box-2">
-                <li>Influencer marketing</li>
-                <li>Community management </li>
-                <li>Reputation management</li>
-                <li>Crisis management</li>
+                <li className='li hidden-text' data-aos="fade-left">Influencer marketing</li>
+                <li className='li hidden-text' data-aos="fade-left">Community management </li>
+                <li className='li hidden-text' data-aos="fade-left">Reputation management</li>
+                <li className='li hidden-text' data-aos="fade-left">Crisis management</li>
               </ul>
 
             </div>
@@ -79,35 +80,40 @@ const Landing = () => {
         </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="searching">
+        <Pattern1 />
           <div className="container">
-              <div className="coverImg hidden "> 
-                  <img src={Grid1} alt="" /> 
-                  <img src={Grid2} alt="" /> 
-                  <img src={Grid3} alt="" /> 
-                  <img src={Grid4} alt="" /> 
+              <div className="coverImg  "> 
+                  <img className='hidden-img' src={Grid1} alt="" /> 
+                  <img className='hidden-img' src={Grid2} alt="" /> 
+                  <img className='hidden-img' src={Grid3} alt="" /> 
+                  <img className='hidden-img' src={Grid4} alt="" /> 
               </div>
 
               <div className="boxs hidden hidden-left">
-                  <h3 className='h2'>Are you searching for top-notch <br/> social media management services in Dubai?</h3>
+                  <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch <br/> social media management services in Dubai?</h3>
                   
                   <div className="box">
-                      <h2 className='h3'> We've got you covered.</h2>
-                      <p className='p'> We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
+                      <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered.</h2>
+                      <p className='p hidden-text' data-aos="fade-left"> We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
                   </div>
 
                   <div className="box">
-                      <h2 className='h3'>We're A Full-Service Digital Agency</h2>
-                      <p className='p'> MRM is an innovative social media management agency that helps brands fully leverage their online presence. We have a dynamic team of strategists, content creators, and social media experts who collaborate to develop innovative, data-driven solutions tailored to your specific goals and objectives. Partnering with MRM unlocks the power of expert social media management to elevate your brand's digital presence.</p>
+                      <h2 className='h3 hidden-text' data-aos="fade-left">We're A Full-Service Digital Agency</h2>
+                      <p className='p hidden-text' data-aos="fade-left"> MRM is an innovative social media management agency that helps brands fully leverage their online presence. We have a dynamic team of strategists, content creators, and social media experts who collaborate to develop innovative, data-driven solutions tailored to your specific goals and objectives. Partnering with MRM unlocks the power of expert social media management to elevate your brand's digital presence.</p>
                   </div>
 
               </div>
           </div>
       </div>
 
+
+      <Divider classn="divider-left" />
       <div className="social-media  ">
+        <Pattern3 />
         <div className="container">
-          <h3 className='h1'>Our Social Media Management Services</h3>
+          <h3 className='h1 hidden-text clip'>Our Social Media Management Services</h3>
           <div className="boxs">
             {
               SocialMedia.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} />))
@@ -116,9 +122,11 @@ const Landing = () => {
         </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="platforms">
+        <Pattern2 />
           <div className="container">
-              <h3 className='h1'>Platforms we've managed on social media</h3>
+              <h3 className='h1 hidden-text clip'>Platforms we've managed on social media</h3>
               <div className="boxs">
                   <OnePlatform num="hidden hidden-left" img={Icon_1} title="Facbook Marketing "   paragraph="we can increase your brand interaction on Facebook and Instagram with deep engagement methods and rich content, including video marketing. Our specialists help you achieve your marketing goals by leveraging your Facebook presence to raise brand awareness, reach new customers, generate leads, boost website traffic, or gather market and competitor information." />
                   <OnePlatform num="hidden" img={Icon_5} title="Snapchat Marketing "  paragraph="We specialize in creating effective Snapchat Ads to boost your brand's visibility, drive traffic, and increase sales. Our region-specific marketing tactics leverage features like Snap Ads, Geofilters, and Sponsored Lens to optimize your presence on this fast-growing platform. We can help you incorporate Snapchat into your marketing strategy for short-term, impactful campaigns." />
@@ -130,8 +138,10 @@ const Landing = () => {
           </div>
       </div>
 
+      <Divider classn="divider-left" />
     <div className="process">
-    <div className="container1"> <div className="h1">our proccess</div></div>
+        <Pattern3 />
+    <div className="container1"> <div className="h1 hidden-text clip">our proccess</div></div>
         <div className="container">
             <div className="box box1">
                 <OneProcess num="1" classn="hidden" img={Process1} title="Optimized For Results" paragraph="We work closely with our clients to understand their business goals, target audience, industry, and competitors. With this knowledge, we create a tailored social media plan that meets their unique needs. We aim to deliver a strategy customized to each client's specific requirements." />
@@ -145,8 +155,10 @@ const Landing = () => {
         </div>
     </div>
 
+    <Divider classn="divider" />
       <Clients />
-      {/* <Contact2 /> */}
+      
+      <Divider classn="divider-left" />
       <Contact />
       <Footer />
 

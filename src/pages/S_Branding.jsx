@@ -26,6 +26,7 @@ import OnePlatform from '../components/OnePlatform'
 import Slider_1_Img from '../components/Slide/Slider_1_Img'
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 const Approach = [
   { img:approach_1 , title:"Comprehensive Solutions" , desc:"We offer a complete branding solution to ensure consistent messaging across all touchpoints. Trust us to elevate your brand and achieve your business goals."},
@@ -116,18 +117,21 @@ const S_Branding = ({header =true}) => {
             </div>
         </div>
       </div>
-
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
           <div className="container">
-              <div className="h1 hidden-text" data-aos="fade-up"> Elevate Your Brand with Our Comprehensive Branding Services  </div>
-              <div className="h3 hidden-text" data-aos="fade-up">  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
+              <div className="h2 hidden-text" data-aos="fade-up"> Elevate Your Brand with Our Comprehensive Branding Services  </div>
+              <div className="h3 " data-aos="fade-up">  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
           </div>
         </div>
 
 
+        <Divider classn="divider-left" />
         <div className="platforms">
+        <Pattern3 />
           <div className="container">
-              <h3 className='h1'>Our Branding Services</h3>
+              <h3 className='h1 clip'>Our Branding Services</h3>
               <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
@@ -138,9 +142,11 @@ const S_Branding = ({header =true}) => {
           </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="signages">
+        <Pattern2 />
           <div className="container">
-            <div className="h1">Signages We Offer </div>
+            <div className="h1 clip">Signages We Offer </div>
           </div>
 
           <div className="outdoor">
@@ -154,7 +160,9 @@ const S_Branding = ({header =true}) => {
 
       </div>
 
+      <Divider classn="divider-left" />
         <div className="searching">
+        <Pattern3 />
             <div className="container">
               <div className="coverImg "> <img src={Grid1} alt="" /> </div>
 

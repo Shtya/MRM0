@@ -35,6 +35,7 @@ import seo_process_3 from "../assets/SEO/seo-process-3.jpg"
 import seo_process_4 from "../assets/SEO/seo-process-4.jpg"
 import seo_process_5 from "../assets/SEO/seo-process-5.jpg"
 import Animation from '../components/helpers/Animation';
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
 
 
 const OUR_SEO = [
@@ -84,17 +85,20 @@ const S_SEO = () => {
         </div>
       </div>
 
-
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
         <div className="container">
-              <div className="h1 hidden-text" data-aos="fade-up"> Maximizing SEO Impact with MRM at Your Website </div>
-              <p className="h3 "> We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
+              <div className="h2 hidden-text" data-aos="fade-up"> Maximizing SEO Impact with MRM at Your Website </div>
+              <p className="h3 " data-aos="fade-up"> We don't just talk about our commitment to SEO in Dubai, UAE, we take action to prove it. Our main goal is to help businesses succeed in the digital world, so we offer customized local SEO services that meet their unique needs. Our unwavering promise to secure a top ranking on Google's first page makes us different, ensuring that your business stands out in the highly competitive world of local search.</p>
         </div>
         </div>
 
+        <Divider classn="divider-left" />
       <div className="platforms">
+        <Pattern3 />
           <div className="container">
-              <h3 className="h1 hidden-text" data-aos="fade-left">Our SEO Services </h3>
+              <h3 className="h1 hidden-text clip" data-aos="fade-left">Our SEO Services </h3>
               <div className="boxs">
                   {
                     OUR_SEO.map((e,index)=> (
@@ -105,8 +109,11 @@ const S_SEO = () => {
           </div>
       </div>
 
+      <Divider classn="divider" />
+
       <div className="process">
-        <div className="h1 hidden-text" data-aos="fade-left">Our proccess</div>
+        <Pattern2 />
+        <div className="h1 hidden-text clip" data-aos="fade-left">Our proccess</div>
           <div className="container">
               <div className="box box1">
                   <OneProcess num="1" classn={PROCESS[0].classn} img={PROCESS[0].img} title={PROCESS[0].title} paragraph={PROCESS[0].desc} />
@@ -124,9 +131,12 @@ const S_SEO = () => {
           </div>
     </div>
 
+
+    <Divider classn="divider-left" />
     <div className="WHY">
+        <Pattern3 />
       <div className="container">
-      <div className="h1"> Why MRM Team excels in SEO? </div>
+      <div className="h1 clip hidden-text"> Why MRM Team excels in SEO? </div>
         {
           WHY_MRM.map((e,index)=> (
             <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />

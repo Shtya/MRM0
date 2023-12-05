@@ -29,7 +29,7 @@ const Who = () => {
       </div>
 
       <div className="box"  >
-        <h2 className='h2 hidden-text clip '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2>
+        <h2 className='h2 hidden-text  '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2>
         <span className='p hidden-text' >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">
             <div className="box-child"  >

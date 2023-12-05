@@ -13,11 +13,15 @@ export const Pattern1 = () => {
     </div>
   )
 }
+export const Divider = ({classn}) => {
+  return(
+    <div className={`${classn}`}> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"><h4/>  <h4/>  <h4/> </div></div>
+  )
+}
 
 export const Pattern2 = () => {
   return (
     <div className='pattern1'>
-      <div className="divider"> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"></div></div>
 <ul class="screens">
   
   <li class="screen screen2" id="[&quot;screen1&quot;]">1<a class="back-arrow" href="#screen0">
@@ -31,23 +35,14 @@ export const Pattern2 = () => {
 export const Pattern3 = () => {
   return (
     <div className='pattern1'>
-      <div className="divider-left"> <span className='separator'> <h4/>  <h4/>  <h4/>  </span> <div className="other"></div></div>
 <ul class="screens">
-
-
-  
   <li class="screen screen3" id="[&quot;screen3&quot;]"><a class="back-arrow" href="#screen2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a class="next-arrow" href="#screen4">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/>          </svg></a></li>
-  <li class="screen screen3" id="[&quot;screen3&quot;]"><a class="back-arrow" href="#screen2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a class="next-arrow" href="#screen4">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/>          </svg></a></li>
-  <li class="screen screen3" id="[&quot;screen3&quot;]"><a class="back-arrow" href="#screen2">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a class="next-arrow" href="#screen4">
-      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/>          </svg></a></li>
+      {/* <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a class="next-arrow" href="#screen4"> */}
+       </a>
+  </li>
 
-    </ul>
-    </div>
+</ul>
+</div>
   )
 }
 
@@ -98,16 +93,16 @@ export const Pattern7 = ()=>{
       v44h-352z" />
     </defs>
     <g class="parallax1">
-      <use href="#gentle-wave" x="50" y="3" fill="#dcbc43" />
+      <use href="#gentle-wave" x="50" y="3" fill="#333" />
     </g>
     <g class="parallax2">
-      <use href="#gentle-wave" x="50" y="0" fill="#a17f2f" />
+      <use href="#gentle-wave" x="50" y="0" fill="#222" />
     </g>
     <g class="parallax3">
-      <use href="#gentle-wave" x="50" y="9" fill="#65421b" />
+      <use href="#gentle-wave" x="50" y="9" fill="#181818" />
     </g>
     <g class="parallax4">
-      <use href="#gentle-wave" x="50" y="6" fill="#181818" />
+      <use href="#gentle-wave" x="50" y="6" fill="#111" />
     </g>
   </svg>
 </div>

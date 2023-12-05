@@ -18,6 +18,7 @@ import Outdoor_6 from "../assets/signages/outdoor/6.jpg" ;
 import Outdoor_7 from "../assets/signages/outdoor/7.jpg" ;
 import Outdoor_8 from "../assets/signages/outdoor/8.jpg" ;
 import Animation from "../components/helpers/Animation";
+import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
 
 const SERVICES = [
   { animate:"fade-left", img:Outdoor_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
@@ -64,15 +65,15 @@ const S_photography = () => {
   
   
   const images = [
-    {img:Outdoor_1, animate:"fade-right" } ,
-    {img:Outdoor_2, animate:"zoom-in-up" } ,
-    {img:Outdoor_3, animate:"fade-left" } ,
-    {img:Outdoor_4, animate:"fade-right" } ,
-    {img:Outdoor_5, animate:"zoom-in-down" } ,
-    {img:Outdoor_6, animate:"fade-left" } ,
-    {img:Outdoor_7, animate:"fade-right" } ,
-    {img:Outdoor_8, animate:"zoom-in-left" } ,
-    {img:Outdoor_5 , animate:"fade-left" } ,
+    {img:Outdoor_1, animate:"fade-up" } ,
+    {img:Outdoor_2, animate:"fade-up" } ,
+    {img:Outdoor_3, animate:"fade-up" } ,
+    {img:Outdoor_4, animate:"fade-up" } ,
+    {img:Outdoor_5, animate:"fade-up" } ,
+    {img:Outdoor_6, animate:"fade-up" } ,
+    {img:Outdoor_7, animate:"fade-up" } ,
+    {img:Outdoor_8, animate:"fade-up" } ,
+    {img:Outdoor_5 , animate:"fade-up" } ,
   ]
   
 
@@ -95,13 +96,17 @@ const S_photography = () => {
         </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
             <div className="container">
             <p className='h3'> Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
         </div>
 
+        <Divider classn="divider-left" />
       <div className="photography-services">
+      <Pattern3 />
         <div className="h1">Our Photography Services</div> 
         <div className="container">
           {
@@ -115,8 +120,10 @@ const S_photography = () => {
           }
         </div>
       </div>
-
+      
+      <Divider classn="divider" />
       <div className="Videography-services">
+        <Pattern2 />
         <div className="h1">Types of Videography Services</div> 
         <div className="container">
           {
@@ -132,7 +139,9 @@ const S_photography = () => {
       </div>
 
 
+      <Divider classn="divider-left" />
       <div className="exhibition-stands">
+      <Pattern3 />
         <div className="header1">
             <li className="active">Videography</li>
             <li> Events </li>
@@ -155,9 +164,10 @@ const S_photography = () => {
       </div>
 
 
-      
+      <Divider classn="divider" />
       <div className="searching">
-        <div className="h1">Why Choose Us?</div>
+      <Pattern2 />
+        <div className="h1 clip">Why Choose Us?</div>
             <div className="container">
               {/* <div className="coverImg "> <img src={Outdoor_1} alt="" /> </div> */}
 

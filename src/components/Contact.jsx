@@ -1,18 +1,18 @@
 import {useEffect, useState} from 'react'
 import ImgContact from "../assets/contact/contact.jpg"
 import Animation from './helpers/Animation';
-import { Pattern2, Pattern6 } from './patterns/Pattern1';
+import { Pattern2, Pattern3, Pattern6 } from './patterns/Pattern1';
 
 
-const Contact = ({title , desc}) => {
+const Contact = ({title , desc , onHere}) => {
   const [value , setvalue] = useState() ;
 
   let services = [ "social media marketing" , "media buyin" , "web design & Development" , "SEO" , "Branding" , "indoor and outdoor signages" , "exhibition display stand" , "photography & videography" , "cooperated gifts" ,]
   return (
     <section className='Contact' id='Contact'>
       <Animation />
-      <Pattern2 />
-     <h2 className='h1'>{title || "We're here to help you."}</h2> 
+      {onHere ? <Pattern2 /> : <Pattern3 /> }
+     <h2 className='h1 clip hidden-text'>{title || "We're here to help you."}</h2> 
      <div className="container">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 

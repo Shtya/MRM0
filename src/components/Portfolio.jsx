@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { ImgsPortfolio } from './Images';
 import Slider_2_Imgs from './Slide/Slider_2_Imgs';
-import { Pattern2, Pattern4 } from './patterns/Pattern1';
+import { Pattern2, Pattern3, Pattern4 } from './patterns/Pattern1';
 
 var settings = {
   dots: true,
@@ -60,8 +60,8 @@ const Portfolio = ({header  , typeGallery }) => {
 
   return (
     <section className='portfolio' id="Portfolio">
-      <Pattern2 />
-      <h2 className='h1' >WORK OF ART</h2>
+      <Pattern3 />
+      <h2 className='h1 clip' > ART</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (
           <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>

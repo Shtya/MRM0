@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react'
 import Animation from './helpers/Animation'
-import Pattern1, {Pattern2, Pattern5} from './patterns/Pattern1'
+import Pattern1, {Pattern2, Pattern3, Pattern4, Pattern5} from './patterns/Pattern1'
 
 
 
@@ -22,9 +22,9 @@ const Why = () => {
 
     <section id='Why' className='Why'>
       <Animation />
-      <Pattern2 />
+      <Pattern3 />
       <div className="container1">
-        <div className="h1" >WHY CHOOSE US</div>
+        <div className="h1 clip hidden-text" >WHY CHOOSE US</div>
       </div>
       <div className="container">
               <div className="boxs"  >
@@ -32,7 +32,7 @@ const Why = () => {
                     <div className="box" data-aos={e.animate} key={idx} >
                       <div className="group" >
                           <i  className={e.icon}></i>
-                          <h3 className='h3' > {e.title}  </h3>
+                          <h3 className='h2' > {e.title}  </h3>
                       </div>
                       <span className={` p`}>{e.desc}</span>
                     </div>

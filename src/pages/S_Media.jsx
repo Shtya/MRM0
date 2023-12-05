@@ -33,6 +33,7 @@ import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising",]
@@ -75,33 +76,37 @@ const S_Media = () => {
         <div className="container">
             <div className="boxImg hidden-img " >  <img src={ImgSection} alt="" /> </div>
             <div className="boxs" >
-                <h2 className='h1 hidden-text'> Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise.</h2>
-                <h2 className='h2 hidden-text'>Transform your social platforms into full revenue drivers and maximize your return on investment. </h2>
-                <div className="inner-boxs" >
+                <h2 className='h1 hidden-text' data-aos="fade-left"> Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise.</h2>
+                <h2 className='h2 hidden-text' data-aos="fade-left">Transform your social platforms into full revenue drivers and maximize your return on investment. </h2>
+                <div className="inner-boxs" data-aos="fade-left" >
                   <div className="box">
-                      <li className='p'> {li[0]} </li>
-                      <li className='p'> {li[1]} </li>
-                      <li className='p'> {li[2]} </li>
+                      <li className='p hidden-text'> {li[0]} </li>
+                      <li className='p hidden-text'> {li[1]} </li>
+                      <li className='p hidden-text'> {li[2]} </li>
                     </div>
                   
-                  <div className="box-2">
-                    <li className='p'> {li[3]} </li>
-                    <li className='p'> {li[4]} </li>
-                    <li className='p'> {li[5]} </li>
+                  <div className="box box-2">
+                    <li className='p hidden-text'> {li[3]} </li>
+                    <li className='p hidden-text'> {li[4]} </li>
+                    <li className='p hidden-text'> {li[5]} </li>
                   </div>
           </div>
           </div>
       </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
         <div className="container">
-              <div className="h1 hidden-text" data-aos="fade-up"> Experience the Power of Paid Amplification</div>
+              <div className="h2 hidden-text" data-aos="fade-up"> Experience the Power of Paid Amplification</div>
               <p className="h3 "> We create paid campaigns with specific goals, such as boosting brand awareness, engaging with audiences, generating leads, and driving sales. We understand that success varies for each business, so we tailor our campaigns to align with your unique Key Performance Indicators. Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers.</p>
         </div>
         </div>
 
+        <Divider classn="divider-left" />
         <div className="social-media">
+        <Pattern3 />
         <div className="container">
             <h3 className='h1'>We offer standout paid campaigns for your business.</h3>
             <div className="boxs">
@@ -112,10 +117,12 @@ const S_Media = () => {
         </div>
         </div>
 
+        <Divider classn="divider" />
         <div className="impact">
+        <Pattern2 />
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-left"  >Impact of what you'll get</div>
-                <div className="p hidden-text" data-aos="fade-left"  >MRM is the preferred choice for social media marketing services in Dubai.<br/> We specialize in tailoring effective strategies that fit your brand and objectives.<br/>Here's how we can help:</div>
+                <div className="p hidden-text" data-aos="fade-left"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
                 <div className="boxs">
                   {
                     Impact.map((e,index)=> (
@@ -132,7 +139,9 @@ const S_Media = () => {
             </div>
         </div>
 
+        <Divider classn="divider-left" />
         <div className="process">
+        <Pattern3 />
             <div className="container">
                 <div className="h1 hidden-text" data-aos="fade-left">Our Process</div>
 

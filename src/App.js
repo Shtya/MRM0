@@ -38,16 +38,16 @@ const App = () => {
 
         {/* secondary Pages */}
         <Route path='/social' element={<S_photography />} />
+        <Route path='/media' element={<S_Media />} />
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/branding' element={<S_Branding  />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
         <Route path='/gifts' element={<S_Gifts  />} />
 
-        <Route path='/media' element={<S_Media />} />
         <Route path='/seo' element={<S_SEO />} />
         <Route path='/signages' element={<M_Signages />} />
-
         <Route path='/photography' element={<S_photography />} />
+
       </Routes>
       
     </div>

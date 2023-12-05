@@ -17,6 +17,7 @@ import gifts_1 from "../assets/S_gifts/gifts1.png" ;
 import gifts_2 from "../assets/S_gifts/gifts2.png" ;
 import gifts_3 from "../assets/S_gifts/gifts3.png" ;
 import Animation from '../components/helpers/Animation'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
 const Approach = [
@@ -27,7 +28,7 @@ const Approach = [
 
 const BRANDING_SERVICES = [
   { img:Icon_1 , title:"Full Customization",                     desc:"Unique, on-brand gifts that stand out. Our complimentary in-house design services will help bring your vision to life."},
-  { img:Icon_2 , title:"We consider every budget and deadline.", desc:"We understand that every client has different needs. We offer multiple gifting options to fit any budget and deadline."},
+  { img:Icon_2 , title:"We consider every budget", desc:"We understand that every client has different needs. We offer multiple gifting options to fit any budget and deadline."},
   { img:Icon_3 , title:"Satisfaction Guaranteed"               , desc:"You're our top priority! We guarantee a smooth and enjoyable experience, no matter the size of your order. If you're not happy, we'll make it right!"},
   { img:Icon_4 , title:"Quality Craftsmanship"                , desc:"Our gifts and trophies are created with great care, using only top-quality materials and paying close attention to every detail. We take pride in meeting the highest standards to ensure that each piece is of the utmost quality."},
   ]
@@ -52,29 +53,34 @@ const S_Gifts = () => {
         </div>
       </div>
 
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
             <div className="container" >
-                <div className="h1" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously<br/> Curated Collection of Corporate Gifts</div>
+                <div className="h2" data-aos="fade-up">Strengthen Your Professional Ties  with Our Meticulously<br/> Curated Collection of Corporate Gifts</div>
                 <div className="h3" data-aos="fade-up">Explore our meticulously curated collection of corporate gifts, tailor-made for every occasion, and elevate your business relationships to new heights. Our handpicked selection of gifts is designed to leave a lasting impression on your clients, employees, and partners, and convey your appreciation for their business.  With a focus on quality, elegance, and functionality, our gifts are sure to impress and strengthen your professional ties</div>
             </div>
         </div>
         
+        <Divider classn="divider-left" />
         <div className="searching">
-          <div className="h1">We Offer</div> 
+          <Pattern3 />
+          <div className="h1 clip">We Offer</div> 
             <div className="container">
                   {Approach.map((e,index)=>(
                     <div className='box' key={index} data-aos="fade-up" >
-                      {index <2 && <i className="fa-solid fa-arrow-right"></i> }
+                      {/* {index <2 && <i className="fa-solid fa-arrow-right"></i> } */}
                       <div className="coverImg hidden-img"data-aos="fade-up" > <img src={e.img} alt="" /> </div>
-                      <h3 className="h2 hidden-text" data-aos="fade-up">{e.title}</h3>
+                      <h3 className="h2 clip hidden-text" data-aos="fade-up">{e.title}</h3>
                       <h2 className="h3 hidden-text" data-aos="fade-up">{e.desc}</h2>
                     </div>
                   ))}
             </div>
       </div>
 
-      
+      <Divider classn="divider" />
       <div className="impact">
+        <Pattern2 />
             <div className="container">
                 <div className="h1 hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
                 <div className="boxs">

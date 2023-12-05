@@ -6,8 +6,8 @@ import { Pattern2, Pattern3, Pattern6, Pattern7 } from './patterns/Pattern1'
 const Footer = () => {
   return (
     <footer>
-      <Pattern2 />
-      {/* <Pattern7 /> */}
+      {/* <Pattern3 /> */}
+      <Pattern7 />
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />

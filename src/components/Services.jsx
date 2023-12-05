@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Pattern3, Pattern5 } from './patterns/Pattern1';
+import { Pattern2, Pattern3, Pattern5 } from './patterns/Pattern1';
 
 const services = [
   {route:"/social",     animate:"fade-up",  title:"social media marketing"       , icon:"clip  fa-solid fa-bullhorn "        ,desc:"Enhance your online presence with our social media management." ,                                                                 },
@@ -19,19 +19,19 @@ export function Services() {
   return (
     <>
     <section className='services' id='Services'>
-       <Pattern3 />
+       <Pattern2 />
        
-      <div className="container"> <h2 className='h1' >OUR SERVICES</h2> </div>
+       <h2 className='h1 clip hidden-text' >OUR SERVICES</h2> 
       
       <div className="container">
-      <ul  >
+      <ul className='ul' >
         {services.map((e , index) => (
           <div key={index} className="box" data-aos={e.animate}>
             <div className="animate" ></div>
             <Link to={e.route}   >
-              <Link to={e.route}><i className={e.icon}> <span />  <span /> </i> </Link>
-              <h3 className='h2'>{e.title}</h3>
-              <h4 className='p'>{e.desc}</h4>
+              <Link to={e.route}><i className={`${e.icon} clip hidden-img`}> <span />  <span /> </i> </Link>
+              <h3 className='h2 clip hidden-text'>{e.title}</h3>
+              <h4 className='p hidden-text'>{e.desc}</h4>
           </Link>
           </div>
         ))}

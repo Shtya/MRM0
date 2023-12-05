@@ -14,7 +14,7 @@ import Why from "../components/Why";
 import Who from "../components/Who";
 import Portfolio from "../components/Portfolio";
 import SlideNav from "../components/SlideNav";
-import { Pattern2 } from "../components/patterns/Pattern1";
+import { Divider, Pattern2 } from "../components/patterns/Pattern1";
 var settings = {
   dots: false,
   infinite: true,
@@ -30,6 +30,7 @@ function Home() {
   return (
     <div className="Home">
         <Landing />
+        
         {/* <div className="slogan">
           <Pattern2 />
         <Slider {...settings} className='container' >
@@ -39,16 +40,31 @@ function Home() {
           </Slider>
         </div> */}
         <SlideNav />
+
+        <Divider classn="divider" />
         <Who />
+
+        <Divider classn="divider-left" />
         <Why />
+
+        <Divider classn="divider" />
         <Services />
+
+        <Divider classn="divider-left" />
         <Portfolio header={true} />
 
         {/* <Gallery_merge />  */}
         
+        <Divider classn="divider" />
         <Clients />
+
+        <Divider classn="divider-left" />
         <Contact />
+
+        <Divider classn="divider" />
         <Blog />
+
+        {/* <Divider classn="divider-left" /> */}
         <Footer />
         </div>
   );
