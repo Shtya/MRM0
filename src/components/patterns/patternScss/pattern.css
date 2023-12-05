@@ -6,6 +6,9 @@
   height: 100%;
   overflow: hidden;
 }
+.pattern1 .next-arrow, .pattern1 .back-arrow {
+  display: none;
+}
 .pattern1::after {
   content: "";
   position: absolute;

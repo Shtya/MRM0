@@ -6,7 +6,7 @@ export const Pattern1 = () => {
   return (
     <div className='pattern1'>
       <ul class="screens">
-        <li class="screen screen0" id="[&quot;screen0&quot;]">0<a class="back-arrow" href="#screen-1">
+        <li class="screen screen0" id="[&quot;screen0&quot;]"><a class="back-arrow" href="#screen-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/></svg></a><a class="next-arrow" href="#screen1">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 50 50"><path d="M25,28.207l-5.354-5.354c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0L25,26.793l4.646-4.646 		c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707L25,28.207z"/>          </svg></a></li>
         </ul>
