@@ -31,6 +31,7 @@ import Outdoor_7 from "../assets/signages/outdoor/7.jpg" ;
 import Outdoor_8 from "../assets/signages/outdoor/8.jpg" ;
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
+import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
 
@@ -106,15 +107,19 @@ const M_Signages = () => {
             </div>
         </div>
       </div>
-
+      
+      <Divider classn="divider" />
       <div className="quotation">
+        <Pattern1 />
             <div className="container">
-                <div className="h1">MRM is Your Partner in Web Development <br/> and Design in Dubai, UAE</div>
+                <div className="h2">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
                 <div className="h3">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</div>
             </div>
         </div>
 
+        <Divider classn="divider-left" />
       <div className="signages">
+        <Pattern3 />
           <div className="container">
               <div className="h2">Signages We Offer </div>
               <div className="h3">Our Signages gives an elegant and professional finish to every project.</div>
@@ -130,7 +135,9 @@ const M_Signages = () => {
               <Slider_2_Imgs data={data} settings={settings} />
           </div>
 
+          <Divider classn="divider" />
           <div className="indoor">
+            <Pattern2 />
               <div className="header1 header2">
                   <li className='p active'>	Health-Safety </li>
                   <li className='p'>	Menu Boards </li>
@@ -143,10 +150,12 @@ const M_Signages = () => {
 
       </div>
 
+      <Divider classn="divider-left" />
       <div className="process">
+        <Pattern3 />
             <div className="container">
                 <div className="h1 hidden-text" data-aos="fade-left">Signage creation process</div>
-                <div className="h3 hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project <br/> an elegant and professional finish.</div>
+                <div className="p hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish.</div>
                 <div className="timeline">
                   {
                     process.map((e,index)=>(
@@ -154,7 +163,7 @@ const M_Signages = () => {
                         <div className="number hidden-text" data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
                           <span className='hidden-img' ><img src={e.img} alt="" /></span>
-                          <h2 className="h3  hidden-text" data-aos="fade-left">{e.title}</h2>
+                          <h2 className="h3 clip  hidden-text" data-aos="fade-left">{e.title}</h2>
                           <p className="p  hidden-text" data-aos="fade-left"> {e.desc}</p>
                       </div>
                       </div>

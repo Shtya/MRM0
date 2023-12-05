@@ -4318,6 +4318,7 @@ footer{
     padding: 40px 0;
     background-color: var(--second-bg);
     z-index: 105; 
+    position: relative;
     &::after {
       content: '';
       position: absolute;
@@ -4336,6 +4337,7 @@ footer{
       text-align: center;
       width: calc(100% - 70px);
       margin-left: 35px;
+      color: #eee;
       &::before{
         content:"" ;
         width: 40px;
@@ -4357,26 +4359,9 @@ footer{
         right: -40px;
       }
     }
-    .p{
+    .h2{
       text-align: center;
-      margin-bottom: 5px;
-      @media (max-width:800px) {
-        &::after , &::before {display: none;}
-      }
-      &::after{
-        content: "\f10e";
-        font: normal normal normal 14px/1 FontAwesome;
-        position: absolute;
-        right: -15px;
-        bottom: 0;
-      }
-      &::before{
-        content: "\f10d";
-        font: normal normal normal 14px/1 FontAwesome;
-        position: absolute;
-        left: -15px;
-        top: 0;
-      }
+      margin-bottom: 10px;
     }
   }
 
@@ -4407,7 +4392,8 @@ footer{
       }
       &>.h3{
         text-align: center;
-        margin: 0 0 30px;
+        color: #eee;
+        margin-bottom: 10px;
       }
     }
     .header2{
@@ -4497,7 +4483,7 @@ footer{
     min-height: 50vh;
     display: flex; align-items: center;
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 100px;
     background-color: var(--third-bg);
     z-index: 105; 
     &::after {
@@ -4515,9 +4501,13 @@ footer{
       background-color: var(--third-bg);
     }
     .container{
-      &>.h3{
+      &>.p{
         text-align: center;
         margin: -10px 0  30px 0;
+        color: #eee;
+        @media (min-width: 1000px) {
+          padding: 0 20px;
+        }
       }
       .timeline{
         width: 50%;
@@ -4587,9 +4577,10 @@ footer{
               }
             }
             .h3{
-              margin-bottom: -5px;
+              margin-bottom: 5px;
               color: var(--alt-alt-main);
               overflow: hidden;
+              font-size: 18px;
               text-overflow: ellipsis;
               text-wrap: nowrap;
             }
