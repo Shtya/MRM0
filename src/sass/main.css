@@ -2717,7 +2717,7 @@ footer .container .bottom .last a {
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  padding: 30px !important;
+  padding: 30px 0 100px !important;
 }
 .contact-us .Contact2 .h1 {
   text-align: left;
@@ -2733,7 +2733,7 @@ footer .container .bottom .last a {
   content: "";
   position: absolute;
   width: 100%;
-  height: 110vh;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: var(--overlay1);
@@ -7243,7 +7243,7 @@ footer .container .bottom .last a {
   flex-direction: column;
   justify-content: center;
 }
-.error .CoverImg {
+.error .intro .CoverImg {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -7251,7 +7251,7 @@ footer .container .bottom .last a {
   left: 0;
   z-index: -1;
 }
-.error .CoverImg::before {
+.error .intro .CoverImg::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -7260,13 +7260,13 @@ footer .container .bottom .last a {
   left: 0;
   background-color: rgba(29, 29, 31, 0.4549019608);
 }
-.error .CoverImg img {
+.error .intro .CoverImg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.error h1 {
+.error .intro h1 {
   line-height: 0.8;
   font-size: 220px;
   font-family: "Poppins", system-ui;
@@ -7274,13 +7274,13 @@ footer .container .bottom .last a {
   text-shadow: 2px 2px 6px var(--alt-alt-main);
   font-family: "Nunito", sans-serif, system-ui;
 }
-.error h2 {
+.error .intro h2 {
   font-size: 50px;
   color: var(--alt-alt-main);
   text-shadow: 1px 1px 4px var(--alt-alt-main);
   line-height: 2;
 }
-.error h3 {
+.error .intro h3 {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -7289,6 +7289,20 @@ footer .container .bottom .last a {
   text-transform: capitalize;
   color: #d8d8d8;
   text-align: center !important;
+}
+@media (max-width: 700px) {
+  .error .intro h1 {
+    font-size: 180px;
+  }
+  .error .intro h2 {
+    font-size: 40px;
+  }
+  .error .intro h3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+  }
 }
 .error .group2 {
   width: 50%;
