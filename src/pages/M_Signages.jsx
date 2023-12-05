@@ -98,11 +98,11 @@ const M_Signages = () => {
 
       <div className="home">
           <div className="container">
-              <div className="boxImg  " >  <img src={ImgSection} alt="" /> </div>
+              <div className="boxImg hidden-img " >  <img src={ImgSection} alt="" /> </div>
               <div className="boxs " >
-                  <h2 className='h1 '> Craft Your Vision, Achieve Your Goals </h2>
-                  <h2 className='h2 '>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE.</h2>
-                  <p className='p'>MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding.</p>
+                  <h2 className='h1  hidden-text'> Craft Your Vision, Achieve Your Goals </h2>
+                  <h2 className='h2  hidden-text'>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE.</h2>
+                  <p className='p hidden-text'>MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding.</p>
 
             </div>
         </div>
@@ -112,8 +112,8 @@ const M_Signages = () => {
       <div className="quotation">
         <Pattern1 />
             <div className="container">
-                <div className="h2">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
-                <div className="h3">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</div>
+                <div className="h1 hidden-text" data-aos="fade-left">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
+                <div className="h3" data-aos="fade-left">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</div>
             </div>
         </div>
 
@@ -121,8 +121,8 @@ const M_Signages = () => {
       <div className="signages">
         <Pattern3 />
           <div className="container">
-              <div className="h2">Signages We Offer </div>
-              <div className="h3">Our Signages gives an elegant and professional finish to every project.</div>
+              <div className="h1 clip hidden-text" data-aos="fade-left">Signages We Offer </div>
+              <div className="phead hidden-text" data-aos="fade-left">Our Signages gives an elegant and professional finish to every project.</div>
           </div>
           <div className="outdoor">
               <div className="header1 header2">
@@ -154,8 +154,8 @@ const M_Signages = () => {
       <div className="process">
         <Pattern3 />
             <div className="container">
-                <div className="h1 hidden-text" data-aos="fade-left">Signage creation process</div>
-                <div className="p hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish.</div>
+                <div className="h1 hidden-text clip" data-aos="fade-left">Signage creation process</div>
+                <div className="phead hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish.</div>
                 <div className="timeline">
                   {
                     process.map((e,index)=>(
@@ -163,7 +163,7 @@ const M_Signages = () => {
                         <div className="number hidden-text" data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
                           <span className='hidden-img' ><img src={e.img} alt="" /></span>
-                          <h2 className="h3 clip  hidden-text" data-aos="fade-left">{e.title}</h2>
+                          <h2 className="h2 clip  hidden-text" data-aos="fade-left">{e.title}</h2>
                           <p className="p  hidden-text" data-aos="fade-left"> {e.desc}</p>
                       </div>
                       </div>

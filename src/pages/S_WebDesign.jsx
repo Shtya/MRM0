@@ -69,8 +69,8 @@ const S_WebDesign = () => {
         <div className="social-media">
           <Pattern3 />
         <div className="container">
-            <h3 className='h2 hidden-text clip'>Our Specializations</h3>
-            <div className="h3 hidden-text">We specialize in the following web design and development services</div> 
+            <h3 className='h1 hidden-text clip'>Our Specializations</h3>
+            <div className="phead hidden-text">We specialize in the following web design and development services</div> 
             <div className="boxs">
             { SocialMedia.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} /> ))}
             </div>

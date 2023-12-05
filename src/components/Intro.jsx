@@ -17,7 +17,7 @@ const Intro = ({children , classn , ImgIntro , ImgSection , main_title , second_
               <div className="boxs " data-aos="fade-rigth" >
                   <h2 className='h1 hidden-text'> {main_title} </h2>
                   <p className='h2 hidden-text'>{second_title}</p>
-                  <div className="inner-boxs"  >
+                  <ul className="inner-boxs"  >
                     {
                       li && <div className="box" data-aos="fade-rigth">
                         <li className='p hidden-text'> {li[0]} </li>
@@ -32,7 +32,7 @@ const Intro = ({children , classn , ImgIntro , ImgSection , main_title , second_
                       {li?.length > 6 &&<li className='p hidden-text'> {li[6]} </li>}
                       {li?.length > 7 &&<li className='p hidden-text'> {li[7]} </li>}
                     </div>
-            </div>
+            </ul>
             </div>
         </div>
       </div>

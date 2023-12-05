@@ -129,7 +129,7 @@ const S_Media = () => {
                       <div className="box" key={index}>
                           <div className="coverImg hidden-img"> <img src={e.img} alt="" /> </div>
                           <div className="text">
-                              <div className="h3  hidden-text" data-aos="fade-up">{e.title} </div>
+                              <div className="h3 clip hidden-text" data-aos="fade-up">{e.title} </div>
                               <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>
                           </div>
                       </div>
@@ -143,7 +143,7 @@ const S_Media = () => {
         <div className="process">
         <Pattern3 />
             <div className="container">
-                <div className="h1 hidden-text" data-aos="fade-left">Our Process</div>
+                <div className="h1 clip hidden-text" data-aos="fade-left">Our Process</div>
 
                 <div className="timeline">
                   {
@@ -152,7 +152,7 @@ const S_Media = () => {
                         <div className="number hidden-text" data-aos="fade-left"> 0{index +1} </div>
                         <div className='inner-box'>
                           <span className='hidden-img' ><img src={e.img} alt="" /></span>
-                          <h2 className="h3 hidden-text" data-aos="fade-left">{e.title}</h2>
+                          <h2 className="h3 clip hidden-text" data-aos="fade-left">{e.title}</h2>
                           <p className="p hidden-text" data-aos="fade-left"> {e.desc}</p>
                       </div>
                       </div>

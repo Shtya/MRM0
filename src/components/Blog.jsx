@@ -57,7 +57,7 @@ const Blog = () => {
     <section className='blog' id='Blog'>
       <Pattern2 />
       <div className="container"> <div className="h1 clip hidden-text">BLOGS</div> </div>
-      <p className="p hidden-text" >Latest Insights and News to Keep Your Strategies Alive </p>
+      <p className="phead hidden-text" >Latest Insights and News to Keep Your Strategies Alive </p>
 
       {/* <BLOG_SLIDER data={blogs} /> */}
       <Slider_1_Img  data={blogs} settings={settings} />

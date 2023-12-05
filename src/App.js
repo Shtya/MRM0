@@ -37,16 +37,17 @@ const App = () => {
         <Route path='/terms' element={<Terms />} />
 
         {/* secondary Pages */}
-        <Route path='/social' element={<S_photography />} />
-        <Route path='/media' element={<S_Media />} />
         <Route path='/web-design' element={<S_WebDesign/>} />
-        <Route path='/branding' element={<S_Branding  />} />
+        <Route path='/photography' element={<S_photography />} />
+        <Route path='/social' element={<S_photography />} />
+        <Route path='/signages' element={<M_Signages />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
+
+        <Route path='/media' element={<S_Media />} />
+        <Route path='/branding' element={<S_Branding  />} />
         <Route path='/gifts' element={<S_Gifts  />} />
 
         <Route path='/seo' element={<S_SEO />} />
-        <Route path='/signages' element={<M_Signages />} />
-        <Route path='/photography' element={<S_photography />} />
 
       </Routes>
       

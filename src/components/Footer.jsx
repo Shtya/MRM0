@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />
-        <div className="p">We Don't Create Ads ,We Build Successful Campaigns</div>
+        <div className="phead">We Don't Create Ads ,We Build Successful Campaigns</div>
         <ul className="social">
           <li><i className="fa-brands fa-facebook-f"></i></li>
           <li><i className="fa-brands fa-instagram"></i></li>

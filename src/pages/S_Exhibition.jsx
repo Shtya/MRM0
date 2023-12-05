@@ -79,7 +79,7 @@ const S_Exhibition = () => {
       <div className="quotation">
         <Pattern1 />
             <div className="container">
-                <div className="h3 " data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.
+                <div className="h3" data-aos="fade-up">We offer high-quality stands for businesses in Dubai to appear more professional and convey their brand's message.  You can customize your free-standing display with options that align perfectly with your brand identity and marketing objectives.  Add your logo, informative panels, and eye-catching graphics to leave a powerful impression on your target audience.
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@ const S_Exhibition = () => {
         <Divider classn="divider-left" />
       <div className="exhibition-stands">
         <Pattern3 />
-        <div className="container"> <div className="h1">Take a look at our designs for exhibition stands. </div></div>
+        <div className="container"> <div className="h1 clip">Take a look at our designs for exhibition stands. </div></div>
         <div className="container">
           <div className="boxs">
             {images.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
@@ -103,7 +103,7 @@ const S_Exhibition = () => {
       <Divider classn="divider" />
       <div className="Display-stands">
         <Pattern2 />
-      <div className="container"><div className="h1">Take a look at our designs for Display stands.</div></div>
+      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands.</div></div>
         <div className="container">
             <div className="boxs">
                 {images.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
@@ -120,14 +120,14 @@ const S_Exhibition = () => {
       <div className="impact">
         <Pattern3 />
             <div className="container">
-            <div className="container"><div className="h1">Why Choose Us for Your Corporate Gifting Needs?</div></div>
+            <div className="container"><div className="h1 clip">Why Choose Us for Your Corporate Gifting Needs?</div></div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
                       <div className="box" data-aos="fade-right" key={index}>
                           <div className="coverImg hidden-img"> <img src={e.img} alt="" /> </div>
                           <div className="text" >
-                              <div className="h3  hidden-text">{e.title} </div>
+                              <div className="h3 clip hidden-text">{e.title} </div>
                               <div className="p hidden-text">{e.desc} </div>
                           </div>
                       </div>

@@ -7,7 +7,7 @@ const OneProcess = ({title , paragraph , img , classn , num}) => {
       <span></span>
       <div className="num">{num}</div>
       <div className="inner-box" >
-        <h2 className="h2 hidden-text" data-aos="fade-right">{title} </h2>
+        <h2 className="h2 clip hidden-text" data-aos="fade-right">{title} </h2>
         <p className="p hidden-text" data-aos="fade-right">{paragraph}</p>
       </div>
     </div>

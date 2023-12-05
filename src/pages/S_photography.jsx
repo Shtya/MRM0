@@ -113,7 +113,7 @@ const S_photography = () => {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate}>
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
-                <div className="h3 clip hidden-text"> {e.title} </div>
+                <div className="h2 clip hidden-text"> {e.title} </div>
                 <div className="p hidden-text">{e.desc} </div>
               </div>
             ))
@@ -167,7 +167,7 @@ const S_photography = () => {
       <Divider classn="divider" />
       <div className="searching">
       <Pattern2 />
-        <div className="h1 clip">Why Choose Us?</div>
+        <div className="h1 clip hidden-text">Why Choose Us?</div>
             <div className="container">
               {/* <div className="coverImg "> <img src={Outdoor_1} alt="" /> </div> */}
 
@@ -175,7 +175,7 @@ const S_photography = () => {
               {WHY.map((e,index)=>(
                 <div key={index}>
                   <h3 className='h2'>{e.title}</h3>
-                  <h2 className='h3'>{e.desc}</h2>
+                  <h2 className='p'>{e.desc}</h2>
                 </div>
                   ))}
               </div>

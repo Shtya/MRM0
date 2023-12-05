@@ -82,14 +82,14 @@ const S_Gifts = () => {
       <div className="impact">
         <Pattern2 />
             <div className="container">
-                <div className="h1 hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
+                <div className="h1 clip hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (
-                      <div className="box" key={index}>
+                      <div className="box" key={index} data-aos="fade-up" >
                           <div className="coverImg"> <img src={e.img} alt="" /> </div>
                           <div className="text">
-                              <div className="h3 hidden-text" data-aos="fade-up">{e.title} </div>
+                              <div className="h3 clip hidden-text" data-aos="fade-up">{e.title} </div>
                               <div className="p hidden-text" data-aos="fade-up">{e.desc} </div>
                           </div>
                       </div>

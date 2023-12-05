@@ -1604,16 +1604,21 @@ footer .container .bottom .last a {
 }
 .about-us .searching .boxs .box {
   text-align: left;
-  font-size: 16px;
+  font-size: 1.1rem;
   text-wrap: balance;
   background: var(--bg-card);
   padding: 10px;
   text-transform: capitalize;
   font-family: "Poppins", system-ui;
   font-weight: 500;
-  color: #aaa;
+  color: #eee;
   display: flex;
   align-items: center;
+}
+@media (max-width: 100px) {
+  .about-us .searching .boxs .box {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 1100px) {
   .about-us .searching .container {
@@ -3058,7 +3063,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -3701,7 +3706,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -3894,9 +3899,8 @@ footer .container .bottom .last a {
   margin-top: 10px;
 }
 .M_SEO .platforms .container .boxs .box .p {
-  color: #aaa;
+  color: #eee;
   letter-spacing: 1px;
-  text-wrap: balance;
 }
 .M_SEO .process {
   padding: 50px 0;
@@ -4328,7 +4332,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -4398,7 +4402,7 @@ footer .container .bottom .last a {
   background-position: 0 0;
   background-color: var(--third-bg);
 }
-.M_Signages .signages .container .h2 {
+.M_Signages .signages .container .h1 {
   margin-bottom: 0;
   text-align: center;
 }
@@ -4411,7 +4415,7 @@ footer .container .bottom .last a {
   width: 150px;
 }
 .M_Signages .signages .indoor {
-  padding: 50px 0 30px;
+  padding: 70px 0 30px;
   position: relative;
   background-color: var(--second-bg);
   z-index: 105;
@@ -4851,7 +4855,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -5209,7 +5213,7 @@ footer .container .bottom .last a {
   text-align: left !important;
   margin-bottom: 0;
 }
-.S_Exhibition .home .container .boxs .h3 {
+.S_Exhibition .home .container .boxs .h2 {
   text-align: left;
   margin-bottom: 0;
 }
@@ -5251,7 +5255,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -5658,7 +5662,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -5842,7 +5846,6 @@ footer .container .bottom .last a {
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  font-size: 18px;
   line-height: 1.4;
   text-align: center !important;
 }
@@ -6050,10 +6053,14 @@ footer .container .bottom .last a {
 }
 .S_photography .searching .container .boxs h2 {
   position: relative;
-  padding-left: 20px;
+  padding: 0 120px;
   text-wrap: balance;
-  text-align: left;
-  color: #aaa;
+  margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .S_photography .searching .container .boxs h2 {
+    padding: 0;
+  }
 }
 .S_photography .searching .container .boxs h2::before {
   content: "";
@@ -6167,9 +6174,6 @@ footer .container .bottom .last a {
 .WEB_DESIGN .home .container .boxs .inner-boxs .box-2 {
   flex: 1;
 }
-.WEB_DESIGN .home .container .boxs .inner-boxs .box {
-  padding-left: 20px;
-}
 .WEB_DESIGN .home .container .boxs .inner-boxs .box li {
   list-style: circle;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, system-ui;
@@ -6190,7 +6194,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -6775,7 +6779,7 @@ footer .container .bottom .last a {
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
-  padding: 40px 0;
+  padding: 80px 0;
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
@@ -7057,7 +7061,7 @@ footer .container .bottom .last a {
   margin-top: 10px;
 }
 .S_Branding .platforms .container .boxs .box .p {
-  color: #aaa;
+  color: #eee;
   letter-spacing: 1px;
   text-wrap: balance;
 }
@@ -7145,14 +7149,12 @@ footer .container .bottom .last a {
   top: 50%;
   transform: translateY(-50%);
 }
-.S_Branding .searching .container .boxs h2 {
+.S_Branding .searching .container .boxs .p {
   position: relative;
   padding-left: 20px;
-  font-size: 1rem;
   text-wrap: balance;
-  color: #aaa;
 }
-.S_Branding .searching .container .boxs h2::before {
+.S_Branding .searching .container .boxs .p::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -7355,12 +7357,14 @@ footer .container .bottom .last a {
 .Privacy, .Term {
   background-color: var(--bg);
   color: white;
+  padding-bottom: 100px;
 }
 .Privacy .container, .Term .container {
   width: 80%;
 }
 .Privacy .container .content, .Term .container .content {
   padding-top: 50px;
+  padding-bottom: 50px;
   font-family: "Nunito", sans-serif, system-ui;
 }
 .Privacy .container .content h1, .Term .container .content h1 {
@@ -7934,7 +7938,7 @@ footer .container .bottom .last a {
 }
 
 .h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-transform: capitalize;
   position: relative;
   z-index: 3;
@@ -7968,7 +7972,6 @@ footer .container .bottom .last a {
   text-wrap: balance;
   color: var(--alt-alt-main);
   text-shadow: 0 0 2px var(--alt-alt-main);
-  opacity: 0.9;
 }
 @media (max-width: 1070px) {
   .h2 {
@@ -7996,18 +7999,37 @@ footer .container .bottom .last a {
 
 .p {
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: 400;
-  color: #ccc;
+  color: #eee;
   position: relative;
   text-wrap: pretty;
-  text-shadow: 0 0 1px white;
+  text-shadow: 0 0 1px #eee;
   font-family: "Poppins", system-ui;
   display: block !important;
 }
 @media (max-width: 1170px) {
   .p {
     font-size: 0.9rem;
+  }
+}
+
+.phead {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #eee;
+  position: relative;
+  text-wrap: pretty;
+  text-shadow: 0 0 1px #eee;
+  font-family: "Poppins", system-ui;
+  display: block !important;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+  .phead {
+    font-size: 1rem;
   }
 }
 

@@ -14,7 +14,7 @@ const Contact2 = () => {
               <div className="box2">
                   <div className="text">
                       <h2 className='h1'>Turn your dreams into digital realities. </h2>
-                      <p className='h2'> Get in touch with us to start your digital journey.</p>
+                      {/* <p className='h2'> Get in touch with us to start your digital journey.</p> */}
                   </div>
                   <ul className='social'>
                     <li> <a className="Iicon"> <div className="style"><i className="fa-solid fa-phone"></i></div>         </a>    <span className='paragraph'>+971561384496</span></li>
