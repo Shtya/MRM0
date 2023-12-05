@@ -5627,15 +5627,19 @@ footer{
         overflow: hidden;
         &:hover{
           height: 450px ;
-          transform: translateY(50px);
+          position: relative;
+          top: 20px;
+          // transform: translateY(50px);
           padding: 0;
+          margin-bottom: 70px;
+          // top: -50px;
           .coverImg{
             height: 450px;
           }
           .h3{
             position: relative;
             transform: translateY(-60px);
-            text-shadow: 0 0 3px yellow;
+            text-align: center;
           }
         }
         .coverImg{
@@ -5648,23 +5652,30 @@ footer{
             object-fit: cover;
           }
         }
-        .h3{
-          text-align: center;
-          margin: 5px 0;
+        .h2{
+          padding: 10px 0 0;
           font-weight: bold;
           font-family: 'Nunito' , system-ui;
-          font-size: 1.3rem;
           color: var(--main);
           -webkit-text-stroke: .1px black;
           transition: 0.2s ease-in;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.2;
+          text-align: center !important;
         }
         .p{
           text-align: center;
-          padding:0 10px 20px;
-          display: -webkit-box !important ;
-          -webkit-line-clamp: 1 ;
-          -webkit-box-orient: vertical ;
+          padding: 0 10px 20px;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
           overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.3;
         }
       }
     }

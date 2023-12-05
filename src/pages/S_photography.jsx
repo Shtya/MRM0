@@ -107,14 +107,14 @@ const S_photography = () => {
         <Divider classn="divider-left" />
       <div className="photography-services">
       <Pattern3 />
-        <div className="h1">Our Photography Services</div> 
+        <div className="h1 clip hidden-text">Our Photography Services</div> 
         <div className="container">
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate}>
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
-                <div className="h3"> {e.title} </div>
-                <div className="p">{e.desc} </div>
+                <div className="h3 clip hidden-text"> {e.title} </div>
+                <div className="p hidden-text">{e.desc} </div>
               </div>
             ))
           }
@@ -124,13 +124,13 @@ const S_photography = () => {
       <Divider classn="divider" />
       <div className="Videography-services">
         <Pattern2 />
-        <div className="h1">Types of Videography Services</div> 
+        <div className="h1 clip hidden-text">Types of Videography Services</div> 
         <div className="container">
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="coverImg"> <img src={e.img} alt="" />  </div>
-                <div className="h3"> {e.title} </div>
+                <div className="h2 clip"> {e.title} </div>
                 <div className="p">{e.desc} </div>
               </div>
             ))
