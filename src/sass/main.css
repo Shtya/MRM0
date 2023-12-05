@@ -5829,8 +5829,8 @@ footer .container .bottom .last a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.S_photography .photography-services .container .box .h2, .S_photography .Videography-services .container .box .h2 {
-  padding: 10px 0 0;
+.S_photography .photography-services .container .box .h2, .S_photography .photography-services .container .box .h3, .S_photography .Videography-services .container .box .h2, .S_photography .Videography-services .container .box .h3 {
+  margin: 10px 0;
   font-weight: bold;
   font-family: "Nunito", system-ui;
   color: var(--main);
@@ -5841,7 +5841,9 @@ footer .container .bottom .last a {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.4;
   text-align: center !important;
 }
 .S_photography .photography-services .container .box .p, .S_photography .Videography-services .container .box .p {

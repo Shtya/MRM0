@@ -5643,8 +5643,8 @@ footer{
             object-fit: cover;
           }
         }
-        .h2{
-          padding: 10px 0 0;
+        .h2 , .h3{
+          margin: 10px 0 ;
           font-weight: bold;
           font-family: 'Nunito' , system-ui;
           color: var(--main);
@@ -5655,7 +5655,9 @@ footer{
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
-          line-height: 1.2;
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 1.4;
           text-align: center !important;
         }
         .p{
