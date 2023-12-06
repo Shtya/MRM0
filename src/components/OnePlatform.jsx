@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const OnePlatform = ({title , paragraph , img , classn }) => {
+const OnePlatform = ({title , paragraph , img , classn , path }) => {
   return (
-    <div className={`box ${classn}`} data-aos="fade-up">
+    <Link to={path}  className={`box ${classn}`} data-aos="fade-up">
         <div className="coverImg hidden-img"> <img src={img} alt="" /></div>
         <div className="inner-box">
             <span className="one"/>
@@ -11,7 +12,7 @@ const OnePlatform = ({title , paragraph , img , classn }) => {
             <p className='p hidden-text'>{paragraph}</p>
             {/* <button className='bt'> see more</button> */}
         </div>
-      </div>
+      </Link>
   )
 }
 

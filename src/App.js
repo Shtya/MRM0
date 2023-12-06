@@ -3,7 +3,6 @@ import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
 import Loading1 from "../src/assets/loading1.svg"
-import Loading2 from "../src/assets/loading2.svg"
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -23,8 +22,7 @@ import S_Exhibition from './pages/S_Exhibition'
 import S_photography from './pages/S_photography';
 import { AnimatePresence } from 'framer-motion'
 import Pattern1 from './components/patterns/Pattern1'
-import SplitText from "split-text"
-import gsap from 'gsap'
+import Facebook from './components/Social-media/Facebook'
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -57,7 +55,7 @@ const App = () => {
 
   return ( 
     <div className='App'>
-       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
+       <div className="animation_text" style={{display:`${Done ? "none" : "none"}` }}>
         <Pattern1 />
         
         <img src={Loading1} alt="" />
@@ -77,23 +75,23 @@ const App = () => {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blogs />} /> 
         <Route path='/landing' element={<Landing />} />
-
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/terms' element={<Terms />} />
 
-        {/* secondary Pages */}
+        {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
         <Route path='/social' element={<S_photography />} />
         <Route path='/signages' element={<M_Signages />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
-
         <Route path='/media' element={<S_Media />} />
         <Route path='/branding' element={<S_Branding  />} />
         <Route path='/gifts' element={<S_Gifts  />} />
-
         <Route path='/seo' element={<S_SEO />} />
+
+      {/* Social media Pages */}
+        <Route path='/facebook' element={<Facebook />} />
 
       </Routes>
       {/* </AnimatePresence> */}
