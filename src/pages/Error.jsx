@@ -16,8 +16,8 @@ const Error = () => {
         <div className="intro">
           <div className="CoverImg"> <img src={IntroImg} alt="" /> </div>
           <h1>404</h1>
-          <h2> Oops! </h2>
-          <h3 className='p'> Looks like you've taken a wrong turn. Don't worry, even the best of us get lost sometimes.</h3>
+          <h2 className='clip'> Oops! </h2>
+          <h3 className='phead'> Looks like you've taken a wrong turn. Don't worry, even the best of us get lost sometimes.</h3>
           <div className="group2">
             <input type="text" />
             <i className="fa-solid fa-magnifying-glass"></i>

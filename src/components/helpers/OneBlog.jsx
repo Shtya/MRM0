@@ -9,7 +9,7 @@ const OneBlog = ({classn ,blogs , settings , name , onHere}) => {
   return (
     <div className={`Slider_1_Img ${classn}`}>
       {onHere ? <Pattern2 /> : <Pattern3 />}
-      <div className="h1"> {name} </div>
+      <div className="h1 clip"> {name} </div>
           <Slider {...settings} className='container' >
             {blogs.map((e,index)=>(
                   <div  key={index} className="coverImg">

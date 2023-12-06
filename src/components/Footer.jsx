@@ -22,14 +22,14 @@ const Footer = () => {
 
       <div className="center">
         <ul className='ul-1'>
-          <h2 className='h2'>Contact INFO</h2>
+          <h2 className='h2 clip'>Contact INFO</h2>
           <li><i className="fa-solid fa-phone"></i>  +971561384496 </li>
           <li><i className="fa-solid fa-envelope"></i>  info@mrmadvertisingdubai.com </li>
           <li><i className="fa-solid fa-map-location-dot"></i>  Business Bay - Dubai </li>
         </ul>
 
         <ul className='ul-2'>
-          <h2 className='h2'>Quick Links</h2>
+          <h2 className='h2 clip'>Quick Links</h2>
           <li > <Link className='p' to="/about-us"> about us </Link></li>
           <li > <Link className='p' to="/landing"> services </Link></li>
           <li > <Link className='p' to="/contact-us"> contact us </Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
         </ul>
 
         <ul className='ul-3' >
-          <h2 className='h2'>SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <h2 className='h2 clip'>SUBSCRIBE TO OUR NEWSLETTER</h2>
           <li>Stay Informed and Inspired Subscribe to Our Newsletter for Exclusive Updates, Insights, and Offers</li>
           <div className="group">
             <input type="text" placeholder='Email Address' />

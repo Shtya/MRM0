@@ -169,7 +169,7 @@ const S_Branding = ({header =true}) => {
               <div className="boxs">
               {Approach.map((e,index)=>(
                 <div key={index}>
-                  <h3 className='h2'>{e.title}</h3>
+                  <h3 className='h2 clip'>{e.title}</h3>
                   <h2 className='p'>{e.desc}</h2>
                 </div>
                   ))}

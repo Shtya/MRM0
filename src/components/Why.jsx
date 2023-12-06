@@ -32,7 +32,7 @@ const Why = () => {
                     <div className="box" data-aos={e.animate} key={idx} >
                       <div className="group" >
                           <i  className={e.icon}></i>
-                          <h3 className='h2' > {e.title}  </h3>
+                          <h3 className='h2 clip' > {e.title}  </h3>
                       </div>
                       <span className={` p`}>{e.desc}</span>
                     </div>

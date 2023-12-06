@@ -3596,7 +3596,7 @@ footer .container .bottom .last a {
      object-fit: contain;
 }
 .S_media .process .container .timeline .check-point .inner-box .h3 {
-  margin-bottom: -5px;
+  margin-bottom: 5px;
   color: var(--alt-alt-main);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4162,12 +4162,9 @@ footer .container .bottom .last a {
   padding: 0 40px 0 20px;
 }
 .M_SEO .process .container .box .one-process .inner-box h2 {
-  line-height: 1.1;
   position: relative;
   text-transform: uppercase;
   padding-top: 20px;
-  font-size: 1.2rem;
-  font-weight: 600;
   margin-bottom: 5px;
 }
 .M_SEO .process .container .box .one-process .inner-box p {
@@ -5173,13 +5170,11 @@ footer .container .bottom .last a {
 .S_Gifts .searching .container .box .h2 {
   color: var(--alt-alt-main);
   margin: 10px;
-  font-size: 1.2rem;
   text-transform: capitalize;
   font-family: "Montserrat", system-ui;
   font-weight: 600;
   text-align: center;
   font-family: "Montserrat", system-ui;
-  font-size: 25px;
 }
 .S_Gifts .searching .container .box .h3 {
   font-size: 1rem;
@@ -6558,6 +6553,8 @@ footer .container .bottom .last a {
   background-color: var(--second-bg);
   z-index: 105;
   position: relative;
+  padding-top: 0;
+  padding-bottom: 196px;
 }
 @media (max-width: 1160px) {
   .WEB_DESIGN .our_Approach {
@@ -7446,8 +7443,13 @@ footer .container .bottom .last a {
   font-size: 20px;
   font-family: "Poppins", system-ui;
   text-transform: capitalize;
-  color: #d8d8d8;
+  color: #eee;
   text-align: center !important;
+}
+@media (min-width: 800px) {
+  .error .intro h3 {
+    padding: 0 200px !important;
+  }
 }
 @media (max-width: 700px) {
   .error .intro h1 {
@@ -8239,7 +8241,7 @@ footer .container .bottom .last a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none !important;
-  font-weight: 600;
+  font-weight: 700 !important;
 }
 
 .hidden {

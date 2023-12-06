@@ -30,7 +30,7 @@ export function Services() {
             <div className="animate" ></div>
             <Link to={e.route}   >
               <Link to={e.route}><i className={`${e.icon} clip hidden-img`}> <span />  <span /> </i> </Link>
-              <h3 className='h2 hidden-text'>{e.title}</h3>
+              <h3 className='h2 clip hidden-text'>{e.title}</h3>
               <h4 className='p hidden-text'>{e.desc}</h4>
           </Link>
           </div>
