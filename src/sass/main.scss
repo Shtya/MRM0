@@ -4409,8 +4409,8 @@ footer{
           line-height: 1.4;
           text-transform: capitalize;
           color: #eee;
-          font-size: 1.5rem !important;
-          &::first-line{ color:var(--alt-alt-main);font-size: 1.9rem !important ; margin-bottom: 20px !important;}
+          font-size: 1.7rem !important;
+          &::first-line{ color:var(--alt-alt-main);font-size: 2rem !important ; margin-bottom: 20px !important;}
           @media (max-width:900px){
             font-size: 1.3rem !important;
             &::first-line{ color:var(--alt-alt-main);font-size: 1.6rem !important ;}
