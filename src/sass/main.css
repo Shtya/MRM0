@@ -4429,22 +4429,29 @@ footer .container .bottom .last a {
   width: 650px;
   margin: auto;
 }
-@media (max-width: 690px) {
-  .Facebook .home .container .boxs {
-    width: 100% !important;
-  }
-}
 .Facebook .home .container .boxs .h2 {
   font-family: "Noto Sans";
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   text-wrap: balance;
   line-height: 1.4;
   text-transform: capitalize;
   color: #eee;
+  font-size: 1.5rem !important;
 }
 .Facebook .home .container .boxs .h2::first-line {
   color: var(--alt-alt-main);
+  font-size: 1.9rem !important;
+  margin-bottom: 20px !important;
+}
+@media (max-width: 900px) {
+  .Facebook .home .container .boxs .h2 {
+    font-size: 1.3rem !important;
+  }
+  .Facebook .home .container .boxs .h2::first-line {
+    color: var(--alt-alt-main);
+    font-size: 1.6rem !important;
+  }
 }
 .Facebook .home .container .boxs .inner-boxs {
   display: flex;
@@ -4477,6 +4484,19 @@ footer .container .bottom .last a {
 @media (max-width: 1000px) {
   .Facebook .home .container .boxs .inner-boxs .box li {
     font-size: 1rem !important;
+  }
+}
+@media (max-width: 690px) {
+  .Facebook .home .container .boxs {
+    width: 100% !important;
+  }
+  .Facebook .home .container .boxs .h2 {
+    text-align: center !important;
+    font-size: 1rem !important;
+  }
+  .Facebook .home .container .boxs .h2::first-line {
+    color: var(--alt-alt-main);
+    font-size: 1.3rem !important;
   }
 }
 .Facebook .quotation {
