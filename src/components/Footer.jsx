@@ -1,12 +1,12 @@
 import React from 'react'
 import Logo from "../assets/Logo1.png"
 import { Link } from 'react-router-dom'
-import { Pattern2, Pattern3, Pattern6, Pattern7 } from './patterns/Pattern1'
+import { Pattern2, Pattern3, Pattern5, Pattern6, Pattern7 } from './patterns/Pattern1'
 
 const Footer = () => {
   return (
     <footer>
-      {/* <Pattern3 /> */}
+      <Pattern5 />
       <Pattern7 />
       <div className="container">
       <div className="top">

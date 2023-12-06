@@ -91,7 +91,7 @@ const Landing = () => {
                   <img className='hidden-img' src={Grid4} alt="" /> 
               </div>
 
-              <div className="boxs hidden hidden-left">
+              <div className="boxs ">
                   <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch <br/> social media management services in Dubai?</h3>
                   
                   <div className="box">

@@ -100,10 +100,10 @@ export const Pattern7 = ()=>{
       <use href="#gentle-wave" x="50" y="0" fill="#222" />
     </g>
     <g class="parallax3">
-      <use href="#gentle-wave" x="50" y="9" fill="#181818" />
+      <use href="#gentle-wave" x="50" y="9" fill="#111" />
     </g>
     <g class="parallax4">
-      <use href="#gentle-wave" x="50" y="6" fill="#111" />
+      <use href="#gentle-wave" x="50" y="6" fill="#181818" />
     </g>
   </svg>
 </div>

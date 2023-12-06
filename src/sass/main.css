@@ -1,4 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.animation_text {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  z-index: 9000000000000000000;
+  top: 0;
+  left: 0;
+}
+.animation_text > img {
+  position: relative;
+  margin-bottom: -60px;
+}
+.animation_text svg {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.animation_text svg img {
+  width: 300px;
+  height: 300px;
+}
+.animation_text svg text {
+  position: relative;
+  stroke: var(--alt-alt-main);
+  font-size: 100px;
+  font-weight: 70;
+  stroke-width: 6;
+  animation: textAnimate 3s infinite alternate;
+  transform: translateX(-100%);
+  font-family: "Noto Sans", fangsong;
+}
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 100%;
+    stroke-dashoffset: 20%;
+  }
+  100% {
+    stroke-dasharray: 100% 0;
+    stroke-dashoffset: -20%;
+  }
+}
+.animation_text .words {
+  position: relative;
+  margin-top: -50px;
+}
+.animation_text .words .wraper p {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin: 0;
+  line-height: 0;
+}
+.animation_text .words .wraper p:nth-child(5) {
+  color: var(--alt-alt-main);
+}
+.animation_text .typing {
+  font-size: 40px;
+  color: transparent;
+}
+.animation_text .typing span {
+  -webkit-text-stroke: 1px var(--alt-alt-main);
+  letter-spacing: 1px;
+  font-family: "slick";
+  stroke-dasharray: 0 50%;
+  stroke-dashoffset: 42%;
+}
+
 .container {
   margin: auto;
 }
@@ -63,8 +139,8 @@
 }
 
 .App {
-  overflow-x: hidden;
-  background: var(--gradient);
+  overflow: hidden;
+  background: var(--third-bg);
   font-family: "Raleway", system-ui;
 }
 
@@ -513,6 +589,10 @@ header section .video video {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.Who .text-img {
+  width: 100%;
+  height: 100%;
 }
 .Who .p {
   text-align: justify;
@@ -1078,12 +1158,13 @@ header section .video video {
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   pointer-events: none;
   margin-bottom: 20px;
-  background-color: var(--bg-card);
-  box-shadow: 0 0 50px #000 inset, 0 0 30px #181818 inset;
+  background-color: rgba(199, 199, 199, 0.21);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 .Clients .Slider_2_Imgs .slick-arrow {
   width: 40px !important;
@@ -1094,6 +1175,9 @@ header section .video video {
   top: calc(100% - 34px);
   z-index: 1000;
   border: 1px solid var(--alt-alt-main);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
 }
 .Clients .Slider_2_Imgs .slick-arrow:nth-of-type(1) {
   left: calc(100% - 99px);
@@ -1320,8 +1404,29 @@ footer {
   position: relative;
   color: white;
   padding: 50px 0 0 0;
-  background-color: var(--third-bg);
+  background-color: var(--second-bg);
   z-index: 1000;
+  height: 100%;
+}
+footer .square {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+footer .square:nth-child(1) {
+  left: 0;
+}
+footer .square:nth-child(2) {
+  right: 0;
+}
+footer .square:nth-child(3) {
+  left: 300px;
+}
+footer .square:nth-child(4) {
+  right: 300px;
 }
 footer .editorial {
   top: -50px;
@@ -1902,35 +2007,71 @@ footer .container .bottom .last a {
   position: relative;
 }
 .landing .searching .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  --w:700px ;
+  --h:600px ;
+}
+@media (max-width: 1150px) {
+  .landing .searching .container {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    --w:500px !important ;
+    --h:400px ;
+  }
+}
+@media (max-width: 850px) {
+  .landing .searching .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    align-items: baseline;
+    justify-items: center;
+    --w:500px !important ;
+    --h:400px ;
+  }
+}
+@media (max-width: 530px) {
+  .landing .searching .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    align-items: baseline;
+    justify-items: center;
+    --w:400px !important ;
+    --h:350px ;
+  }
 }
 .landing .searching .container .coverImg {
-  height: 400px;
-  width: 400px;
+  width: var(--w);
+  height: var(--h);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 12px;
   transition: 0.4s;
 }
 .landing .searching .container .coverImg:hover {
-  transform: scale(0.9) !important;
+  transform: scale(1) !important;
+  gap: 0;
+  justify-content: center;
 }
 .landing .searching .container .coverImg:hover img {
-  width: 200px;
-  height: 200px;
+  width: calc(var(--w) / 2 - 10px);
+  height: calc(var(--h) / 2);
   border: none;
   top: 0 !important;
+  padding: 0;
+  margin: 0;
 }
 .landing .searching .container .coverImg img {
   transition: 0.4s;
-  width: calc(50% - 5px);
-  height: calc(50% - 10px);
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: calc(var(--w) / 2 - 10px);
+  height: calc(var(--h) / 2 - 10px);
+  -o-object-fit: fill;
+     object-fit: fill;
   cursor: pointer;
 }
 .landing .searching .container .coverImg img:nth-child(1) {
@@ -1950,9 +2091,9 @@ footer .container .bottom .last a {
   top: 30px;
 }
 .landing .searching .container .boxs {
-  flex: 1;
   padding-left: 20px;
-  border-left: 2px dotted rgba(255, 255, 255, 0.64);
+  border-left: 2px dotted #8b949e;
+  position: relative;
 }
 .landing .searching .container .boxs h3 {
   text-align: left;
@@ -2722,10 +2863,11 @@ footer .container .bottom .last a {
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  padding: 30px 0 100px !important;
+  padding: 30px 0 0 !important;
 }
 .contact-us .Contact2 .h1 {
   text-align: left;
+  position: relative;
 }
 .contact-us .Contact2 .coverImg {
   position: absolute;
@@ -2741,7 +2883,7 @@ footer .container .bottom .last a {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--overlay1);
+  background-color: rgba(20, 20, 15, 0.77);
 }
 .contact-us .Contact2 .coverImg img {
   width: 100%;
@@ -2758,7 +2900,12 @@ footer .container .bottom .last a {
   justify-content: space-between;
 }
 .contact-us .Contact2 .home .box2 .text {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+}
+@media (max-width: 880px) {
+  .contact-us .Contact2 .home .box2 .text {
+    display: none;
+  }
 }
 .contact-us .Contact2 .home .box2 .text .h1 {
   text-wrap: nowrap;
@@ -2767,6 +2914,7 @@ footer .container .bottom .last a {
 .contact-us .Contact2 .home .box2 hr {
   width: 50%;
   margin: 20px 0;
+  border-color: gold;
 }
 .contact-us .Contact2 .home .box2 .social {
   display: flex;
@@ -2807,7 +2955,7 @@ footer .container .bottom .last a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background: white;
   transform: translate(-100%, -100%) rotate(45deg);
   transition: 0.3s;
 }
@@ -2820,23 +2968,33 @@ footer .container .bottom .last a {
   font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid var(--alt-alt-main);
   position: relative;
   z-index: 4;
-  color: white;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 3;
   transition: 0.3s;
 }
 .contact-us .Contact2 .home .box2 .social > li span {
   display: block;
-  color: white !important;
+  color: var(--alt-alt-main);
   letter-spacing: 0;
   text-wrap: nowrap;
+  font-family: "Noto Sans";
 }
 .contact-us .Contact2 .home .box2 .last-social {
   display: flex;
   flex-direction: row;
   grid: 40px !important;
+}
+@media (max-width: 880px) {
+  .contact-us .Contact2 .home .box2 .last-social {
+    position: relative;
+    top: -274px;
+    left: 0;
+  }
 }
 .contact-us .Contact2 .home .box2 .last-social li {
   margin-right: 10px;
@@ -2859,14 +3017,23 @@ footer .container .bottom .last a {
 .contact-us .Contact2 .home .box {
   width: 400px;
   height: 500px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
   padding: 20px;
   border-radius: 2px;
-  background: radial-gradient(#ececed, white);
-  box-shadow: 0 0 10px #eee, inset 0 0 10px #eee;
+  position: relative;
+  left: -76px;
+  top: -50px;
+  transition: 0.3s;
+}
+@media (max-width: 990px) {
+  .contact-us .Contact2 .home .box {
+    left: 0;
+    top: 0;
+  }
 }
 .contact-us .Contact2 .home .box p {
-  color: black !important;
   text-shadow: 0 0 transparent;
   margin-bottom: 30px;
 }
@@ -2878,30 +3045,32 @@ footer .container .bottom .last a {
 }
 .contact-us .Contact2 .home .box form input, .contact-us .Contact2 .home .box form select {
   width: 100%;
-  color: black;
-  font-family: "Montserrat", system-ui;
-  background: transparent;
   border: none;
-  border-bottom: 1px solid;
-  padding: 10px 10px 10px 3px;
   outline: none;
   text-transform: capitalize;
   font-size: 1rem;
+  padding: 10px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: "Noto Sans";
+  font-weight: 500;
+  color: white;
 }
 .contact-us .Contact2 .home .box form input::-moz-placeholder, .contact-us .Contact2 .home .box form select::-moz-placeholder {
-  color: black;
+  color: white;
 }
 .contact-us .Contact2 .home .box form input::placeholder, .contact-us .Contact2 .home .box form select::placeholder {
-  color: black;
+  color: white;
 }
 .contact-us .Contact2 .home .box form button {
   width: 100%;
   box-shadow: 0 0 0 transparent;
 }
-@media (max-width: 700px) {
+@media (max-width: 880px) {
   .contact-us .home {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-self: center;
     gap: 20px;
   }
   .contact-us .home .text {
@@ -2917,6 +3086,10 @@ footer .container .bottom .last a {
 @media (max-width: 480px) {
   .contact-us .box {
     width: 300px !important;
+  }
+  .contact-us .social {
+    position: relative;
+    left: 10px !important;
   }
 }
 
@@ -7961,19 +8134,19 @@ footer .container .bottom .last a {
 }
 
 .h2 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   position: relative;
   z-index: 3;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Poppins", system-ui;
+  font-family: "Noto Sans", system-ui;
   line-height: 1.2;
   margin-bottom: 5px;
   text-wrap: balance;
   color: var(--alt-alt-main);
   text-shadow: 0 0 2px var(--alt-alt-main);
 }
-@media (max-width: 1070px) {
+@media (max-width: 1170px) {
   .h2 {
     font-size: 1.1rem;
   }
@@ -7982,14 +8155,14 @@ footer .container .bottom .last a {
 .h3 {
   list-style: circle;
   text-transform: capitalize;
-  line-height: 1.5;
+  line-height: 1.3;
   font-size: 1.2rem;
   position: relative;
   text-shadow: 0 0 2px var(--alt-alt-main);
   color: var(--alt-alt-main);
   text-align: left;
   font-weight: 500;
-  font-family: "Montserrat", system-ui;
+  font-family: "Noto Sans", system-ui;
 }
 @media (max-width: 1170px) {
   .h3 {
@@ -8000,12 +8173,12 @@ footer .container .bottom .last a {
 .p {
   font-size: 1rem;
   line-height: 1.3;
-  font-weight: 400;
+  font-weight: 500;
   color: #eee;
   position: relative;
   text-wrap: pretty;
   text-shadow: 0 0 1px #eee;
-  font-family: "Poppins", system-ui;
+  font-family: "Noto Sans", system-ui;
   display: block !important;
 }
 @media (max-width: 1170px) {

@@ -4,17 +4,8 @@ import Animation  from './helpers/Animation'
 import Pattern1, { Pattern2 } from './patterns/Pattern1'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Who1 from "../assets/text/home/Who1.png"
 
-var settings = {
-  dots: false,
-  infinite: true,
-  speed: 800,
-  slidesToShow: 1,
-  slidesToScroll: 1 , 
-  autoplay:true ,
-  
-};
 const Who = () => {
   
   
@@ -29,7 +20,8 @@ const Who = () => {
       </div>
 
       <div className="box"  >
-        <h2 className='h2 hidden-text  '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2>
+         <img className='text-img' src={Who1} alt="" /> 
+        {/* <h2 className='h2 hidden-text  '>Your Partner for Advertising & Digital Marketing Success in Dubai</h2> */}
         <span className='p hidden-text' >We are a Dubai-based agency specialized in advertising, and digital marketing with years of experience. Our team delivers the highest level of service, combining creativity and strategic thinking for effective campaigns. Our values are dedication, excellence, and transparency. </span>
         <div className="info">
             <div className="box-child"  >

@@ -90,16 +90,13 @@ const Navbar = ()=>{
         
         {path:"/portfolio" , route:"Portfolio"},{path:"/blog" , route:"Blog"},{path:"/contact-us" , route:"Contact Us"},
   ]
-  return(
-    <div className="navbar">
-      <Link to="/" className="logo"> <img src={Logo} alt="" /></Link>
 
-      <nav>
-        <ul className={`${shownav}`}>
-          {routes.map((e,index) => ( 
+  return(
+    <div className="navbar"> <Link to="/" className="logo"> <img src={Logo} alt="" /></Link> <nav> <ul className={`${shownav}`}> {routes.map((e,index) => ( 
+
             <li key={index} className={e.path == "/landing" ? "service" : ""}> 
               
-              <Link to={e.path}> {e.route} {e.Icon}
+              <Link  to={e.path}> {e.route} {e.Icon}
                 
                 {e.path === "/landing" &&
                   <ul className='ul-services'>

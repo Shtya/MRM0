@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {Routes , Route} from "react-router-dom"
+import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
-
+import Loading1 from "../src/assets/loading1.svg"
+import Loading2 from "../src/assets/loading2.svg"
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -20,11 +21,56 @@ import S_Branding from './pages/S_Branding'
 import S_Gifts from './pages/S_Gifts'
 import S_Exhibition from './pages/S_Exhibition'
 import S_photography from './pages/S_photography';
+import { AnimatePresence } from 'framer-motion'
+import Pattern1 from './components/patterns/Pattern1'
+import SplitText from "split-text"
+import gsap from 'gsap'
 
 const App = () => {
+  const [Done , setDone] = useState(true)
+  const {pathname} = useLocation() ;
+
+  const Divvariant = {
+    hidden:{opacity:0 },
+    visible:{
+      opacity:1,
+      transition : {duration : 1 ,staggerChildren : 0.2},
+      y:5
+    },
+  }
+  const Pvariant = {
+    hidden:{opacity:0, y:100 },
+    visible:{
+      opacity:1, y:10
+    },
+  }
+  const text = "WELCOME TO MRM" ;
+
+  useEffect(_=>{
+    if(pathname != "jj") setDone(true)
+    setTimeout(() => {
+      setDone(false)
+    }, 3500);
+    
+  },[pathname])
   
-  return (
+
+  return ( 
     <div className='App'>
+       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
+        <Pattern1 />
+        
+        <img src={Loading1} alt="" />
+        <svg viewBox="0 0 400 400" >
+            <text  x="30%" y="50%" fill="transparent" textAnchor="middel"  > WELCOME TO MRM</text>
+        </svg>
+
+{/* 
+    <motion.p  className="typing"onAnimationComplete={_=> setDone(false)} variants={Divvariant} initial="hidden" whileInView="visible" >{
+      text.split("").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
+    } </motion.p> */}
+
+  </div>
       <Routes>
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
@@ -50,9 +96,31 @@ const App = () => {
         <Route path='/seo' element={<S_SEO />} />
 
       </Routes>
-      
+      {/* </AnimatePresence> */}
     </div>
+
   )
 }
 
 export default App
+
+
+
+    //   <AnimatePresence mode="wait">
+    //     <Routes location={location} key={location.pathname} >
+    //       <Route path="/motion"  element={<Motion />} />
+    //       <Route path="/sec2"  element={<Sec2 />} />
+    //       <Route path="/sec3"  element={<Sec3 />} />
+    //       <Route path="/sec4"  element={<Sec4 />} />
+    //     </Routes>
+    //   </AnimatePresence> 
+
+
+    //   {/*  1. Scroll  */}
+    //   <motion.div className="progress-bar" style={{ scaleX: scrollYProgress}} />
+    //   <Lesson1 />
+    //   {/* <Lesson2 /> */}
+
+
+
+

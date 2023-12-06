@@ -13,7 +13,7 @@ const Contact2 = () => {
           <div className="home">
               <div className="box2">
                   <div className="text">
-                      <h2 className='h1'>Turn your dreams into digital realities. </h2>
+                      <h2 className='h1 clip blur'>Turn your dreams into digital realities. </h2>
                       {/* <p className='h2'> Get in touch with us to start your digital journey.</p> */}
                   </div>
                   <ul className='social'>
@@ -31,7 +31,7 @@ const Contact2 = () => {
               </div>
 
               <div className="box">
-              <p className='h1'>Contact Us</p>
+              <p className='h1 clip'>Contact Us</p>
               <form action="">
                   <input type="text" name="" placeholder='Your Name' id="" />
                   <input type="Email" name="" placeholder='Email address' id="" />
