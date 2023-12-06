@@ -57,7 +57,7 @@ const App = () => {
 
   return ( 
     <div className='App'>
-       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
+       <div className="animation_text" style={{display:`${Done ? "" : "nne"}` }}>
         <Pattern1 />
         
         <img src={Loading1} alt="" />

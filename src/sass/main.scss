@@ -33,7 +33,9 @@
   left: 0;
   >img {
     position: relative;
-    margin-bottom: -60px;
+}
+@media (max-width:700px) {
+  svg{display: none !important; text{display: none;}}
 }
 svg{
   width: 600px;
@@ -66,36 +68,6 @@ svg{
 }
 }
 
-.words{
-  position: relative;
-  margin-top: -50px;
-  .wraper{
-    p{
-      font-size: 3rem;
-      text-align: center; 
-      color:white ;
-      margin: 0;
-      line-height: 0;
-      &:nth-child(5){color:var(--alt-alt-main)} 
-    }
-  }
-}
-
-.typing{
-  font-size: 40px;
-    color: transparent;
-    span{
-      // background: var(--gradient-top) ;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px var(--alt-alt-main);
-      // text-shadow: 0 0 1px var(--alt-alt-main);
-      letter-spacing: 1px;
-      font-family: 'slick';
-      stroke-dasharray: 0 50%;
-      stroke-dashoffset: 42%;
-    }
-}
 }
 
 .container{

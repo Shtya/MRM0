@@ -15,7 +15,14 @@
 }
 .animation_text > img {
   position: relative;
-  margin-bottom: -60px;
+}
+@media (max-width: 700px) {
+  .animation_text svg {
+    display: none !important;
+  }
+  .animation_text svg text {
+    display: none;
+  }
 }
 .animation_text svg {
   width: 600px;
@@ -48,31 +55,6 @@
     stroke-dasharray: 100% 0;
     stroke-dashoffset: -20%;
   }
-}
-.animation_text .words {
-  position: relative;
-  margin-top: -50px;
-}
-.animation_text .words .wraper p {
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-  margin: 0;
-  line-height: 0;
-}
-.animation_text .words .wraper p:nth-child(5) {
-  color: var(--alt-alt-main);
-}
-.animation_text .typing {
-  font-size: 40px;
-  color: transparent;
-}
-.animation_text .typing span {
-  -webkit-text-stroke: 1px var(--alt-alt-main);
-  letter-spacing: 1px;
-  font-family: "slick";
-  stroke-dasharray: 0 50%;
-  stroke-dashoffset: 42%;
 }
 
 .container {
