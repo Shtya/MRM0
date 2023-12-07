@@ -1001,7 +1001,7 @@ header section .video video {
 
 /*================================== CLIENTS ================================*/
 .Clients {
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1011,7 +1011,7 @@ header section .video video {
   background: var(--third-bg);
 }
 .Clients .h1 {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .Clients .pattern1::after {
   content: "";
@@ -1116,7 +1116,7 @@ header section .video video {
   }
 }
 .Clients .Slider_2_Imgs {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1159,6 +1159,7 @@ header section .video video {
   width: 40px !important;
   height: 40px !important;
   display: flex !important;
+  display: none !important;
   align-items: center;
   justify-content: center;
   top: calc(100% - 34px);

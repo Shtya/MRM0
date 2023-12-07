@@ -933,7 +933,7 @@ min-height: 50vh;
 
 /*================================== CLIENTS ================================*/
 .Clients{
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -941,7 +941,7 @@ min-height: 50vh;
   padding: 50px 0;
   position: relative;
   background: var(--third-bg);
-  .h1{ margin-bottom: 30px;}
+  .h1{ margin-bottom: 0;}
   .pattern1::after {
     content: "";
     background: rgba(12, 12, 12, 0.715) ;
@@ -1035,7 +1035,7 @@ min-height: 50vh;
   }
 
   .Slider_2_Imgs{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     display: flex; justify-content: center; flex-direction: column;
     .container{
@@ -1068,9 +1068,10 @@ min-height: 50vh;
     }
     }
       .slick-arrow{
-          width: 40px !important;
-          height: 40px !important;
-          display: flex !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        display: none !important;
           align-items: center;
           justify-content: center;
           top: calc(100% - 34px);

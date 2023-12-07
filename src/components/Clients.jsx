@@ -5,7 +5,7 @@ import { Pattern2, Pattern3, Pattern5} from "./patterns/Pattern1";
 
 
 var settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 6,
@@ -18,7 +18,7 @@ var settings = {
         slidesToShow: 5,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -27,7 +27,7 @@ var settings = {
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
