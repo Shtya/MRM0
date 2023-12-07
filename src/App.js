@@ -37,7 +37,7 @@ const App = () => {
     if(pathname != "jj") setDone(true)
     setTimeout(() => {
       setDone(false)
-    }, 1900);
+    }, 1600);
     
   },[pathname])
   
