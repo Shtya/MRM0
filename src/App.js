@@ -37,19 +37,29 @@ const App = () => {
     if(pathname != "jj") setDone(true)
     setTimeout(() => {
       setDone(false)
-    }, 3500);
+    }, 1900);
     
   },[pathname])
   
 
   return ( 
     <div className='App'>
-       <div className="animation_text" style={{display:`${Done ? "none" : "none"}` }}>
-        <Pattern1 />
-        <img src={Loading1} alt="" />
-        <svg viewBox="0 0 400 400" >
-            <text  x="30%" y="50%" fill="transparent" textAnchor="middel"  > WELCOME TO MRM</text>
-        </svg>
+       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
+        {/* <Pattern1 /> */}
+        {/* <img src={Loading1} alt="" /> */}
+<div className="Loading">
+        <div class="cube-wrapper">
+          <div class="cube-folding">
+            <span class="leaf1"></span>
+            <span class="leaf2"></span>
+            <span class="leaf3"></span>
+            <span class="leaf4"></span>
+          </div>
+          <span class="loading" data-name="Loading">Loading</span>
+        </div>
+
+</div>
+
   </div>
       <Routes>
         <Route index element={<Home />} />

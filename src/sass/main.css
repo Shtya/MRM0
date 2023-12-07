@@ -8541,6 +8541,163 @@ footer .container .bottom .last a {
   line-height: 1.5;
 }
 
+.Loading {
+  background: var(--gradient); /* fallback for old browsers */
+  background: linear-gradient(to bottom, #dcbc43, var(--second));
+  height: 100vh;
+  width: 100%;
+  @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+}
+.Loading .cube-folding {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: 0;
+}
+.Loading .cube-folding span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform: scale(1.1);
+  display: inline-block;
+}
+.Loading .cube-folding span::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform-origin: 100% 100%;
+  animation: folding 2.5s infinite linear both;
+}
+.Loading .cube-folding .leaf2 {
+  transform: rotateZ(90deg) scale(1.1);
+}
+.Loading .cube-folding .leaf2::before {
+  animation-delay: 0.3s;
+  background-color: #f2f2f2;
+}
+.Loading .cube-folding .leaf3 {
+  transform: rotateZ(270deg) scale(1.1);
+}
+.Loading .cube-folding .leaf3::before {
+  animation-delay: 0.9s;
+  background-color: #f2f2f2;
+}
+.Loading .cube-folding .leaf4 {
+  transform: rotateZ(180deg) scale(1.1);
+}
+.Loading .cube-folding .leaf4::before {
+  animation-delay: 0.6s;
+  background-color: #e6e6e6;
+}
+@keyframes folding {
+  0%, 10% {
+    transform: perspective(140px) rotateX(-180deg);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+  25%, 75% {
+    transform: perspective(140px) rotateX(0deg);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+  90%, 100% {
+    transform: perspective(140px) rotateY(180deg);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+}
+.Loading .cube-wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+}
+.Loading .cube-wrapper:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  margin: auto;
+  width: 144px;
+  height: 6px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  filter: blur(2px);
+  border-radius: 100%;
+  animation: shadow 0.5s ease infinite alternate;
+}
+.Loading .cube-wrapper .loading {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  display: block;
+  color: white;
+  position: relative;
+  top: 40px;
+  z-index: 2;
+  animation: text 0.5s ease infinite alternate;
+}
+@keyframes text {
+  100% {
+    top: 50px;
+  }
+}
+@keyframes shadow {
+  100% {
+    bottom: -18px;
+    width: 160px;
+  }
+}
+.Loading .loading {
+  font-family: "Overlock", Arial !important;
+}
+.Loading h1 {
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  padding: 50px 20px;
+}
+.Loading .made-with-love {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 9999;
+  font-family: arial;
+  color: #fff;
+}
+.Loading .made-with-love i {
+  font-style: normal;
+  color: #f50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.Loading .made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.Loading .made-with-love a:hover {
+  text-decoration: underline;
+}
+
 .Slider_2_Imgs {
   margin-top: 20px;
   height: 100vh;
