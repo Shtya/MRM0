@@ -36,6 +36,7 @@ import Footer from '../components/Footer';
 import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
+import QuickContact from '../components/QuickContact';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
@@ -158,8 +159,9 @@ const Landing = () => {
     <Divider classn="divider" />
       <Clients />
       
-      <Divider classn="divider-left" />
-      <Contact />
+      {/* <Divider classn="divider-left" /> */}
+      {/* <Contact /> */}
+      <QuickContact />
       <Footer />
 
 

@@ -28,6 +28,7 @@ import Snapchat from './components/Social-media/Snapchat'
 import Linkedin from './components/Social-media/Linkedin'
 import Tiktok from './components/Social-media/Tiktok'
 import X from './components/Social-media/X'
+import QuickContact from './components/QuickContact'
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -44,10 +45,8 @@ const App = () => {
 
   return ( 
     <div className='App'>
-       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
-        {/* <Pattern1 /> */}
-        {/* <img src={Loading1} alt="" /> */}
-<div className="Loading">
+      <div className="animation_text" style={{display:`${Done ? "none" : "none"}` }}>
+        <div className="Loading">
         <div class="cube-wrapper">
           <div class="cube-folding">
             <span class="leaf1"></span>
@@ -58,9 +57,10 @@ const App = () => {
           <span class="loading" data-name="Loading">Loading</span>
         </div>
 
-</div>
+        </div>
+      </div>
 
-  </div>
+      
       <Routes>
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
