@@ -2,20 +2,12 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 
-import FacebookIntro from "../../assets/Socialmedia/facebook-intro.jpg"
-import FacebookCover from "../../assets/Socialmedia/facebook-cover.jpg"
+import FacebookIntro from "../../assets/Socialmedia/facebook-intro1.webp"
+import FacebookCover from "../../assets/Socialmedia/facebook-cover1.jpg"
 
-
-import Icon_1 from "../../assets/S_gifts/offer1.png" ;
-import Icon_2 from "../../assets/S_gifts/offer2.png" ;
-import Icon_3 from "../../assets/S_gifts/offer3.png" ;
-import Icon_4 from "../../assets/S_gifts/offer4.png" ;
 
 import { motion } from 'framer-motion'
 
-import gifts_1 from "../../assets/S_gifts/gifts1.png" ;
-import gifts_2 from "../../assets/S_gifts/gifts2.png" ;
-import gifts_3 from "../../assets/S_gifts/gifts3.png" ;
 import Animation from '../../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
 
@@ -77,7 +69,7 @@ const Pvariant = {
 
 const Facebook = () => {
    return (
-    <div className="Facebook">
+    <div className="Facebook shared">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro "> <img src={FacebookIntro} alt="" /></div>

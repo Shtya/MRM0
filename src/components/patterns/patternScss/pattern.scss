@@ -220,12 +220,11 @@
 }
 }
 
-.circle {
+.circle1 {
   position: absolute;
   --w: 350px ;
   width: var(--w); 
   height: var(--w); 
-  // background-image: radial-gradient(at 82% 17%, hsl(217deg 7.71% 4.2%) 0px, transparent 50%), radial-gradient(at 35% 2%, hsl(211deg 2.63% 5.78%) 0px, transparent 50%), radial-gradient(at 21% 51%, hsl(0deg 0.46% 10.08%) 0px, transparent 50%), radial-gradient(at 78% 100%, hsl(37deg 21.5% 16.4%) 0px, transparent 50%), radial-gradient(at 73% 43%, hsl(228, 26.51%, 22.39%) 0px, transparent 50%);
   backdrop-filter: blur(0.8);
   left: -100px;
     top: 119px;
@@ -235,7 +234,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+  z-index: 100000;
   span:nth-child(1){
     width: 430px;
     height: 430px;

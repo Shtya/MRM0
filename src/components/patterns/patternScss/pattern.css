@@ -156,7 +156,7 @@
   background-color: Wheat;
 }
 
-.circle {
+.circle1 {
   position: absolute;
   --w: 350px ;
   width: var(--w);
@@ -171,8 +171,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100000;
 }
-.circle span:nth-child(1) {
+.circle1 span:nth-child(1) {
   width: 430px;
   height: 430px;
   position: absolute;
@@ -182,7 +183,7 @@
   border-radius: 50%;
   border-width: 8px 7px 6px 5px;
 }
-.circle span:nth-child(2) {
+.circle1 span:nth-child(2) {
   width: 470px;
   height: 470px;
   position: absolute;
@@ -192,7 +193,7 @@
   border-radius: 50%;
   border-width: 10px 9px 8px 6px;
 }
-.circle span:nth-child(3) {
+.circle1 span:nth-child(3) {
   width: 510px;
   height: 510px;
   position: absolute;
@@ -202,7 +203,7 @@
   border-radius: 50%;
   border-width: 10px 9px 8px 6px;
 }
-.circle span:nth-child(4) {
+.circle1 span:nth-child(4) {
   width: 550px;
   height: 550px;
   position: absolute;

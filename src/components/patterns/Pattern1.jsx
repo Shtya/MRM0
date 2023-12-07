@@ -62,7 +62,7 @@ export const Pattern4 = () => {
 
 export const Pattern5 = ()=>{
   return (
-    <div className="circle">
+    <div className="circle1">
       <span></span>
       <span></span>
       <span></span>

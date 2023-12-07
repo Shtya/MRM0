@@ -174,7 +174,7 @@ const S_photography = () => {
               <div className="boxs">
               {WHY.map((e,index)=>(
                 <div key={index}>
-                  <h3 className='h2'>{e.title}</h3>
+                  <h3 className='h2 clip'>{e.title}</h3>
                   <h2 className='p'>{e.desc}</h2>
                 </div>
                   ))}

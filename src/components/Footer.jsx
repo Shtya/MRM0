@@ -38,7 +38,7 @@ const Footer = () => {
 
         <ul className='ul-3' >
           <h2 className='h2 clip'>SUBSCRIBE TO OUR NEWSLETTER</h2>
-          <li>Stay Informed and Inspired Subscribe to Our Newsletter for Exclusive Updates, Insights, and Offers</li>
+          <li className='newsletter'>Stay Informed and Inspired Subscribe to Our Newsletter for Exclusive Updates, Insights, and Offers</li>
           <div className="group">
             <input type="text" placeholder='Email Address' />
             <i className="fa-regular fa-envelope"></i>

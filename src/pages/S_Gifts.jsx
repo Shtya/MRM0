@@ -72,7 +72,7 @@ const S_Gifts = () => {
                       {/* {index <2 && <i className="fa-solid fa-arrow-right"></i> } */}
                       <div className="coverImg hidden-img"data-aos="fade-up" > <img src={e.img} alt="" /> </div>
                       <h3 className="h2 clip hidden-text" data-aos="fade-up">{e.title}</h3>
-                      <h2 className="h3 hidden-text" data-aos="fade-up">{e.desc}</h2>
+                      <h2 className=" p hidden-text" data-aos="fade-up">{e.desc}</h2>
                     </div>
                   ))}
             </div>

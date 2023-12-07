@@ -112,7 +112,7 @@ const M_Signages = () => {
       <div className="quotation">
         <Pattern1 />
             <div className="container">
-                <div className="h1 hidden-text" data-aos="fade-left">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
+                <div className="h2 hidden-text" data-aos="fade-left">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
                 <div className="h3" data-aos="fade-left">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</div>
             </div>
         </div>

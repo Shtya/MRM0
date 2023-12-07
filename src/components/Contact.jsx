@@ -12,7 +12,7 @@ const Contact = ({title , desc , onHere}) => {
     <section className='Contact' id='Contact'>
       <Animation />
       {onHere ? <Pattern2 /> : <Pattern3 /> }
-     <h2 className='h1 clip hidden-text'>{title || "We're here to help you."}</h2> 
+     
      <div className="container">  <h2 className='h2'>{desc }</h2> </div>
       <div className="container">
 
@@ -21,7 +21,8 @@ const Contact = ({title , desc , onHere}) => {
         </div>
 
         <div   className="box" data-aos="fade-left" >
-        <p className='h2'>{desc ? "" : "Reach Out and Let's Talk."} </p>
+          <h2 className='h1 clip hidden-text'>{title || "We're here to help you."}</h2> 
+          <p className='h2'>{desc ? "" : "Reach Out and Let's Talk."} </p>
           <form action="">
             <div className="group">
               <input type="text" name="" placeholder='Your Name' id="" />

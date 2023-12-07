@@ -38,13 +38,13 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pa
 
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising",]
 const Paid = [ 
-  {classn: "hidden hidden-left"  ,img: X ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
-  {classn: "hidden hidden-left"  ,img: F ,title:"Facebook Advertising:" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
-  {classn: "hidden hidden-left"  ,img: I ,title:"Instagram Advertising" , desc:"Showcase your brand with visually captivating Instagram ads. Stay top-of-mind with powerful advertising features that drive brand recognition and engagement."},
-  {classn: "hidden hidden-left"  ,img: L ,title:"LinkedIn Advertising" , desc:"Contact business owners and potential clients through LinkedIn's specialized advertising platform. Our strategies ensure you connect with the right audience for your business goals."},
-  {classn: "hidden hidden-left"  ,img: T ,title:"TikTok Advertising" , desc:"Ignite excitement around your brand with fun and engaging ads on the latest Social Media sensation, TikTok. Harness the creativity of this popular new platform to connect with your target audience."},
-  {classn: "hidden hidden-left"  ,img: S ,title:"Snapchat Advertising" , desc:"Captivate the Snapchat audience with creative and impactful advertising. Share your brand's story and products in a format that resonates with this unique demographic."},
-  {classn: "hidden hidden-left"  ,img: G ,title:"Google Ads Campaigns" , desc:"Effective PPC management requires specialized expertise in advertising strategies, budget planning, and execution. Our experienced team leverages data-driven insights, cutting-edge technology, and creative solutions to create high-performing campaigns that can significantly impact your bottom line."},
+  {classn: "hidden hidden-left"  ,img: X , path:"/x" ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
+  {classn: "hidden hidden-left"  ,img: F , path:"/facebook" ,title:"Facebook Advertising:" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
+  {classn: "hidden hidden-left"  ,img: I , path:"/instagram" ,title:"Instagram Advertising" , desc:"Showcase your brand with visually captivating Instagram ads. Stay top-of-mind with powerful advertising features that drive brand recognition and engagement."},
+  {classn: "hidden hidden-left"  ,img: L , path:"/linkedin" ,title:"LinkedIn Advertising" , desc:"Contact business owners and potential clients through LinkedIn's specialized advertising platform. Our strategies ensure you connect with the right audience for your business goals."},
+  {classn: "hidden hidden-left"  ,img: T , path:"/tiktok" ,title:"TikTok Advertising" , desc:"Ignite excitement around your brand with fun and engaging ads on the latest Social Media sensation, TikTok. Harness the creativity of this popular new platform to connect with your target audience."},
+  {classn: "hidden hidden-left"  ,img: S , path:"/snapchat" ,title:"Snapchat Advertising" , desc:"Captivate the Snapchat audience with creative and impactful advertising. Share your brand's story and products in a format that resonates with this unique demographic."},
+  {classn: "hidden hidden-left"  ,img: G  ,title:"Google Ads Campaigns" , desc:"Effective PPC management requires specialized expertise in advertising strategies, budget planning, and execution. Our experienced team leverages data-driven insights, cutting-edge technology, and creative solutions to create high-performing campaigns that can significantly impact your bottom line."},
 ]
 const Impact = [
   {img:ImpactImg1 , title:"Higher Conversion Rate" , desc:"By utilizing the latest tools and techniques, we guarantee highly effective social media ad campaigns that drive conversions and significantly boost your business's conversion rate."  } ,
@@ -111,7 +111,7 @@ const S_Media = () => {
             <h3 className='h1'>We offer standout paid campaigns for your business.</h3>
             <div className="boxs">
             {
-                Paid.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} /> ))
+                Paid.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} path={e.path} classn={e.classn} /> ))
             }
             </div>
         </div>
@@ -122,7 +122,7 @@ const S_Media = () => {
         <Pattern2 />
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-left"  >Impact of what you'll get</div>
-                <div className="p hidden-text" data-aos="fade-left"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
+                <div className="phead hidden-text" data-aos="fade-left"  >MRM is the preferred choice for social media marketing services in Dubai.  We specialize in tailoring effective strategies that fit your brand and objectives. Here's how we can help</div>
                 <div className="boxs">
                   {
                     Impact.map((e,index)=> (

@@ -75,7 +75,7 @@ const Navbar = ()=>{
     const routes = [
     {path:"/" , route:"Home"}, {path:"/about-us" , route:"About Us"},
 
-    {Icon:<i class={`fa-solid fa-angle-down`}></i> ,path:"/landing" , route:"Services" , 
+    {Icon:<i class={`fa-solid fa-angle-down`}></i> ,path1:"/landing" , route:"Services" , 
       nestedRoute:[
         {N_route:"web design & Development "    , N_path:"/web-design"},
         {N_route:"photography & videography "   , N_path:"/photography"},
@@ -94,11 +94,11 @@ const Navbar = ()=>{
   return(
     <div className="navbar"> <Link to="/" className="logo"> <img src={Logo} alt="" /></Link> <nav> <ul className={`${shownav}`}> {routes.map((e,index) => ( 
 
-            <li key={index} className={e.path == "/landing" ? "service" : ""}> 
+            <li key={index} className={e.path1 == "/landing" ? "service" : ""}> 
               
               <Link  to={e.path}> {e.route} {e.Icon}
                 
-                {e.path === "/landing" &&
+                {e.path1 === "/landing" &&
                   <ul className='ul-services'>
                     {e.nestedRoute.map((ele , idx) => (
                       <li> <Link to={ele.N_path}> {ele.N_route} </Link> </li>
