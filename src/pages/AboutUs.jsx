@@ -4,9 +4,7 @@ import ImgBox1 from "../assets/about-us/mission.jpg"
 import ImgBox2 from "../assets/about-us/vision.jpg"
 import ImgBox3 from "../assets/about-us/vision.jpg"
 import ImgContact from "../assets/about-us/contact.jpg"
-import ImgAbout from "../assets/about-us/about-us.jpg"
 import Navbar from '../components/Navbar'
-import Contact from '../components/Contact'
 import OneWhy from '../components/OneWhy'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'

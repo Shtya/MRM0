@@ -22,15 +22,17 @@ const TYPES = [
 ]
 
 const SERVICES = [
-  {icon:"" , title:"Geo-filters" , desc:"Increase engagement."},
-  {icon:"" , title:"Social media presence" , desc:"Boost your online presence."},
-  {icon:"" , title:"Massive audience" , desc:"Reach a vast audience."},
-  {icon:"" , title:"Brand awareness" , desc:"Build and strengthen your brand's image."},
-  {icon:"" , title:"Consumer behaviour" , desc:"Track user behaviour with the Snap Pixel."},
-  {icon:"" , title:"Engagement" , desc:"Create meaningful interactions."},
-  {icon:"" , title:"Influencer marketing" , desc:"Leverage influencers effectively."},
-  {icon:"" , title:"Mobile users" , desc:"Reach a mobile-centric audience."},
+  {icon:"" , title:"Geo-filters" , desc:"Increase engagement by targeting users in specific locations."},
+  {icon:"" , title:"Social media presence" , desc:"Boost your online presence by showcasing your content to Snapchat's vast user base."},
+  {icon:"" , title:"Massive audience" , desc:"Reach a vast audience of over 300 million active monthly users."},
+  {icon:"" , title:"Brand awareness" , desc:"Build and strengthen your brand's image with Snapchat's unique creative tools."},
+  {icon:"" , title:"Consumer behaviour" , desc:"Track user behavior with the Snap Pixel to gain insights into their actions and preferences."},
+  {icon:"" , title:"Engagement" , desc:"Create meaningful interactions with your audience through Snapchat's interactive features."},
+  {icon:"" , title:"Influencer marketing" , desc:"Leverage influencers effectively by partnering with relevant influencers on Snapchat."},
+  {icon:"" , title:"Mobile users" , desc:"Reach a mobile-centric audience who prefer using their smartphones for social media."},
 ]
+
+
 
 const SERVICES1 = [
   {icon : " " , title:"Drive store sales" , desc : "Help potential customers find your business effortlessly."},

@@ -44,6 +44,7 @@ function Home() {
         <Blog />
 
         {/* <Divider classn="divider-left" /> */}
+        
         <Footer />
         </div>
   );

@@ -531,13 +531,15 @@
 
 
 .divider-left{
+  --h : 15px ;
   position: relative;
-  display: grid; 
-  --bg: linear-gradient(to right,#1f1c14, #5b5b5b ) ;
-  --bg-left: linear-gradient(to left,#1f1c14, #5b5b5b) ;
+  height: var(--h);
+  width: 100%;
+  --bg: linear-gradient(to right,#0b0b0b, #383838 ) ;
+  --bg-left: linear-gradient(to left,#0b0b0b, #383838) ;
   .separator{
     width: calc(30% - 20px);
-    height: 20px;
+    height: var(--h);
     background: var(--bg-left) ;
     top: 0;
     right: 0;
@@ -549,16 +551,16 @@
     h4{
       background: var(--bg-left) ;    }
     h4:nth-child(1){
-      width: 20px;
-      height: 20px;
+      width: var(--h);
+      height: var(--h);
       border-radius: 50%;
       position: absolute;
       left: -30px;
       top: 0;
     }
     h4:nth-child(2){
-      width: 18px;
-      height: 18px;
+      width: calc( var(--h ) - 2px);
+      height: calc( var(--h ) - 2px);
       border-radius: 50%;
       position: absolute;
       left: -50px;
@@ -566,8 +568,8 @@
       transform: translateY(-50%);
     }
     h4:nth-child(3){
-      width: 15px;
-      height: 15px;
+      width: calc( var(--h ) - 4px);
+      height: calc( var(--h ) - 4px);
       border-radius: 50%;
       position: absolute;
       left: -70px;
@@ -578,7 +580,7 @@
   .other{
     width:calc( 70% - 125px);
     margin-right: calc( 30% + 125px);
-    height: 20px;
+    height:  var(--h );
     background: var(--bg) ;    
     top: 0;
     left: 0;
@@ -589,16 +591,16 @@
     h4{
       background: var(--bg) ;    }
     h4:nth-child(1){
-      width: 20px;
-      height: 20px;
+      width: var(--h);
+      height: var(--h);
       border-radius: 50%;
       position: absolute;
       right: -30px;
       top: 0;
     }
     h4:nth-child(2){
-      width: 18px;
-      height: 18px;
+      width: calc( var(--h ) - 2px);
+      height: calc( var(--h ) - 2px);
       border-radius: 50%;
       position: absolute;
       right: -50px;
@@ -606,8 +608,8 @@
       transform: translateY(-50%);
     }
     h4:nth-child(3){
-      width: 15px;
-      height: 15px;
+      width: calc( var(--h ) - 4px);
+      height: calc( var(--h ) - 4px);
       border-radius: 50%;
       position: absolute;
       right: -70px;
@@ -617,10 +619,13 @@
   }
 }
 .divider{
+  --h:15px ;
   position: relative;
+  height:var(--h) ;
+  width: 100%;
   .separator{
     width: calc(30% - 20px);
-    height: 20px;
+    height:var(--h) ;
     background: linear-gradient(to right , var(--alt-alt-main) , var(--second) );
     top: 0;
     left: 0;
@@ -633,16 +638,16 @@
       background: linear-gradient(to right , transparent , var(--alt-alt-main) , var(--second));
     }
     h4:nth-child(1){
-      width: 20px;
-      height: 20px;
+      width: var(--h);
+      height:var(--h);
       border-radius: 50%;
       position: absolute;
       right: -30px;
       top: 0;
     }
     h4:nth-child(2){
-      width: 18px;
-      height: 18px;
+      width: calc(var(--h) - 2px);
+      height: calc(var(--h) - 2px);
       border-radius: 50%;
       position: absolute;
       right: -50px;
@@ -650,8 +655,8 @@
       transform: translateY(-50%);
     }
     h4:nth-child(3){
-      width: 15px;
-      height: 15px;
+      width: calc( var(--h) - 4px);
+      height: calc( var(--h) - 4px);
       border-radius: 50%;
       position: absolute;
       right: -70px;
@@ -662,7 +667,7 @@
   .other{
     width:calc( 70% - 125px);
     margin-left: calc( 30% + 125px);
-    height: 20px;
+    height:var(--h);
     background: linear-gradient(to left ,  var(--alt-alt-main) , var(--second) );
     top: 0;
     left: 0;
@@ -674,16 +679,16 @@
       background: linear-gradient(to right , transparent , var(--alt-alt-main) , var(--second));
     }
     h4:nth-child(1){
-      width: 20px;
-      height: 20px;
+      width: var(--h);
+      height: var(--h);
       border-radius: 50%;
       position: absolute;
       left: -30px;
       top: 0;
     }
     h4:nth-child(2){
-      width: 18px;
-      height: 18px;
+      width: calc( var(--h ) - 2px);
+      height: calc( var(--h ) - 2px);
       border-radius: 50%;
       position: absolute;
       left: -50px;
@@ -691,8 +696,8 @@
       transform: translateY(-50%);
     }
     h4:nth-child(3){
-      width: 15px;
-      height: 15px;
+      width: calc( var(--h ) - 4px);
+      height: calc( var(--h ) - 4px);
       border-radius: 50%;
       position: absolute;
       left: -70px;

@@ -7,9 +7,9 @@ const Animation = () => {
   useEffect(() => {
     AOS.init({
       offset: 50,
-      duration: 500,
+      duration: 300,
       easing: 'ease-in-out',
-      delay: 400,
+      delay: 200,
       
     });
     AOS.refresh();

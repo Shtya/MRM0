@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import {motion} from "framer-motion"
-import BLOG_SLIDER from './Slider/BLOG_SLIDER';
 import Slider_1_Img from './Slide/Slider_1_Img';
 import { Pattern2, Pattern3 } from './patterns/Pattern1';
 

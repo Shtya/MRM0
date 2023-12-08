@@ -1,76 +1,97 @@
-import sign_large_1 from "../assets/portfolio/Signages/large-1.jpg"
-import sign_large_2 from "../assets/portfolio/Signages/large-2.jpg"
-import sign_square_1 from "../assets/portfolio/Signages/square-1.jpg"
-import sign_square_2 from "../assets/portfolio/Signages/square-2.jpg"
-import sign_square_3 from "../assets/portfolio/Signages/square-3.jpg"
-import sign_square_4 from "../assets/portfolio/Signages/square-4.jpg"
-import sign_req_1    from "../assets/portfolio/Signages/req-1.jpg"
-
-import stands_large_1 from "../assets/portfolio/Stands/large-1.jpg"
-import stands_large_2 from "../assets/portfolio/Stands/large-2.jpg"
-import stands_req_1   from "../assets/portfolio/Stands/req-1.jpg"
-import stands_req_2   from "../assets/portfolio/Stands/req-2.jpg"
-import stands_req_3   from "../assets/portfolio/Stands/req-3.jpg"
-import stands_req_4   from "../assets/portfolio/Stands/req-4.jpg"
-import stands_req_5   from "../assets/portfolio/Stands/req-5.jpg"
-import stands_square_1 from "../assets/portfolio/Stands/square-1.jpg"
-import stands_square_2 from "../assets/portfolio/Stands/square-2.jpg"
-import stands_square_3 from "../assets/portfolio/Stands/square-3.jpg"
-import stands_square_4 from "../assets/portfolio/Stands/square-4.jpg"
-import stands_square_5 from "../assets/portfolio/Stands/square-5.jpg"
+import Sign1 from  "../assets/gallery/sinages/Signages (1).jpg"
+import Sign2 from  "../assets/gallery/sinages/Signages (2).jpg"
+import Sign3  from "../assets/gallery/sinages/Signages (3).jpg"
+import Sign4  from "../assets/gallery/sinages/Signages (4).jpg"
+import Sign5  from "../assets/gallery/sinages/Signages (5).jpg"
+import Sign6  from "../assets/gallery/sinages/Signages (6).jpg"
+import Sign7  from "../assets/gallery/sinages/Signages (7).jpg"
+import Sign8  from "../assets/gallery/sinages/Signages (8).jpg"
 
 
-import display_large_1 from "../assets/portfolio/Display-stand/large-1.jpg"
-import display_large_2 from "../assets/portfolio/Display-stand/large-2.jpg"
-import display_req_1    from "../assets/portfolio/Display-stand/req-1.jpg"
-import display_req_2    from "../assets/portfolio/Display-stand/req-2.jpg"
-import display_square_1 from "../assets/portfolio/Display-stand/square-1.jpg"
-import display_square_2 from "../assets/portfolio/Display-stand/square-2.jpg"
-import display_square_3 from "../assets/portfolio/Display-stand/square-3.jpg"
+import DisplayStand1  from "../assets/gallery/display stand/display-stands (1).jpg"
+import DisplayStand2  from "../assets/gallery/display stand/display-stands (2).jpg"
+import DisplayStand3  from "../assets/gallery/display stand/display-stands (3).jpg"
+import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).jpg"
+import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg"
+import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg"
+import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg"
+import DisplayStand8  from "../assets/gallery/display stand/display-stands (8).jpg"
+import DisplayStand9  from "../assets/gallery/display stand/display-stands (9).jpg"
+import DisplayStand10 from "../assets/gallery/display stand/display-stands (10).jpg"
+
+import Exhibition1 from "../assets/gallery/exhibition stand/(1).jpg"
+import Exhibition2 from "../assets/gallery/exhibition stand/(2).jpg"
+import Exhibition3 from "../assets/gallery/exhibition stand/(3).jpg"
+import Exhibition4 from "../assets/gallery/exhibition stand/(4).jpg"
+import Exhibition5 from "../assets/gallery/exhibition stand/(5).jpg"
+import Exhibition6 from "../assets/gallery/exhibition stand/(6).jpg"
+import Exhibition7 from "../assets/gallery/exhibition stand/(7).jpg"
+import Exhibition8 from "../assets/gallery/exhibition stand/(8).jpg"
+import Exhibition9 from "../assets/gallery/exhibition stand/(9).jpg"
+
+import Branding1 from  "../assets/gallery/branding/branding (1).jpg"
+import Branding2 from  "../assets/gallery/branding/branding (2).jpg"
+import Branding3  from "../assets/gallery/branding/branding (3).jpg"
+import Branding4  from "../assets/gallery/branding/branding (4).jpg"
+import Branding5  from "../assets/gallery/branding/branding (5).jpg"
+import Branding6  from "../assets/gallery/branding/branding (6).jpg"
+import Branding7  from "../assets/gallery/branding/branding (7).jpg"
 
 
-import gallery1 from "../assets/web-design/gallery1.jpg"
-import gallery2 from "../assets/web-design/gallery2.jpg"
-import gallery3 from "../assets/web-design/gallery3.jpg"
-import gallery4 from "../assets/web-design/gallery4.jpg"
-import gallery5 from "../assets/web-design/gallery5.jpg"
-import gallery6 from "../assets/web-design/gallery6.jpg"
-import gallery7 from "../assets/web-design/gallery7.jpg"
+import Photography1  from "../assets/gallery/photography/(1).jpg"
+import Photography2  from "../assets/gallery/photography/(2).jpg"
+import Photography3  from "../assets/gallery/photography/(3).jpg"
+import Photography4  from "../assets/gallery/photography/(4).jpg"
+import Photography5  from "../assets/gallery/photography/(5).jpg"
+import Photography6  from "../assets/gallery/photography/(6).jpg"
+import Photography7  from "../assets/gallery/photography/(7).jpg"
+import Photography8  from "../assets/gallery/photography/(8).jpg"
+import Photography9  from "../assets/gallery/photography/(9).jpg"
 
 
 
-import clients18 from "../assets/png/  (1).png"
-import clients20 from "../assets/png/  (2).png"
-import clients22 from "../assets/png/  (3).png"
-import clients23 from "../assets/png/  (4).png"
-import clients24 from "../assets/png/  (5).png"
-import clients25 from "../assets/png/  (6).png"
-import clients26 from "../assets/png/  (7).png"
-import clients27 from "../assets/png/  (8).png"
-import clients28 from "../assets/png/  (9).png"
-import clients29 from "../assets/png/  (10).png"
-import clients30 from "../assets/png/  (11).png"
-import clients31 from "../assets/png/  (12).png"
-import clients32 from "../assets/png/  (13).png"
-import clients33 from "../assets/png/  (14).png"
-import clients34 from "../assets/png/  (15).png"
-import clients35 from "../assets/png/  (16).png"
-import clients36 from "../assets/png/  (17).png"
-import clients38 from "../assets/png/  (19).png"
-import clients39 from "../assets/png/  (20).png"
-import clients40 from "../assets/png/  (21).png"
-import clients41 from "../assets/png/  (22).png"
-import clients42 from "../assets/png/  (23).png"
-import clients43 from "../assets/png/  (24).png"
-import clients44 from "../assets/png/  (25).png"
-import clients45 from "../assets/png/  (26).png"
-import clients46 from "../assets/png/  (27).png"
-import clients47 from "../assets/png/  (28).png"
-import clients48 from "../assets/png/  (29).png"
-import clients49 from "../assets/png/  (30).png"
-import clients50 from "../assets/png/  (31).png"
-import clients51 from "../assets/png/  (32).png"
-import clients52 from "../assets/png/  (33).png"
+import webDesign1 from "../assets/gallery/web design/web (1).jpg"
+import webDesign2 from "../assets/gallery/web design/web (2).jpg"
+import webDesign3 from "../assets/gallery/web design/web (3).jpg"
+import webDesign4 from "../assets/gallery/web design/web (4).jpg"
+import webDesign5 from "../assets/gallery/web design/web (5).jpg"
+import webDesign6 from "../assets/gallery/web design/web (6).jpg"
+import webDesign7 from "../assets/gallery/web design/web (7).jpg"
+
+
+
+import clients18 from "../assets/clients/  (1).jpg"
+import clients20 from "../assets/clients/  (2).jpg"
+import clients22 from "../assets/clients/  (3).jpg"
+import clients23 from "../assets/clients/  (4).jpg"
+import clients24 from "../assets/clients/  (5).jpg"
+import clients25 from "../assets/clients/  (6).jpg"
+import clients26 from "../assets/clients/  (7).jpg"
+import clients27 from "../assets/clients/  (8).jpg"
+import clients28 from "../assets/clients/  (9).jpg"
+import clients29 from "../assets/clients/  (10).jpg"
+import clients30 from "../assets/clients/  (11).jpg"
+import clients31 from "../assets/clients/  (12).jpg"
+import clients32 from "../assets/clients/  (13).jpg"
+import clients33 from "../assets/clients/  (14).jpg"
+import clients34 from "../assets/clients/  (15).jpg"
+import clients35 from "../assets/clients/  (16).jpg"
+import clients36 from "../assets/clients/  (17).jpg"
+import clients38 from "../assets/clients/  (19).jpg"
+import clients39 from "../assets/clients/  (20).jpg"
+import clients40 from "../assets/clients/  (21).jpg"
+import clients41 from "../assets/clients/  (22).jpg"
+import clients42 from "../assets/clients/  (23).jpg"
+import clients43 from "../assets/clients/  (24).jpg"
+import clients44 from "../assets/clients/  (25).jpg"
+import clients45 from "../assets/clients/  (26).jpg"
+import clients46 from "../assets/clients/  (27).jpg"
+import clients47 from "../assets/clients/  (28).jpg"
+import clients48 from "../assets/clients/  (29).jpg"
+import clients49 from "../assets/clients/  (30).jpg"
+import clients50 from "../assets/clients/  (31).jpg"
+import clients51 from "../assets/clients/  (32).jpg"
+import clients52 from "../assets/clients/  (33).jpg"
 
 
 
@@ -86,46 +107,63 @@ export function ImgsClients (){
 export function ImgsPortfolio (headers) {
  return [
 
-  {img:  sign_large_1  , type:`${headers[1]} all` }  ,
-  {img:  sign_large_2  , type:`${headers[1]} all` }  ,
-  {img:  sign_square_1 , type:`${headers[1]} all` }  ,
-  {img:  sign_square_2 , type:`${headers[1]} all` }  ,
-  {img:  sign_square_3 , type:`${headers[1]} all` }  ,
-  {img:  sign_square_4 , type:`${headers[1]} all` }  ,
-  {img:  sign_req_1    , type:`${headers[1]} all` }  ,
-  {img:  sign_req_1    , type:`${headers[1]} all` }  ,
+  {img:  Sign1 , type:`${headers[1]} all` }  ,
+  {img:  Sign2 , type:`${headers[1]} all` }  ,
+  {img:  Sign3 , type:`${headers[1]} all` }  ,
+  {img:  Sign4 , type:`${headers[1]} all` }  ,
+  {img:  Sign5 , type:`${headers[1]} all` }  ,
+  {img:  Sign6 , type:`${headers[1]} all` }  ,
+  {img:  Sign7 , type:`${headers[1]} all` }  ,
+  {img:  Sign8 , type:`${headers[1]} all` }  ,
 
 
-  {img: stands_large_1   , type:`${headers[3]} all` }  ,
-  {img: stands_large_2   , type:`${headers[3]} all` }  ,
-  {img: stands_req_1     , type:`${headers[3]} all` }  ,
-  {img: stands_req_2     , type:`${headers[3]} all` }  ,
-  {img: stands_req_3     , type:`${headers[3]} all` }  ,
-  {img: stands_req_4     , type:`${headers[3]} all` }  ,
-  {img: stands_req_5     , type:`${headers[3]} all` }  ,
-  {img: stands_square_1  , type:`${headers[3]} all` }  ,
-  {img: stands_square_2  , type:`${headers[3]} all` }  ,
-  {img: stands_square_3  , type:`${headers[3]} all` }  ,
-  {img: stands_square_4  , type:`${headers[3]} all` }  ,
-  {img: stands_square_5  , type:`${headers[3]} all` }  ,
+  {img: DisplayStand1   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand2   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand3   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand4   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand5   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand6   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand7   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand8   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand9   , type:`${headers[2]} all` }  ,
+  {img: DisplayStand10  , type:`${headers[2]} all` }  ,
+
+  {img:  Exhibition1   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition2   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition3   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition4   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition5   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition6   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition7   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition8   , type:`${headers[3]} all` }  ,
+  {img:  Exhibition9   , type:`${headers[3]} all` }  ,
+
+  {img: Branding1  , type:`${headers[4]} all` }  ,
+  {img: Branding2  , type:`${headers[4]} all` }  ,
+  {img: Branding3  , type:`${headers[4]} all` }  ,
+  {img: Branding4  , type:`${headers[4]} all` }  ,
+  {img: Branding5  , type:`${headers[4]} all` }  ,
+  {img: Branding6  , type:`${headers[4]} all` }  ,
+  {img: Branding7  , type:`${headers[4]} all` }  ,
 
 
-  {img: display_large_1   , type:`${headers[2]} all` }  ,
-  {img: display_large_2   , type:`${headers[2]} all` }  ,
-  {img: display_req_1     , type:`${headers[2]} all` }  ,
-  {img: display_req_2     , type:`${headers[2]} all` }  ,
-  {img: display_square_1  , type:`${headers[2]} all` }  ,
-  {img: display_square_2  , type:`${headers[2]} all` }  ,
-  {img: display_square_3  , type:`${headers[2]} all` }  ,
+  {img:  Photography1   , type:`${headers[5]} all` }  ,
+  {img:  Photography2   , type:`${headers[5]} all` }  ,
+  {img:  Photography3   , type:`${headers[5]} all` }  ,
+  {img:  Photography4   , type:`${headers[5]} all` }  ,
+  {img:  Photography5   , type:`${headers[5]} all` }  ,
+  {img:  Photography6   , type:`${headers[5]} all` }  ,
+  {img:  Photography7   , type:`${headers[5]} all` }  ,
+  {img:  Photography8   , type:`${headers[5]} all` }  ,
+  {img:  Photography9   , type:`${headers[5]} all` }  ,
 
-  {img: gallery1  , type:`${headers[6]} all` }  ,
-  {img: gallery2  , type:`${headers[6]} all` }  ,
-  {img: gallery3  , type:`${headers[6]} all` }  ,
-  {img: gallery4  , type:`${headers[6]} all` }  ,
-  {img: gallery5  , type:`${headers[6]} all` }  ,
-  {img: gallery6  , type:`${headers[6]} all` }  ,
-  {img: gallery7  , type:`${headers[6]} all` }  ,
-  
+  {img: webDesign1  , type:`${headers[6]} all` }  ,
+  {img: webDesign2  , type:`${headers[6]} all` }  ,
+  {img: webDesign3  , type:`${headers[6]} all` }  ,
+  {img: webDesign4  , type:`${headers[6]} all` }  ,
+  {img: webDesign5  , type:`${headers[6]} all` }  ,
+  {img: webDesign6  , type:`${headers[6]} all` }  ,
+  {img: webDesign7  , type:`${headers[6]} all` }  ,
   
 ]
 
@@ -134,28 +172,26 @@ export function ImgsPortfolio (headers) {
 export function Imgsignages () {
  return [
 
-  {img:  sign_large_1  , class:"lar" , type:` all` }  ,
-  {img:  sign_large_2  , class:"lar" , type:` all` }  ,
-  {img:  sign_square_1 , class:"squ" , type:` all` }  ,
-  {img:  sign_square_2 , class:"squ" , type:` all` }  ,
-  {img:  sign_square_3 , class:"squ" , type:` all` }  ,
-  {img:  sign_square_4 , class:"squ" , type:` all` }  ,
-  {img:  sign_req_1    , class:"req" , type:` all` }  ,
-  {img:  sign_req_1    , class:"req" , type:` all` }  ,
+  {img:  Sign1 , class:"lar" , type:` all` }  ,
+  {img:  Sign2 , class:"lar" , type:` all` }  ,
+  {img:  Sign3 , class:"squ" , type:` all` }  ,
+  {img:  Sign4 , class:"squ" , type:` all` }  ,
+  {img:  Sign5 , class:"squ" , type:` all` }  ,
+  {img:  Sign6 , class:"squ" , type:` all` }  ,
+  {img:  Sign7 , class:"req" , type:` all` }  ,
+  {img:  Sign8 , class:"req" , type:` all` }  ,
 
 
-  {img: stands_large_1   , class:"lar" , type:` all` }  ,
-  {img: stands_large_2   , class:"lar" , type:` all` }  ,
-  {img: stands_req_1     , class:"req" , type:` all` }  ,
-  {img: stands_req_2     , class:"req" , type:` all` }  ,
-  {img: stands_req_3     , class:"req" , type:` all` }  ,
-  {img: stands_req_4     , class:"req" , type:` all` }  ,
-  {img: stands_req_5     , class:"req" , type:` all` }  ,
-  {img: stands_square_1  , class:"squ" , type:` all` }  ,
-  {img: stands_square_2  , class:"squ" , type:` all` }  ,
-  {img: stands_square_3  , class:"squ" , type:` all` }  ,
-  {img: stands_square_4  , class:"squ" , type:` all` }  ,
-  {img: stands_square_5  , class:"squ" , type:` all` }  ,
+  {img: DisplayStand1   , class:"lar" , type:` all` }  ,
+  {img: DisplayStand2   , class:"lar" , type:` all` }  ,
+  {img: DisplayStand3   , class:"req" , type:` all` }  ,
+  {img: DisplayStand4   , class:"req" , type:` all` }  ,
+  {img: DisplayStand5   , class:"req" , type:` all` }  ,
+  {img: DisplayStand6   , class:"req" , type:` all` }  ,
+  {img: DisplayStand7   , class:"req" , type:` all` }  ,
+  {img: DisplayStand8   , class:"squ" , type:` all` }  ,
+  {img: DisplayStand9   , class:"squ" , type:` all` }  ,
+  {img: DisplayStand10  , class:"squ" , type:` all` }  ,
 
 ]
 

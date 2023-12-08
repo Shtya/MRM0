@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
-import Loading1 from "../src/assets/loading1.svg"
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -20,7 +19,6 @@ import S_Branding from './pages/S_Branding'
 import S_Gifts from './pages/S_Gifts'
 import S_Exhibition from './pages/S_Exhibition'
 import S_photography from './pages/S_photography';
-import Pattern1 from './components/patterns/Pattern1'
 
 import Facebook from './components/Social-media/Facebook'
 import Instagram from './components/Social-media/Instagram'
@@ -28,7 +26,7 @@ import Snapchat from './components/Social-media/Snapchat'
 import Linkedin from './components/Social-media/Linkedin'
 import Tiktok from './components/Social-media/Tiktok'
 import X from './components/Social-media/X'
-import QuickContact from './components/QuickContact'
+import S_SocialMediaMarketing from './pages/S_SocialMediaMarketing'
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -74,7 +72,7 @@ const App = () => {
         {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
-        <Route path='/social' element={<S_photography />} />
+        <Route path='/social' element={<S_SocialMediaMarketing />} />
         <Route path='/signages' element={<M_Signages />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
         <Route path='/media' element={<S_Media />} />

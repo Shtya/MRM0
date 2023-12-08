@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Intro from '../components/Intro'
 import ImgIntro from "../assets/web-design/intro.jpg"
-import ImgSection from "../assets/web-design/section.png"
+import ImgSection from "../assets/web-design/section.jpg"
 import OneSocial from '../components/OneSocial'
 
 import Social_1 from   "../assets/web-design/I1.png"
@@ -9,7 +9,6 @@ import Social_2 from "../assets/web-design/I2.png"
 import Social_3 from "../assets/web-design/I3.png"
 import Social_4 from "../assets/web-design/I4.png"
 
-import Circle from "../assets/web-design/circle.jpg" ;
 import Icon_1 from "../assets/web-design/icon-1.png" ;
 import Icon_2 from "../assets/web-design/icon-2.png" ;
 import Icon_3 from "../assets/web-design/icon-3.png" ;
@@ -20,12 +19,11 @@ import Icon_7 from "../assets/web-design/icon-7.png" ;
 import Icon_8 from "../assets/web-design/icon-8.png" ;
 
 
-import Clients from '../components/Clients'
-import Contact from '../components/Contact'
-import WebDesign from '../components/Slide/WebDesign'
 import Portfolio from '../components/Portfolio'
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 
 const SocialMedia = [
@@ -46,15 +44,39 @@ const Approach = [
     { img:Icon_8 , title:"Launch and Beyond"            , desc:" Once your website is live, our support doesn't end. We provide ongoing maintenance, updates, and support to ensure your site continues to perform optimally."},
 ]
 
-const li = [ "UI & UX Design " ,"PHP Development" ,"WordPress Development" ,"E-commerce Development Services " ]
-
 
 const S_WebDesign = () => {
 
 
   return (
-    <Intro classn="WEB_DESIGN" li={li} ImgIntro={ImgIntro} ImgSection={ImgSection} main_title={"Boost the Effectiveness of Your Website's Online Presence."} second_title={"Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development"} desc="" >
-    <Animation />
+
+<div className="WEB_DESIGN landing" >
+      <Animation />
+      <div className="container"> <Navbar /> </div>
+
+      <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
+      <div className="home">
+        <div className="container">
+          <div className="boxImg hidden-img" >  <img src={ImgSection} alt="" /> </div>
+          <div className="boxs" >
+            <h2 className='h1 hidden-text' data-aos="fade-left">Boost the Effectiveness of Your Website's Online Presence. </h2>
+            <p className='h3 hidden-text' data-aos="fade-left"> Transforming Visions into Seamless Experiences with Our Cutting-Edge Web Design and Development. </p>
+            <div className="inner-boxs" >
+
+              <ul className="box">
+                <li className='li hidden-text' data-aos="fade-left">UI & UX Design </li>
+                <li className='li hidden-text' data-aos="fade-left">PHP Development </li>
+              </ul>
+
+              <ul className="box box-2">
+                <li className='li hidden-text' data-aos="fade-left">WordPress Development </li>
+                <li className='li hidden-text' data-aos="fade-left">E-commerce Development Services </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Divider classn="divider" />
       <div className="quotation">
@@ -108,7 +130,8 @@ const S_WebDesign = () => {
         <Divider classn="divider-left" />
       <Portfolio header={false} typeGallery="Web design" />
 
-    </Intro>
+      <Footer />
+      </div>
   )
 }
 

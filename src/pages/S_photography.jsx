@@ -1,45 +1,58 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+import Grid1 from "../assets/S_branding/why.jpg" ;
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_photography/intro.jpg"
 import ImgSection from "../assets/S_photography/cover.jpg"
-import Contact from '../components/Contact'
-import Clients from '../components/Clients'
 
-import Outdoor_1 from "../assets/signages/outdoor/1.jpg" ;
-import Outdoor_2 from "../assets/signages/outdoor/2.jpg" ;
-import Outdoor_3 from "../assets/signages/outdoor/3.jpg" ;
-import Outdoor_4 from "../assets/signages/outdoor/4.jpg" ;
-import Outdoor_5 from "../assets/signages/outdoor/5.jpg" ;
-import Outdoor_6 from "../assets/signages/outdoor/6.jpg" ;
-import Outdoor_7 from "../assets/signages/outdoor/7.jpg" ;
-import Outdoor_8 from "../assets/signages/outdoor/8.jpg" ;
+
+import Photography_1 from "../assets/gallery/photography/(1).jpg" ;
+import Photography_2 from "../assets/gallery/photography/(2).jpg" ;
+import Photography_3 from "../assets/gallery/photography/(3).jpg" ;
+import Photography_4 from "../assets/gallery/photography/(4).jpg" ;
+import Photography_5 from "../assets/gallery/photography/(5).jpg" ;
+import Photography_6 from "../assets/gallery/photography/(6).jpg" ;
+import Photography_7 from "../assets/gallery/photography/(7).jpg" ;
+import Photography_8 from "../assets/gallery/photography/(8).jpg" ;
+import Photography_9 from "../assets/gallery/photography/(9).jpg" ;
+
+import Videography1 from "../assets/gallery/videography/(1).jpg" ;
+import Videography2 from "../assets/gallery/videography/(2).jpg" ;
+import Videography3 from "../assets/gallery/videography/(3).jpg" ;
+import Videography4 from "../assets/gallery/videography/(4).jpg" ;
+import Videography5 from "../assets/gallery/videography/(5).jpg" ;
+import Videography6 from "../assets/gallery/videography/(6).jpg" ;
+import Videography7 from "../assets/gallery/videography/(7).jpg" ;
+import Videography8 from "../assets/gallery/videography/(8).jpg" ;
+import Videography9 from "../assets/gallery/videography/(9).jpg" ;
+
+
 import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
 
 const SERVICES = [
-  { animate:"fade-left", img:Outdoor_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
-  { animate:"fade-left", img:Outdoor_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
-  { animate:"fade-left", img:Outdoor_3 , title:"Fashion Photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
-  { animate:"fade-left", img:Outdoor_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
-  { animate:"fade-left", img:Outdoor_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
-  { animate:"fade-left", img:Outdoor_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
-  { animate:"fade-left", img:Outdoor_7 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
-  { animate:"fade-left", img:Outdoor_8 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
-  { animate:"fade-left", img:Outdoor_3 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { animate:"fade-left", img:Photography_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
+  { animate:"fade-left", img:Photography_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
+  { animate:"fade-left", img:Photography_3 , title:"Fashion Photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { animate:"fade-left", img:Photography_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
+  { animate:"fade-left", img:Photography_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
+  { animate:"fade-left", img:Photography_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
+  { animate:"fade-left", img:Photography_7 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
+  { animate:"fade-left", img:Photography_8 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
+  { animate:"fade-left", img:Photography_9 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
 ]
 const SERVICES2 = [
-  { animate:"fade-up", img:Outdoor_1 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
-  { animate:"fade-up", img:Outdoor_2 , title:"Corporate Films" , desc:"Tell your brand's story with compelling corporate videos that resonate with your audience."},
-  { animate:"fade-up", img:Outdoor_3 , title:"Event Filming" , desc:"Preserve the memories of your events with event filming that captures every significant moment."},
-  { animate:"fade-up", img:Outdoor_4 , title:"Behind-the-Scene Videos" , desc:"Offer your audience an exclusive look at your brand's inner workings with behind-the-scenes videos."},
-  { animate:"fade-up", img:Outdoor_5 , title:"Fashion Videography" , desc:" Our high-quality videos capture the essence of your clothing, accessories, or lifestyle shots with advanced cinematic techniques. Let us create a visual story that sets your brand apart."},
-  { animate:"fade-up", img:Outdoor_6 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
-  { animate:"fade-up", img:Outdoor_7 , title:"YouTube/Facebook/Instagram Short Ads" , desc:"Create short, impactful social media ads that engage your audience."},
-  { animate:"fade-up", img:Outdoor_8 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
+  { animate:"fade-up", img:Videography1 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
+  { animate:"fade-up", img:Videography2 , title:"Corporate Films" , desc:"Tell your brand's story with compelling corporate videos that resonate with your audience."},
+  { animate:"fade-up", img:Videography3 , title:"Event Filming" , desc:"Preserve the memories of your events with event filming that captures every significant moment."},
+  { animate:"fade-up", img:Videography4 , title:"Behind-the-Scene Videos" , desc:"Offer your audience an exclusive look at your brand's inner workings with behind-the-scenes videos."},
+  { animate:"fade-up", img:Videography5 , title:"Fashion Videography" , desc:" Our high-quality videos capture the essence of your clothing, accessories, or lifestyle shots with advanced cinematic techniques. Let us create a visual story that sets your brand apart."},
+  { animate:"fade-up", img:Videography6 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
+  { animate:"fade-up", img:Videography7 , title:"YouTube/Facebook/Instagram Short Ads" , desc:"Create short, impactful social media ads that engage your audience."},
+  { animate:"fade-up", img:Videography8 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."} ,
+  { animate:"fade-up", img:Videography9 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
 ]
 
 const WHY = [
@@ -51,39 +64,26 @@ const WHY = [
 ]
 
 const S_photography = () => {
-  
-  const [X , setX] = useState(0) ;
-  const [Y , setY] = useState(0) ;
-  useEffect(_=>{
-    const handle = (e) => {
-      setX(e.clientX / 2)
-      setY(e.clientY / 2)
-    }
-    window.addEventListener("mousemove" , e => handle(e))
-    return _=> window.removeEventListener("moucemove" , handle(window))
-  } ,[])
-  
-  
-  const images = [
-    {img:Outdoor_1, animate:"fade-up" } ,
-    {img:Outdoor_2, animate:"fade-up" } ,
-    {img:Outdoor_3, animate:"fade-up" } ,
-    {img:Outdoor_4, animate:"fade-up" } ,
-    {img:Outdoor_5, animate:"fade-up" } ,
-    {img:Outdoor_6, animate:"fade-up" } ,
-    {img:Outdoor_7, animate:"fade-up" } ,
-    {img:Outdoor_8, animate:"fade-up" } ,
-    {img:Outdoor_5 , animate:"fade-up" } ,
-  ]
+  // const images = [
+  //   {img:Outdoor_1, animate:"fade-up" } ,
+  //   {img:Outdoor_2, animate:"fade-up" } ,
+  //   {img:Outdoor_3, animate:"fade-up" } ,
+  //   {img:Outdoor_4, animate:"fade-up" } ,
+  //   {img:Outdoor_5, animate:"fade-up" } ,
+  //   {img:Outdoor_6, animate:"fade-up" } ,
+  //   {img:Outdoor_7, animate:"fade-up" } ,
+  //   {img:Outdoor_8, animate:"fade-up" } ,
+  //   {img:Outdoor_5 , animate:"fade-up" } ,
+  // ]
   
 
   const [Img , setImg] = useState()
 
   return (
-    <div className="S_photography">
+    <div className="S_photography landing">
       <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro"> <img src={ImgIntro} style={{transform:`translate(${X/20}px , -${Y/20}px)` , transition:".3s"}} /></div>
+      <div className="coverIntro"> <img src={ImgIntro}  /></div>
 
       <div className="home">
           <div className="container">
@@ -104,7 +104,7 @@ const S_photography = () => {
             </div>
         </div>
 
-        <Divider classn="divider-left" />
+      <Divider classn="divider-left" />
       <div className="photography-services">
       <Pattern3 />
         <div className="h1 clip hidden-text">Our Photography Services</div> 
@@ -112,9 +112,11 @@ const S_photography = () => {
           {
             SERVICES.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate}>
+                <div className="innerbox">
                 <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
                 <div className="h2 clip hidden-text"> {e.title} </div>
                 <div className="p hidden-text">{e.desc} </div>
+                </div>
               </div>
             ))
           }
@@ -129,9 +131,11 @@ const S_photography = () => {
           {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
+                <div className="innerbox">
                 <div className="coverImg"> <img src={e.img} alt="" />  </div>
                 <div className="h2 clip"> {e.title} </div>
                 <div className="p">{e.desc} </div>
+                </div>
               </div>
             ))
           }
@@ -139,7 +143,7 @@ const S_photography = () => {
       </div>
 
 
-      <Divider classn="divider-left" />
+      {/* <Divider classn="divider-left" />
       <div className="exhibition-stands">
       <Pattern3 />
         <div className="header1">
@@ -161,17 +165,17 @@ const S_photography = () => {
             </div>}
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <Divider classn="divider" />
-      <div className="searching">
-      <Pattern2 />
-        <div className="h1 clip hidden-text">Why Choose Us?</div>
+<Divider classn="divider-left" />
+        <div className="searching2">
+        <Pattern3 />
             <div className="container">
-              {/* <div className="coverImg "> <img src={Outdoor_1} alt="" /> </div> */}
+              <div className="coverImg "> <img src={Grid1} alt="" /> </div>
 
               <div className="boxs">
+              <div className="h1 clip hidden-text">Why Choose Us?</div>
               {WHY.map((e,index)=>(
                 <div key={index}>
                   <h3 className='h2 clip'>{e.title}</h3>
@@ -181,6 +185,8 @@ const S_photography = () => {
               </div>
           </div>
       </div>
+
+
 
     <Footer />
       </div>

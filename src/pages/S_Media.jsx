@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
-import Intro from '../components/Intro'
 
 import ImgIntro from "../assets/S_media/intro.jpg"
-import ImgSection from "../assets/S_media/cover.png"
+import ImgSection from "../assets/S_media/cover.jpg"
 import OneSocial from '../components/OneSocial'
 
-import   F from "../assets/landing/facebook.png"
-  import X from "../assets/landing/x.png"
-  import I from "../assets/landing/instagram.png"
-  import L from "../assets/landing/linkedin.png"
-  import S from "../assets/landing/snapchat.png"
-  import T from "../assets/landing/tiktok.png"
+import   F from "../assets/S_media/facebook.png"
+  import X from "../assets/S_media/x.png"
+  import I from "../assets/S_media/instagram.png"
+  import L from "../assets/S_media/linkedin.png"
+  import S from "../assets/S_media/snapchat.png"
+  import T from "../assets/S_media/tiktok.png"
   import G from "../assets/S_media/google.png"
 
 
@@ -66,7 +65,7 @@ const process = [
 const S_Media = () => {
 
   return (
-  <div className="S_media">
+  <div className="S_media landing">
     <Animation />
       <div className="container"> <Navbar /> </div>
 
@@ -139,8 +138,9 @@ const S_Media = () => {
             </div>
         </div>
 
+
         <Divider classn="divider-left" />
-        <div className="process">
+        <div className="process3">
         <Pattern3 />
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-left">Our Process</div>

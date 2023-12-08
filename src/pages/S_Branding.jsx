@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_branding/intro.jpg"
-import ImgSection from "../assets/S_branding/cover.png"
+import ImgSection from "../assets/S_branding/cover.jpg"
+
 import { ImgsPortfolio, Imgsignages } from '../components/Images';
 import Grid1 from "../assets/S_branding/why.jpg" ;
 
@@ -102,7 +103,7 @@ const S_Branding = ({header =true}) => {
 
 
   return (
-    <div className="S_Branding">
+    <div className="S_Branding landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
@@ -125,7 +126,6 @@ const S_Branding = ({header =true}) => {
               <div className="h3 " data-aos="fade-up">  MRM, your partner in crafting compelling brand narratives. Our diverse range of branding services ensures that your brand stands out and tells a story that resonates with your audience. </div>
           </div>
         </div>
-
 
         <Divider classn="divider-left" />
         <div className="platforms">
@@ -161,7 +161,7 @@ const S_Branding = ({header =true}) => {
       </div>
 
       <Divider classn="divider-left" />
-        <div className="searching">
+        <div className="searching2">
         <Pattern3 />
             <div className="container">
               <div className="coverImg "> <img src={Grid1} alt="" /> </div>

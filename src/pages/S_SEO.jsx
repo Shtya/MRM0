@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import Intro1 from "../assets/SEO/intro.jpg" ;
-import Community from "../assets/SEO/icon.png" ;
+import Community from "../assets/SEO/icon.jpg" ;
 import { useEffect } from 'react';
 import Grid1 from "../assets/SEO/icon-2.jpg" ;
 
@@ -69,7 +69,7 @@ const S_SEO = () => {
 
 
   return (
-    <div className='M_SEO'>
+    <div className='M_SEO landing'>
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro"> <img src={Intro1} alt="" /></div>
@@ -111,7 +111,7 @@ const S_SEO = () => {
 
       <Divider classn="divider" />
 
-      <div className="process">
+      <div className="process3">
         <Pattern2 />
         <div className="h1 hidden-text clip" data-aos="fade-left">Our proccess</div>
           <div className="container">
@@ -135,8 +135,8 @@ const S_SEO = () => {
     <Divider classn="divider-left" />
     <div className="WHY">
         <Pattern3 />
-      <div className="container">
       <div className="h1 clip hidden-text"> Why MRM Team excels in SEO? </div>
+      <div className="container">
         {
           WHY_MRM.map((e,index)=> (
             <OneWhy key={index} img={e.img} title={e.title} desc={e.desc} classn={`${e.classn} one-why-${index+1}`} />

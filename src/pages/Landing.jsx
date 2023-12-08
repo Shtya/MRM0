@@ -10,12 +10,12 @@ import Social_1 from "../assets/landing/social-1.png"
   import Social_5 from "../assets/landing/social-5.png"
   import Social_6 from "../assets/landing/social-6.png"
 
-import Icon_1 from "../assets/landing/facebook.png"
-  import Icon_2 from "../assets/landing/x.png"
-  import Icon_3 from "../assets/landing/instagram.png"
-  import Icon_4 from "../assets/landing/linkedin.png"
-  import Icon_5 from "../assets/landing/snapchat.png"
-  import Icon_6 from "../assets/landing/tiktok.png"
+import Icon_1 from   "../assets/landing/icon (1).png"
+  import Icon_2 from "../assets/landing/icon (2).png"
+  import Icon_3 from "../assets/landing/icon (3).png"
+  import Icon_4 from "../assets/landing/icon (4).png"
+  import Icon_5 from "../assets/landing/icon (5).png"
+  import Icon_6 from "../assets/landing/icon (6).png"
   import OnePlatform from '../components/OnePlatform';
 
 import Grid1 from "../assets/landing/Grid1.jpg" ;
@@ -130,10 +130,10 @@ const Landing = () => {
               <h3 className='h1 hidden-text clip'>Platforms we've managed on social media</h3>
               <div className="boxs">
                   <OnePlatform path="/facebook" num="hidden hidden-left" img={Icon_1} title="Facbook Marketing "   paragraph="we can increase your brand interaction on Facebook and Instagram with deep engagement methods and rich content, including video marketing. Our specialists help you achieve your marketing goals by leveraging your Facebook presence to raise brand awareness, reach new customers, generate leads, boost website traffic, or gather market and competitor information." />
-                  <OnePlatform path="/snapchat" num="hidden" img={Icon_5} title="Snapchat Marketing "  paragraph="We specialize in creating effective Snapchat Ads to boost your brand's visibility, drive traffic, and increase sales. Our region-specific marketing tactics leverage features like Snap Ads, Geofilters, and Sponsored Lens to optimize your presence on this fast-growing platform. We can help you incorporate Snapchat into your marketing strategy for short-term, impactful campaigns." />
-                  <OnePlatform path="/instagram" classn="different" num="hidden hidden-left" img={Icon_3} title="Instagram Marketing " paragraph="We bring your brand to life on Instagram through innovative visual marketing. Our marketing services are customized to help businesses reach their goals and generate leads, increase engagement, and drive sales. Our specialists conduct research before creating regular content to ensure effective campaigns." />
-                  <OnePlatform path="/x" num="hidden hidden-left" img={Icon_2} title="X Marketing "         paragraph="We can help you enhance your Twitter presence by connecting you with millions of users and creating viral videos. Our X management services provide prompt responses and strategic messaging, resulting in positive word-of-mouth that enhances your business's profits." />
-                  <OnePlatform path="/linkedin" num="hidden" img={Icon_4} title="LinkedIn Marketing "  paragraph="LinkedIn is essential for B2B companies. Partner with our team of specialists to manage your company's LinkedIn page, connect with decision-makers, and increase your online rankings. Prism is a leading LinkedIn marketing agency that provides outstanding content and advertising services to help your company stand out." />
+                  <OnePlatform path="/snapchat" num="hidden" img={Icon_4} title="Snapchat Marketing "  paragraph="We specialize in creating effective Snapchat Ads to boost your brand's visibility, drive traffic, and increase sales. Our region-specific marketing tactics leverage features like Snap Ads, Geofilters, and Sponsored Lens to optimize your presence on this fast-growing platform. We can help you incorporate Snapchat into your marketing strategy for short-term, impactful campaigns." />
+                  <OnePlatform path="/instagram" classn="different" num="hidden hidden-left" img={Icon_2} title="Instagram Marketing " paragraph="We bring your brand to life on Instagram through innovative visual marketing. Our marketing services are customized to help businesses reach their goals and generate leads, increase engagement, and drive sales. Our specialists conduct research before creating regular content to ensure effective campaigns." />
+                  <OnePlatform path="/x" num="hidden hidden-left" img={Icon_5} title="X Marketing "         paragraph="We can help you enhance your Twitter presence by connecting you with millions of users and creating viral videos. Our X management services provide prompt responses and strategic messaging, resulting in positive word-of-mouth that enhances your business's profits." />
+                  <OnePlatform path="/linkedin" num="hidden" img={Icon_3} title="LinkedIn Marketing "  paragraph="LinkedIn is essential for B2B companies. Partner with our team of specialists to manage your company's LinkedIn page, connect with decision-makers, and increase your online rankings. Prism is a leading LinkedIn marketing agency that provides outstanding content and advertising services to help your company stand out." />
                   <OnePlatform path="/tiktok" num="hidden" img={Icon_6} title="TikTok Marketing "    paragraph="We can help you develop campaigns that maximize your advertising budget's ROI and capture your target audience's attention with creative videos." />
               </div>
           </div>
@@ -158,13 +158,8 @@ const Landing = () => {
 
     <Divider classn="divider" />
       <Clients />
-      
-      {/* <Divider classn="divider-left" /> */}
-      {/* <Contact /> */}
-      <QuickContact />
+
       <Footer />
-
-
     </div>
   )
 }

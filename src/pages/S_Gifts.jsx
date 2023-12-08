@@ -3,9 +3,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_gifts/intro.jpg"
 import ImgSection from "../assets/S_gifts/cover.jpg"
-import Contact from '../components/Contact'
-import Clients from '../components/Clients'
-
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;
 import Icon_2 from "../assets/S_gifts/offer2.png" ;
@@ -36,7 +33,7 @@ const BRANDING_SERVICES = [
 const S_Gifts = () => {
 
   return (
-    <div className="S_Gifts">
+    <div className="S_Gifts landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro "> <img src={ImgIntro} alt="" /></div>
@@ -63,7 +60,7 @@ const S_Gifts = () => {
         </div>
         
         <Divider classn="divider-left" />
-        <div className="searching">
+        <div className="boxs-tails">
           <Pattern3 />
           <div className="h1 clip">We Offer</div> 
             <div className="container">

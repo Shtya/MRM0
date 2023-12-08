@@ -5,10 +5,9 @@ import "aos/dist/aos.css";
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import ImgIntro from "../assets/S_branding/intro.jpg"
-import ImgSection from "../assets/S_branding/cover.png"
-import Contact from '../components/Contact'
-import Clients from '../components/Clients'
+import ImgIntro from "../assets/Exhibition/intro.jpg"
+import ImgSection from "../assets/Exhibition/cover.jpg"
+
 
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;
@@ -16,19 +15,26 @@ import Icon_2 from "../assets/S_gifts/offer2.png" ;
 import Icon_3 from "../assets/S_gifts/offer3.png" ;
 import Icon_4 from "../assets/S_gifts/offer4.png" ;
 
+import Exhibition1 from "../assets/gallery/exhibition stand/(1).jpg" ;
+import Exhibition2 from "../assets/gallery/exhibition stand/(2).jpg" ;
+import Exhibition3 from "../assets/gallery/exhibition stand/(3).jpg" ;
+import Exhibition4 from "../assets/gallery/exhibition stand/(4).jpg" ;
+import Exhibition5 from "../assets/gallery/exhibition stand/(5).jpg" ;
+import Exhibition6 from "../assets/gallery/exhibition stand/(6).jpg" ;
+import Exhibition7 from "../assets/gallery/exhibition stand/(7).jpg" ;
+import Exhibition8 from "../assets/gallery/exhibition stand/(8).jpg" ;
+import Exhibition9 from "../assets/gallery/exhibition stand/(9).jpg" ;
 
-import gifts_1 from "../assets/S_gifts/gifts1.png" ;
-import gifts_2 from "../assets/S_gifts/gifts2.png" ;
-import gifts_3 from "../assets/S_gifts/gifts3.png" ;
-
-import Outdoor_1 from "../assets/signages/outdoor/1.jpg" ;
-import Outdoor_2 from "../assets/signages/outdoor/2.jpg" ;
-import Outdoor_3 from "../assets/signages/outdoor/3.jpg" ;
-import Outdoor_4 from "../assets/signages/outdoor/4.jpg" ;
-import Outdoor_5 from "../assets/signages/outdoor/5.jpg" ;
-import Outdoor_6 from "../assets/signages/outdoor/6.jpg" ;
-import Outdoor_7 from "../assets/signages/outdoor/7.jpg" ;
-import Outdoor_8 from "../assets/signages/outdoor/8.jpg" ;
+import DisplayStand1  from "../assets/gallery/display stand/display-stands (1).jpg" ;
+import DisplayStand2  from "../assets/gallery/display stand/display-stands (2).jpg" ;
+import DisplayStand3  from "../assets/gallery/display stand/display-stands (3).jpg" ;
+import DisplayStand4  from "../assets/gallery/display stand/display-stands (4).jpg" ;
+import DisplayStand5  from "../assets/gallery/display stand/display-stands (5).jpg" ;
+import DisplayStand6  from "../assets/gallery/display stand/display-stands (6).jpg" ;
+import DisplayStand7  from "../assets/gallery/display stand/display-stands (7).jpg" ;
+import DisplayStand8  from "../assets/gallery/display stand/display-stands (8).jpg" ;
+import DisplayStand9  from "../assets/gallery/display stand/display-stands (9).jpg" ;
+import  DisplayStand10 from "../assets/gallery/display stand/display-stands (10).jpg" ;
 import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
 
@@ -42,23 +48,36 @@ const BRANDING_SERVICES = [
   ]
 
 const S_Exhibition = () => {
-  const images = [
-    {img:Outdoor_1, animate:"fade-up" } ,
-    {img:Outdoor_2, animate:"fade-up" } ,
-    {img:Outdoor_3, animate:"fade-up" } ,
-    {img:Outdoor_4, animate:"fade-up" } ,
-    {img:Outdoor_5, animate:"fade-up" } ,
-    {img:Outdoor_6, animate:"fade-up" } ,
-    {img:Outdoor_7, animate:"fade-up" } ,
-    {img:Outdoor_8, animate:"fade-up" } ,
-    {img:Outdoor_5 , animate:"fade-up" } ,
+  const DisplayStands = [
+    {img:DisplayStand1, animate:"fade-up" } ,
+    {img:DisplayStand2, animate:"fade-up" } ,
+    {img:DisplayStand3, animate:"fade-up" } ,
+    {img:DisplayStand4, animate:"fade-up" } ,
+    {img:DisplayStand5, animate:"fade-up" } ,
+    {img:DisplayStand6, animate:"fade-up" } ,
+    {img:DisplayStand7, animate:"fade-up" } ,
+    {img:DisplayStand8, animate:"fade-up" } ,
+    {img:DisplayStand9 , animate:"fade-up" } ,
+    {img:DisplayStand10 , animate:"fade-up" } ,
   ]
+  const Exhibition = [
+    {img:Exhibition1, animate:"fade-up" } ,
+    {img:Exhibition2, animate:"fade-up" } ,
+    {img:Exhibition3, animate:"fade-up" } ,
+    {img:Exhibition4, animate:"fade-up" } ,
+    {img:Exhibition5, animate:"fade-up" } ,
+    {img:Exhibition6, animate:"fade-up" } ,
+    {img:Exhibition7, animate:"fade-up" } ,
+    {img:Exhibition8, animate:"fade-up" } ,
+    {img:Exhibition9 , animate:"fade-up" } ,
+  ]
+
 
   const [Img , setImg] = useState()
 
 
   return (
-    <div className="S_Exhibition">
+    <div className="S_Exhibition landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
@@ -91,7 +110,7 @@ const S_Exhibition = () => {
         <div className="container"> <div className="h1 clip">Take a look at our designs for exhibition stands. </div></div>
         <div className="container">
           <div className="boxs">
-            {images.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {Exhibition.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
             {Img && <div className="show-img"> 
               <img src={Img} alt="" /> 
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
@@ -106,7 +125,7 @@ const S_Exhibition = () => {
       <div className="container"><div className="h1 clip">Take a look at our designs for Display stands.</div></div>
         <div className="container">
             <div className="boxs">
-                {images.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+                {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
                 {Img && <div className="show-img"> 
                   <img src={Img} alt="" /> 
                   <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>

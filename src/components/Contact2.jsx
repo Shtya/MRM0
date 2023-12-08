@@ -17,9 +17,9 @@ const Contact2 = () => {
                       {/* <p className='h2'> Get in touch with us to start your digital journey.</p> */}
                   </div>
                   <ul className='social'>
-                    <li> <a className="Iicon"> <div className="style"><i className="fa-solid fa-phone"></i></div>         </a>    <span className='paragraph'>+971561384496</span></li>
-                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-envelope"></i>    </div> </a>    <span className='paragraph'>info@mrmadvertisingdubai.com</span> </li>
-                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-location-dot"></i></div> </a>    <span className='paragraph'>Business Bay - Dubai</span></li>
+                    <li> <a className="Iicon"> <div className="style"><i className="fa-solid fa-phone"></i></div>         </a>    <span className='p'>+971561384496</span></li>
+                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-envelope"></i>    </div> </a>    <span className='p'>info@mrmadvertisingdubai.com</span> </li>
+                    <li> <a className="Iicon"> <div className="style"> <i className="fa-solid fa-location-dot"></i></div> </a>    <span className='p'>Business Bay - Dubai</span></li>
                     <hr />
                     <ul className='social last-social'>
                       <li> <a className="Iicon"> <div className="style"> <i className="fa-brands fa-facebook-f"></i>    </div> </a></li>

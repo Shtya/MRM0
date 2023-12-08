@@ -61,12 +61,11 @@ const data = [
   const settings = {
     dots: true,
     infinite: true,
-    speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay:true  ,
     speed: 2000,
-    autoplaySpeed: 500,
+    autoplaySpeed: 2000,
     cssEase: "linear" ,
     responsive: [
       {breakpoint: 1000,
@@ -91,7 +90,7 @@ const data = [
 const M_Signages = () => {
 
   return (
-    <div className="M_Signages">
+    <div className="M_Signages landing">
       <div className="container"> <Navbar /> </div>
       <Animation />
       <div className="coverIntro"> <img src={ImgIntro} alt="" /></div>
@@ -151,7 +150,7 @@ const M_Signages = () => {
       </div>
 
       <Divider classn="divider-left" />
-      <div className="process">
+      <div className="process2">
         <Pattern3 />
             <div className="container">
                 <div className="h1 hidden-text clip" data-aos="fade-left">Signage creation process</div>

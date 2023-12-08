@@ -2,6 +2,7 @@ import React, { useState , useEffect } from 'react'
 import Animation from './helpers/Animation'
 import Pattern1, {Pattern2, Pattern3, Pattern4, Pattern5} from './patterns/Pattern1'
 
+import WhyImg from "../assets/Why.jpg"
 
 
 const Why = () => {
@@ -40,7 +41,7 @@ const Why = () => {
               </div>
 
             <div className="Img hidden-img"  >
-              <img src="./Who.jpg" alt="" />
+              <img src={WhyImg} alt="" />
             </div>
       </div>
     </section>
