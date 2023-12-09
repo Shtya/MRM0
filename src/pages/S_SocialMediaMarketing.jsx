@@ -51,23 +51,6 @@ const WHY = [
 
 const S_SocialMediaMarketing = () => {
   
-
-  
-  const images = [
-    {img:Outdoor_1, animate:"fade-up" } ,
-    {img:Outdoor_2, animate:"fade-up" } ,
-    {img:Outdoor_3, animate:"fade-up" } ,
-    {img:Outdoor_4, animate:"fade-up" } ,
-    {img:Outdoor_5, animate:"fade-up" } ,
-    {img:Outdoor_6, animate:"fade-up" } ,
-    {img:Outdoor_7, animate:"fade-up" } ,
-    {img:Outdoor_8, animate:"fade-up" } ,
-    {img:Outdoor_5 , animate:"fade-up" } ,
-  ]
-  
-
-  const [Img , setImg] = useState()
-
   return (
     <div className="S_photography landing">
       <Animation />
@@ -122,8 +105,8 @@ const S_SocialMediaMarketing = () => {
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="innerbox">
                 <div className="coverImg"> <img src={e.img} alt="" />  </div>
-                <div className="h2 clip"> {e.title} </div>
-                <div className="p">{e.desc} </div>
+                <div className="h2  hidden-text"> {e.title} </div>
+                <div className="p hidden-text">{e.desc} </div>
                 </div>
               </div>
             ))
@@ -167,8 +150,8 @@ const S_SocialMediaMarketing = () => {
               <div className="h1 clip hidden-text">Why Choose Us?</div>
               {WHY.map((e,index)=>(
                 <div key={index}>
-                  <h3 className='h2 clip'>{e.title}</h3>
-                  <h2 className='p'>{e.desc}</h2>
+                  <h3 className='h2 hidden-text'>{e.title}</h3>
+                  <h2 className='p hidden-text'>{e.desc}</h2>
                 </div>
                   ))}
               </div>

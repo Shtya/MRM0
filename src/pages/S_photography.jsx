@@ -33,15 +33,15 @@ import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
 
 const SERVICES = [
-  { animate:"fade-left", img:Photography_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
-  { animate:"fade-left", img:Photography_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
-  { animate:"fade-left", img:Photography_3 , title:"Fashion Photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
-  { animate:"fade-left", img:Photography_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
-  { animate:"fade-left", img:Photography_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
-  { animate:"fade-left", img:Photography_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
-  { animate:"fade-left", img:Photography_7 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
-  { animate:"fade-left", img:Photography_8 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
-  { animate:"fade-left", img:Photography_9 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { animate:"fade-up", img:Photography_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
+  { animate:"fade-up", img:Photography_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
+  { animate:"fade-up", img:Photography_3 , title:"Fashion Photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { animate:"fade-up", img:Photography_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
+  { animate:"fade-up", img:Photography_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
+  { animate:"fade-up", img:Photography_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
+  { animate:"fade-up", img:Photography_7 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
+  { animate:"fade-up", img:Photography_8 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
+  { animate:"fade-up", img:Photography_9 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
 ]
 const SERVICES2 = [
   { animate:"fade-up", img:Videography1 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
@@ -132,9 +132,9 @@ const S_photography = () => {
             SERVICES2.map((e,index)=> (
               <div className="box" key={index} data-aos={e.animate} data-aos-delay={`${100 * (index + 1) }`} >
                 <div className="innerbox">
-                <div className="coverImg"> <img src={e.img} alt="" />  </div>
-                <div className="h2 clip"> {e.title} </div>
-                <div className="p">{e.desc} </div>
+                <div className="coverImg hidden-img"> <img src={e.img} alt="" />  </div>
+                <div className="h2 hidden-text"> {e.title} </div>
+                <div className="p hidden-text">{e.desc} </div>
                 </div>
               </div>
             ))
@@ -178,8 +178,8 @@ const S_photography = () => {
               <div className="h1 clip hidden-text">Why Choose Us?</div>
               {WHY.map((e,index)=>(
                 <div key={index}>
-                  <h3 className='h2 clip'>{e.title}</h3>
-                  <h2 className='p'>{e.desc}</h2>
+                  <h3 className='h2 hidden-text'>{e.title}</h3>
+                  <h2 className='p hidden-text'>{e.desc}</h2>
                 </div>
                   ))}
               </div>

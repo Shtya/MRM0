@@ -6404,7 +6404,6 @@ footer .container .bottom .last a {
   text-align: left;
 }
 .shared .process2 .flag span {
-  font-size: 1rem !important;
   font-family: "Overlock", Arial;
 }
 .shared .process2 .direction-l .flag:before,
@@ -6856,7 +6855,6 @@ footer .container .bottom .last a {
   text-align: center;
   text-wrap: wrap;
   letter-spacing: 1px;
-  font-size: 13px;
 }
 
 .slidenav {
@@ -7885,11 +7883,6 @@ footer .container .bottom .last a {
   font-size: 1.1rem;
   text-wrap: balance;
 }
-@media (max-width: 1170px) {
-  .p {
-    font-size: 1rem;
-  }
-}
 
 .phead {
   font-size: 1.3rem;
@@ -7986,7 +7979,7 @@ footer .container .bottom .last a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #292929;
+  background: linear-gradient(to right, #171717, #1c1c1c);
   opacity: 1;
   top: 0;
   left: 0;

@@ -72,8 +72,8 @@ const App = () => {
         {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
-        <Route path='/social' element={<S_SocialMediaMarketing />} />
         <Route path='/signages' element={<M_Signages />} />
+        <Route path='/social' element={<S_SocialMediaMarketing />} />
         <Route path='/exhibition' element={<S_Exhibition  />} />
         <Route path='/media' element={<S_Media />} />
         <Route path='/branding' element={<S_Branding  />} />

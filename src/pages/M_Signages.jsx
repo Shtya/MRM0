@@ -3,13 +3,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/signages/intro.jpg"
 import ImgSection from "../assets/signages/cover.jpg"
-import Contact from '../components/Contact'
-import Clients from '../components/Clients'
-import { Imgsignages } from '../components/Images';
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 
 import Icon_1 from "../assets/S_media/1.png" ;
@@ -32,13 +25,6 @@ import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
-
-
-
-
-
-
-
 const process = [
   {img: Icon_1, title:" Planning" ,desc:"During planning, we consider every detail to create signage that resonates with your brand and clients.Effective planning saves time and resources."},
   {img: Icon_2, title:"Designing" ,desc:"Our designers craft strategies to guide your visitors, and customers within your space. We assess colors, themes, and more for the perfect indoor and outdoor signage."},
@@ -56,33 +42,32 @@ const data = [
   {img: Outdoor_7, class:"req" , type:` all` }  ,
   {img: Outdoor_8, class:"req" , type:` all` }  
 ]
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay:true  ,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear" ,
-    responsive: [
-      {breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,}
-    },
-      {breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,}
-    },
-      {breakpoint: 300,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,}
-    }
-  ]
-  };
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true  ,
+  speed: 1000,
+  cssEase: "linear" ,
+  responsive: [
+    {breakpoint: 1000,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,}
+  },
+    {breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,}
+  },
+    {breakpoint: 300,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,}
+  }
+]
+};
 
 
 const M_Signages = () => {
