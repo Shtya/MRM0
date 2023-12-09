@@ -5,7 +5,7 @@ const SlideNav = () => {
   // UP
   const [top , settop] = useState(false)
   useEffect(_=>{
-    const handelScroll =  _=> window.scrollY > 800 ? settop(true) : settop(false)
+    const handelScroll =  _=> window.scrollY > 500 ? settop(true) : settop(false)
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[])
   const handleScroll = ()=> window.scrollTo(0 , 0)

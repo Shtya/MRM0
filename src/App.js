@@ -27,6 +27,7 @@ import Linkedin from './components/Social-media/Linkedin'
 import Tiktok from './components/Social-media/Tiktok'
 import X from './components/Social-media/X'
 import S_SocialMediaMarketing from './pages/S_SocialMediaMarketing'
+import SlideNav from './components/SlideNav'
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -57,7 +58,7 @@ const App = () => {
 
         </div>
       </div>
-
+      <SlideNav />
       
 
       
