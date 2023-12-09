@@ -6,7 +6,7 @@ const Navbar1 = () => {
 
   const [top , settop] = useState(false)
   useEffect(_=>{
-    const handelScroll =  _=> window.scrollY > 200 ? settop("black") : settop("")
+    const handelScroll =  _=> window.scrollY > 50 ? settop("black") : settop("")
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
 

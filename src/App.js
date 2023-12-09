@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
+import { Helmet } from 'react-helmet';
 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -43,6 +44,11 @@ const App = () => {
 
   return ( 
     <div className='App'>
+      <Helmet>
+      <title>MRM</title>
+      <meta name="description" content="MRM is the premium solution provider for all type of printing & advertising in the uae. We are proud to produce some of the finest work in that sector. We are creative agency, providing customers with cross-media solutions, graphic and online design, offset, digital and large format printing as well as marketing promotions." />
+    </Helmet>
+
       <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
         <div className="Loading">
         <div class="cube-wrapper">
@@ -57,6 +63,8 @@ const App = () => {
 
         </div>
       </div>
+
+      
 
       
       <Routes>

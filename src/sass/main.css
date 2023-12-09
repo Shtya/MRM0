@@ -489,7 +489,6 @@ header section .video video {
 }
 .Navbar1 nav .navbar {
   height: 100%;
-  max-width: 1250px;
   width: 100%;
   display: flex;
   align-items: center;
