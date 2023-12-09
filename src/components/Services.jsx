@@ -29,7 +29,7 @@ export function Services() {
           <div key={index} className="box" data-aos={e.animate}>
             <div className="animate" ></div>
             <Link to={e.route}   >
-              <Link to={e.route}><i className={`${e.icon} clip hidden-img`}> <span />  <span /> </i> </Link>
+              <Link to={e.route}><i className={`${e.icon} `}> <span />  <span /> </i> </Link>
               <h3 className='h2 clip hidden-text'>{e.title}</h3>
               <h4 className='p hidden-text'>{e.desc}</h4>
           </Link>

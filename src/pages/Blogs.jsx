@@ -29,7 +29,6 @@ const Blogs = () => {
     slidesToScroll: 1 , 
     autoplay:true ,
     responsive: [
-
       {
         breakpoint: 1000,
         settings: {
@@ -44,7 +43,6 @@ const Blogs = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1 ,
-          dots: false,
         }
       }
     ]
