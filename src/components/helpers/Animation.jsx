@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from 'react-router-dom';
 
 
 const Animation = () => {
+  const {pathname} = useLocation() ;
   useEffect(() => {
     AOS.init({
       offset: 50,
@@ -14,6 +16,10 @@ const Animation = () => {
     });
     AOS.refresh();
   }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return(
 
