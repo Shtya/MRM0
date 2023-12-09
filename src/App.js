@@ -43,7 +43,7 @@ const App = () => {
 
   return ( 
     <div className='App'>
-      <div className="animation_text" style={{display:`${Done ? "none" : "none"}` }}>
+      <div className="animation_text" style={{display:`${Done ? "" : "none"}` }}>
         <div className="Loading">
         <div class="cube-wrapper">
           <div class="cube-folding">

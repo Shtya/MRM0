@@ -52,11 +52,11 @@ const Landing = () => {
     <div className='landing'>
       <Animation />
       <div className="container"> <Navbar /> </div>
-      <div className="coverIntro"> <img src={Intro1} alt="" /></div>
+      <div className="coverIntro"> <img  src={Intro1} alt="" /></div>
       
       <div className="home">
         <div className="container">
-          <div className="boxImg hidden-img" >  <img src={Community} alt="" /> </div>
+          <div className="boxImg hidden-img" >  <img className='n-border' src={Community} alt="" /> </div>
           <div className="boxs" >
             <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence.</h2>
             <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services. </p>
