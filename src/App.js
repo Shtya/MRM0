@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
-
+import Sitemap from "./Sitemap.xml"
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -64,6 +64,7 @@ const App = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
+        <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blogs />} /> 
         <Route path='/portfolio' element={<Landing />} />
