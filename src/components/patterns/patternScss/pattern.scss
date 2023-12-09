@@ -537,6 +537,7 @@
   width: 100%;
   --bg: linear-gradient(to right,#0b0b0b, #383838 ) ;
   --bg-left: linear-gradient(to left,#0b0b0b, #383838) ;
+  z-index: 10;
   .separator{
     width: calc(30% - 20px);
     height: var(--h);
@@ -623,6 +624,7 @@
   position: relative;
   height:var(--h) ;
   width: 100%;
+  z-index: 10;
   .separator{
     width: calc(30% - 20px);
     height:var(--h) ;

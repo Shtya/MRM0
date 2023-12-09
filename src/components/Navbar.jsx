@@ -1,118 +1,98 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
-import { Link , Location, useLocation } from 'react-router-dom'
-import {motion} from "framer-motion" ;
+import { Link } from 'react-router-dom';
+
+const Navbar1 = () => {
+
+  const [top , settop] = useState(false)
+  useEffect(_=>{
+    const handelScroll =  _=> window.scrollY > 200 ? settop("black") : settop("")
+    window.addEventListener("scroll" , handelScroll)
+    return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
 
 
 
-// const Navbar = () => {
-//   const {pathname} = useLocation() ;
+  useEffect(_=>{
+// search-box open close js code
+let navbar = document.querySelector(".Navbar1 .navbar");
+let searchBox = document.querySelector(".Navbar1 .search-box .bx-search");
 
-//   const [show , setshow] = useState(false)
-//   useEffect(_=>{
-//     const handleResize =  _=> window.innerWidth > 800 && setshow(false)
-//     window.addEventListener("resize" , handleResize)
-//     return _=> window.removeEventListener("resize" ,handleResize)
-//   },[])
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
 
-//   const routes = [
-//     {Icon:"" ,path:"/" , route:"Home"},
-//     {Icon:"" ,path:"/about-us" , route:"About Us"},
-//     {Icon:<i className="fa-solid fa-caret-down"></i> ,path:"/landing" , route:"Services" , 
-//       nestedRoute:[
-//         {N_route:"social media marketing"       , N_path:"/social"},
-//         {N_route:"media buying"                 , N_path:"/media"},
-//         {N_route:"web design & Development "    , N_path:"/web-design"},
-//         {N_route:"SEO "                         , N_path:"/seo"},
-//         {N_route:"Branding "                    , N_path:"/branding"},
-//         {N_route:"indoor & outdoor signages " , N_path:"/signages"},
-//         {N_route:"exhibition display stands"    , N_path:"/exhibition"},
-//         {N_route:"photography & videography "   , N_path:"/photography"},
-//         {N_route:"cooperated gifts "            , N_path:"/gifts"}]},
-//     {Icon:"" ,path:"/portfolio" , route:"Portfolio"},
-//     {Icon:"" ,path:"/blog" , route:"Blog"},
-//     {Icon:"" ,path:"/contact-us" , route:"Contact Us"},
-//   ]
-
-//   const handelRoutes = ()=>{
-//     setshow(false)
-//   }
-//   return (
-
-//       <nav >
-//           <div className="Img">
-//             <img src={Logo} alt="" />
-//           </div>
-
-//           <motion.ul animate="animate" initial="initial" className={show ? "show" :""}>{
-//               routes.map((e,index)=> ( 
-//               <motion.li  key={index} className={`Li-${e.route} `} onClick={handelRoutes}> 
-//                 <Link to={e.path}  className={`${e.path == pathname ? "active" : ""}`} > {e.route} {e.Icon} </Link> 
-                
-//                 {e.nestedRoute && <ul className='ul-nested'>
-//                   {
-//                   e.nestedRoute.map((ele , idx)=>(
-//                     <Link key={idx} to={ele.N_path} className={`N_link-${idx+1} ${ele.N_path == pathname ? "active" : ""} `}> {ele.N_route} </Link>
-//                   ))
-//                   }
-//             </ul>}
+let navLinks = document.querySelector(" .Navbar1 .nav-links");
+let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
+let menuCloseBtn = document.querySelector(" .Navbar1 .nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
 
 
-//               </motion.li> ))
-//           }
-
-//           <li><i className="fa-solid fa-magnifying-glass"></i>  </li>
-//           </motion.ul>
-
-//           <i onClick={_=> setshow(!show)} className="fa-solid fa-bars"></i>
-//         </nav>
-//   )
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".Navbar1 .htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+// let moreArrow = document.querySelector(".Navbar1 .more-arrow");
+// moreArrow.onclick = function() {
+//  navLinks.classList.toggle("show2");
+// }
+// let jsArrow = document.querySelector(".Navbar1 .js-arrow");
+// jsArrow.onclick = function() {
+//  navLinks.classList.toggle("show3");
 // }
 
-const Navbar = ()=>{
-  // <i class="fa-solid fa-xmark"></i>
-  const [shownav , setshownav] = useState("")
-    const routes = [
-    {path:"/" , route:"Home"}, {path:"/about-us" , route:"About Us"},
 
-    {Icon:<i class={`fa-solid fa-angle-down`}></i> ,path1:"/landing" , route:"Services" , 
-      nestedRoute:[
-        {N_route:"web design & Development "    , N_path:"/web-design"},
-        {N_route:"photography & videography "   , N_path:"/photography"},
-        {N_route:"indoor & outdoor signages " , N_path:"/signages"},
-        {N_route:"exhibition display stands"    , N_path:"/exhibition"},
-        {N_route:"social media marketing"       , N_path:"/social"},
-        {N_route:"cooperated gifts "            , N_path:"/gifts"},
-        {N_route:"media buying"                 , N_path:"/media"},
-        {N_route:"Branding "                    , N_path:"/branding"},
-        {N_route:"SEO "                         , N_path:"/seo"},
-      ]},
-        
-        {path:"/portfolio" , route:"Portfolio"},{path:"/blog" , route:"Blog"},{path:"/contact-us" , route:"Contact Us"},
-  ]
+  } ,[])
+  return (
+  <div className="Navbar1" >
+    <nav>
+      <div class="navbar" style={{background:top}}>
+        <i class='bx bx-menu'></i>
+        <div class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">   <span class="logo-name"><img src={Logo} alt="" /></span>   <i class='bx bx-x' ></i> </div>
+          
+          <ul class="links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="">Services</Link>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><Link to="/web-design"> web design & Development </Link></li>
+                <li><Link to="/photography"> photography & videography </Link></li>
+                <li><Link to="/signages"> indoor & outdoor signages </Link></li>
+                <li><Link to="/exhibition"> exhibition display stands</Link></li>
+                <li><Link to="/social"> social media marketing</Link></li>
+                <li><Link to="/gifts">cooperated gifts </Link></li>
+                <li><Link to="/media">media buying </Link></li>
+                <li><Link to="/branding">Branding </Link></li>
+                <li><Link to="/seo">SEO </Link></li>
+              </ul>
+            </li>
 
-  return(
-    <div className="navbar"> <Link to="/" className="logo"> <img src={Logo} alt="" /></Link> <nav> <ul className={`${shownav}`}> {routes.map((e,index) => ( 
-
-            <li key={index} className={e.path1 == "/landing" ? "service" : ""}> 
-              
-              <Link  to={e.path}> {e.route} {e.Icon}
-                
-                {e.path1 === "/landing" &&
-                  <ul className='ul-services'>
-                    {e.nestedRoute.map((ele , idx) => (
-                      <li> <Link to={ele.N_path}> {ele.N_route} </Link> </li>
-                    ))}
-                  </ul>
-                  }
-              </Link> 
-
-            </li> 
-          ))}
-        </ul>
-      </nav>
-      <i  className={`fa-solid ${shownav == "active_nav" ? "fa-xmark" :"fa-bars"} close`} onClick={_=> setshownav(pre=> pre == "active_nav" ?"" : "active_nav")}></i>
-    </div>
+            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/contact-us"> Contact Us</Link></li>
+            <li><Link to="/landing"> Portfolio</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box"> <input type="text" placeholder="Search..."/>  </div>
+        </div>
+      </div>
+    </nav>
+  </div>
   )
 }
-export default Navbar
+
+export default Navbar1

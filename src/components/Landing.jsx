@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Dashboard from "../assets/Dashboard.mp4"
+import Navbar1 from './Navbar1';
 
 const Landing = () => {
 
@@ -7,6 +8,7 @@ const Landing = () => {
     <header  >
       <div className="container">
       <Navbar />
+      {/* <Navbar1 /> */}
       <section id='home'>
         <div className="video" >
           <video autoPlay loop muted>
