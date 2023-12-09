@@ -17,18 +17,16 @@ import Icon_2 from "../assets/S_media/2.png" ;
 import Icon_3 from "../assets/S_media/3.png" ;
 import Icon_4 from "../assets/S_media/4.png" ;
 import Icon_5 from "../assets/S_media/5.png" ;
-import Icon_6 from "../assets/S_media/6.png" ;
-import Icon_7 from "../assets/S_media/7.png" ;
-import Icon_8 from "../assets/S_media/8.png" ;
 
-import Outdoor_1 from "../assets/signages/outdoor/1.jpg" ;
-import Outdoor_2 from "../assets/signages/outdoor/2.jpg" ;
-import Outdoor_3 from "../assets/signages/outdoor/3.jpg" ;
-import Outdoor_4 from "../assets/signages/outdoor/4.jpg" ;
-import Outdoor_5 from "../assets/signages/outdoor/5.jpg" ;
-import Outdoor_6 from "../assets/signages/outdoor/6.jpg" ;
-import Outdoor_7 from "../assets/signages/outdoor/7.jpg" ;
-import Outdoor_8 from "../assets/signages/outdoor/8.jpg" ;
+
+import Outdoor_1 from "../assets/gallery/outdoor/1.jpg" ;
+import Outdoor_2 from "../assets/gallery/outdoor/2.jpg" ;
+import Outdoor_3 from "../assets/gallery/outdoor/3.jpg" ;
+import Outdoor_4 from "../assets/gallery/outdoor/4.jpg" ;
+import Outdoor_5 from "../assets/gallery/outdoor/5.jpg" ;
+import Outdoor_6 from "../assets/gallery/outdoor/6.jpg" ;
+import Outdoor_7 from "../assets/gallery/outdoor/7.jpg" ;
+import Outdoor_8 from "../assets/gallery/outdoor/8.jpg" ;
 import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
