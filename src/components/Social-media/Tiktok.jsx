@@ -2,10 +2,8 @@ import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 
-import FacebookIntro from "../../assets/Socialmedia/tiktok-intro1.jpg"
-import FacebookCover from "../../assets/Socialmedia/tiktok-cover.jpg"
-
-
+import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
+import FacebookCover from "../../assets/Socialmedia/tiktok.png"
 
 import { motion } from 'framer-motion'
 

@@ -2,9 +2,8 @@ import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 
-import FacebookIntro from "../../assets/Socialmedia/linkedin-intro.webp"
-import FacebookCover from "../../assets/Socialmedia/linkedin-cover.jpg"
-
+import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
+import FacebookCover from "../../assets/Socialmedia/linkedin.png"
 
 
 import { motion } from 'framer-motion'

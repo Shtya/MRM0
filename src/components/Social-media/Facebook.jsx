@@ -2,8 +2,8 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 
-import FacebookIntro from "../../assets/Socialmedia/facebook-intro1.webp"
-import FacebookCover from "../../assets/Socialmedia/facebook-cover1.jpg"
+import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
+import FacebookCover from "../../assets/Socialmedia/facebook.png"
 
 
 import { motion } from 'framer-motion'

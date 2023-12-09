@@ -2,9 +2,8 @@ import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 
-import FacebookIntro from "../../assets/Socialmedia/snapchat-intro.webp"
-import FacebookCover from "../../assets/Socialmedia/snapchat-cover1.webp"
-
+import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
+import FacebookCover from "../../assets/Socialmedia/snapchat.png"
 import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
