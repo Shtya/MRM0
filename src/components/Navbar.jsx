@@ -69,9 +69,9 @@ htmlcssArrow.onclick = function() {
               <ul class="htmlCss-sub-menu sub-menu">
                 <li><Link to="/web-design"> web design & Development </Link></li>
                 <li><Link to="/photography"> photography & videography </Link></li>
+                <li><Link to="/exhibition"> exhibition & display stands</Link></li>
                 <li><Link to="/signages"> indoor & outdoor signages </Link></li>
-                <li><Link to="/exhibition"> exhibition display stands</Link></li>
-                <li><Link to="/social"> social media marketing</Link></li>
+                <li><Link to="/portfolio"> social media marketing</Link></li>
                 <li><Link to="/gifts">cooperated gifts </Link></li>
                 <li><Link to="/media">media buying </Link></li>
                 <li><Link to="/branding">Branding </Link></li>
@@ -79,7 +79,7 @@ htmlcssArrow.onclick = function() {
               </ul>
             </li>
 
-            <li><Link to="/portfolio"> Portfolio</Link></li>
+            <li><Link > Portfolio</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/contact-us"> Contact Us</Link></li>

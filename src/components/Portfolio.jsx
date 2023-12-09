@@ -57,7 +57,7 @@ const Portfolio = ({header  , typeGallery }) => {
   return (
     <section className='portfolio' id="Portfolio">
       <Pattern3 />
-      <h2 className='h1 clip' > ART</h2>
+      <h2 className='h1 clip' > OUR WORKS</h2>
       {!header == false && <div className="header1">{
           headers.map((e,index)=> (
           <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>

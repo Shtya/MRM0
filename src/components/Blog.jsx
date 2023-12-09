@@ -60,7 +60,7 @@ const Blog = () => {
   return (
     <section className='blog' id='Blog'>
       <Pattern2 />
-      <div className="container"> <div className="h1 clip hidden-text">BLOGS</div> </div>
+      <div className="container"> <div className="h1 clip hidden-text">BLOG</div> </div>
       <p className="phead hidden-text" >Latest Insights and News to Keep Your Strategies Alive </p>
 
       {/* <BLOG_SLIDER data={blogs} /> */}

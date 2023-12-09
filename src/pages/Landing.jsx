@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
-import Intro1 from "../assets/landing/intro1.jpg" ;
-import Community from "../assets/landing/Images-02.png" ;
+import Intro1 from "../assets/social media marketing/intro.jpg" ;
+import Community from "../assets/social media marketing/cover.jpg" ;
 
 import Social_1 from "../assets/landing/social-1.png"
   import Social_2 from "../assets/landing/social-2.png"
@@ -31,12 +31,10 @@ import Process1 from "../assets/landing/process1.png" ;
 
 import OneProcess from '../components/OneProcess';
 import Clients from '../components/Clients';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import OneSocial from '../components/OneSocial';
 import Animation from '../components/helpers/Animation';
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1';
-import QuickContact from '../components/QuickContact';
 
 const SocialMedia = [
   {classn :"hidden hidden-left" , img:Social_1 , title:"Social Media Strategy"    , desc:"Our social media experts will create a custom strategy that aligns with your brand's objectives and target audience."},
