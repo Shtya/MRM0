@@ -1,8 +1,5 @@
-
-import {motion} from 'framer-motion' ;
 import Navbar from './Navbar';
-import { Pattern7 } from './patterns/Pattern1';
-
+import Dashboard from "../assets/Dashboard.mp4"
 
 const Landing = () => {
 
@@ -13,7 +10,7 @@ const Landing = () => {
       <section id='home'>
         <div className="video" >
           <video autoPlay loop muted>
-            <source src='ShowreelV010-1.m4v.mp4' type="video/mp4" />
+            <source src={Dashboard} type="video/mp4" />
           </video>
         </div>
         {/* <Pattern7 /> */}

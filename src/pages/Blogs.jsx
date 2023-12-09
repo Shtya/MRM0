@@ -6,20 +6,24 @@ import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
+import BlogImg1 from "../assets/blog/blog1.webp"
+import BlogImg2 from "../assets/blog/blog4.jpeg"
+import BlogImg3 from "../assets/blog/blog5.webp"
+import BlogImg4 from "../assets/blog/blog6.jpeg"
+import BlogImg5 from "../assets/blog/blog7.webp"
+
 let blogs = [
-  {img:"./blog1.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog4.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog5.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog6.jpeg" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:"./blog7.webp" , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg5 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg2 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg3 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg4 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg5 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
 ]
 
 
 const Blogs = () => {
-  let imgs = ImgsClients() ;
-
 
   var settings = {
     dots: true,

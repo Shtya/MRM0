@@ -6757,7 +6757,6 @@ footer{
 
 
 .Loading{
-  // background: var(--gradient); /* fallback for old browsers */
     background: url("../assets/bg2.png");
     background-color: #181818;
     height: 100vh;
@@ -7629,7 +7628,7 @@ h4{
 }
 .show-img{
   transition: .6s;
-  transition-delay: .6s;
+  transition-delay: 1s;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 

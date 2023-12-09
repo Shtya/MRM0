@@ -2,7 +2,6 @@ import Navbar from '../components/Navbar'
 import Intro1 from "../assets/SEO/intro.jpg" ;
 import Community from "../assets/SEO/icon.jpg" ;
 import { useEffect } from 'react';
-import Grid1 from "../assets/SEO/icon-2.jpg" ;
 
 
 import Analysis_1 from "../assets/SEO/Analysis-1.png"
