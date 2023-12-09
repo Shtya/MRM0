@@ -9,7 +9,7 @@ const Slider_1_Img = ({data , settings }) => {
     <div className="Slider_1_Img">
           <Slider {...settings} className='container' >
             {data.map((e,index)=>(
-                  <div  key={index} className="coverImg hidden-img">
+                  <div  key={index} className="coverImg ">
                       <img src={e.img} alt=""  />
                       <div className="date">Thursday, November 9, 2023</div>
                       <p className='p'>{e.desc}</p>
