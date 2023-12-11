@@ -532,7 +532,7 @@ header section .video video {
   font-size: 18px !important;
   text-transform: capitalize;
   font-weight: 600;
-  font-family: "Noto Sans";
+  font-family: "Overlock", Arial;
 }
 .Navbar1 .links li:hover .htmlcss-arrow {
   transform: rotate(180deg);
@@ -2327,6 +2327,12 @@ footer .container .bottom .last a {
   color: #eee;
   display: flex;
   align-items: center;
+  background: linear-gradient(to right, rgba(10, 7, 11, 0.35), rgba(39, 36, 41, 0.54), rgba(19, 15, 20, 0.64));
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  outline: 2px solid #181818;
+  box-shadow: 0 0 10px #000 inset;
+  border: 2px dotted transparent;
 }
 @media (max-width: 100px) {
   .about-us .searching .boxs .box {
@@ -2373,7 +2379,12 @@ footer .container .bottom .last a {
   z-index: 10;
 }
 .about-us .WHY .container .one-why {
-  background-color: var(--bg-card);
+  background: linear-gradient(to right, rgba(10, 7, 11, 0.35), rgba(39, 36, 41, 0.54), rgba(19, 15, 20, 0.64));
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  outline: 2px solid #181818;
+  box-shadow: 0 0 10px #000 inset;
+  border: 2px dotted transparent;
   padding: 5px 5px 10px;
 }
 .about-us .WHY .container .one-why .coverImg {
@@ -3203,7 +3214,7 @@ footer .container .bottom .last a {
   font-size: 1.5rem;
   text-wrap: balance;
   letter-spacing: 0.6px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", Arial;
 }
 .landing .home .container .boxs .p {
   font-size: 1.3rem;
@@ -5002,7 +5013,9 @@ footer .container .bottom .last a {
   justify-content: center;
   transition: 0.3s;
   z-index: 1000000000000;
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.7098039216);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .S_photography .exhibition-stands .show-img img {
   width: 100%;
@@ -6199,22 +6212,23 @@ footer .container .bottom .last a {
 }
 .S_Exhibition .Display-stands .show-img, .S_Exhibition .exhibition-stands .show-img {
   position: fixed;
+  position: fixed;
   width: 100vw;
   height: 100%;
-  left: 0;
+  left: 0vw;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
   z-index: 1000000000000;
-  background: rgba(24, 24, 24, 0.5607843137);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: rgba(34, 34, 34, 0.7098039216);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .S_Exhibition .Display-stands .show-img img, .S_Exhibition .exhibition-stands .show-img img {
   width: 100%;
-  height: 90%;
+  height: 75%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 4px;
@@ -6223,7 +6237,7 @@ footer .container .bottom .last a {
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 30px;
+  top: 70px;
   right: 30px;
   cursor: pointer;
   transition: 0.3s;
@@ -6692,14 +6706,13 @@ footer .container .bottom .last a {
   line-height: 1.4;
   text-transform: capitalize;
   color: var(--text-color);
-  font-size: 1.7rem !important;
   padding: 0 10px;
   border-radius: 3px;
   overflow: hidden;
   text-align: center;
 }
 .shared .home .container .boxs .h2 span {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", Arial;
   color: #e0dfdc;
   letter-spacing: 0.5px;
   text-shadow: 0 -1px 0 #fff, 0 6px 0 #2e2e2e, 0 6px 0 #2c2c2c, 0 6px 0 #2a2a2a, 0 6px 0 #282828, 0 6px 0 #262626, 0 6px 0 #242424, 0 6px 0 #222, 0 6px 0 #202020, 0 6px 0 #1e1e1e, 0 6px 0 #1c1c1c, 0 6px 0 #1a1a1a, 0 6px 0 #181818, 0 6px 0 #161616, 0 6px 0 #141414, 0 6px 0 #121212, 0 6px 6px rgba(0, 0, 0, 0.9);
@@ -6707,7 +6720,7 @@ footer .container .bottom .last a {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 45px;
 }
 @media (min-width: 950px) {
   .shared .home {
@@ -6800,10 +6813,10 @@ footer .container .bottom .last a {
 }
 @media (max-width: 900px) {
   .shared .quotation .box-style, .shared .quotation .box-style-2 {
-    padding: 10px !important;
+    padding: 0 !important;
+    margin: 10px !important;
     -webkit-clip-path: none;
             clip-path: none;
-    margin-bottom: 0 !important;
   }
 }
 .shared .quotation::after {

@@ -14,7 +14,7 @@ const OneBlog = ({classn ,blogs , settings , name , onHere}) => {
             {blogs.map((e,index)=>(
                   <div  key={index} className="coverImg">
                       <img src={e.img} alt=""  />
-                      <div className="date">Thursday, November 9, 2023</div>
+                      <div className="date"> November 9, 2023</div>
                       <p className='p'>{e.desc}</p>
                       <button className='bt'>More</button>
                   </div>
