@@ -68,7 +68,6 @@ const App = () => {
         <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blogs />} /> 
-        <Route path='/portfolio' element={<Landing />} />
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/terms' element={<Terms />} />
@@ -76,9 +75,10 @@ const App = () => {
         {/* Services Pages */}
         <Route path='/web-design' element={<S_WebDesign/>} />
         <Route path='/photography' element={<S_photography />} />
-        <Route path='/signages' element={<M_Signages />} />
-        <Route path='/social' element={<S_SocialMediaMarketing />} />
+        {/* <Route path='/social' element={<S_SocialMediaMarketing />} /> */}
         <Route path='/exhibition' element={<S_Exhibition  />} />
+        <Route path='/signages' element={<M_Signages />} />
+        <Route path='/portfolio' element={<Landing />} />
         <Route path='/media' element={<S_Media />} />
         <Route path='/branding' element={<S_Branding  />} />
         <Route path='/gifts' element={<S_Gifts  />} />

@@ -56,8 +56,8 @@ const Landing = () => {
         <div className="container">
           <div className="boxImg hidden-img" >  <img className='n-border' src={Community} alt="" /> </div>
           <div className="boxs" >
-            <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence.</h2>
-            <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services. </p>
+            <h2 className='h1 hidden-text' data-aos="fade-left"> Enhance the Effectiveness of Your Social Media Presence</h2>
+            <p className='h3 hidden-text' data-aos="fade-left">Boost your brand online with our social media management services </p>
             <div className="inner-boxs" >
 
               <ul className="box">
@@ -94,7 +94,7 @@ const Landing = () => {
                   <h3 className='h2 hidden-text' data-aos="fade-left">Are you searching for top-notch <br/> social media management services in Dubai?</h3>
                   
                   <div className="box">
-                      <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered.</h2>
+                      <h2 className='h3 hidden-text' data-aos="fade-left"> We've got you covered</h2>
                       <p className='p hidden-text' data-aos="fade-left"> We take pride in delivering exceptional results that help increase sales while minimizing costs. We collaborate with you to develop a tailored strategy that aligns with your business goals. Our team can help you achieve your digital marketing goals, whether you need to drive traffic, increase brand awareness, or boost sales. </p>
                   </div>
 

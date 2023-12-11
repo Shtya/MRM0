@@ -45,6 +45,7 @@ const Portfolio = ({header  , typeGallery }) => {
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
   const [type , settype ] =useState( "all") ;
+  useEffect(_=>{ setdata(Imgs.filter(e => e.type.includes("all"))) } ,[])
 
   const handleHeaders = (ele)=>{
     setdata( Imgs.filter(e =>{

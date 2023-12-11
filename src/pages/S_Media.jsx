@@ -38,7 +38,7 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pa
 const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising",]
 const Paid = [ 
   {classn: "hidden hidden-left"  ,img: X , path:"/x" ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
-  {classn: "hidden hidden-left"  ,img: F , path:"/facebook" ,title:"Facebook Advertising:" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
+  {classn: "hidden hidden-left"  ,img: F , path:"/facebook" ,title:"Facebook Advertising" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
   {classn: "hidden hidden-left"  ,img: I , path:"/instagram" ,title:"Instagram Advertising" , desc:"Showcase your brand with visually captivating Instagram ads. Stay top-of-mind with powerful advertising features that drive brand recognition and engagement."},
   {classn: "hidden hidden-left"  ,img: L , path:"/linkedin" ,title:"LinkedIn Advertising" , desc:"Contact business owners and potential clients through LinkedIn's specialized advertising platform. Our strategies ensure you connect with the right audience for your business goals."},
   {classn: "hidden hidden-left"  ,img: T , path:"/tiktok" ,title:"TikTok Advertising" , desc:"Ignite excitement around your brand with fun and engaging ads on the latest Social Media sensation, TikTok. Harness the creativity of this popular new platform to connect with your target audience."},
@@ -75,8 +75,8 @@ const S_Media = () => {
         <div className="container">
             <div className="boxImg hidden-img " >  <img src={ImgSection} alt="" /> </div>
             <div className="boxs" >
-                <h2 className='h1 hidden-text' data-aos="fade-left"> Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise.</h2>
-                <h2 className='h2 hidden-text' data-aos="fade-left">Transform your social platforms into full revenue drivers and maximize your return on investment. </h2>
+                <h2 className='h1 hidden-text' data-aos="fade-left"> Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h2>
+                <h2 className='h2 hidden-text' data-aos="fade-left">Transform your social platforms into full revenue drivers and maximize your return on investment </h2>
                 <div className="inner-boxs" data-aos="fade-left" >
                   <div className="box">
                       <li className='p hidden-text'> {li[0]} </li>

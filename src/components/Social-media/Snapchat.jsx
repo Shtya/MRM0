@@ -8,6 +8,8 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import { Link } from 'react-router-dom'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -70,22 +72,26 @@ const Snapchat = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("Unlock the Power of Snapchat Marketing with MRM Agency At MRM Agency, we craft personalized and captivating Snap ads enriched with engaging content such as short films, GIFs, and images that will leave a lasting impression on your audience. As an award-winning Snapchat marketing agency in Dubai, our Snapchat Marketing Solutions are designed to resonate with a younger demographic. If your products or services target a youthful audience, allocating a portion of your digital and social media marketing budget to Snapchat is strategic").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Create Engaging Snapchat Campaigns with Our Expert Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
-
         </div>
       </div>
+
 
       <Divider classn="divider" />
       <div className="quotation">
         <Pattern3 />
-            <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("Why Snapchat?  Snapchat has emerged as the latest sensation in image and video sharing worldwide, with over 186 million active users, primarily between 18 and 24. This demographic continues contributing to the staggering daily count of 3 billion pictures shared on the platform. Snapchat is your go-to platform if your business caters to the younger generation. It not only simplifies advertising but also makes it cost-effective and efficient.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
+        <div className="container" >
+          <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unleash the Potential of Snapchat Marketing with MRM Agency").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM Agency, we specialize in creating personalized and captivating Snapchat Ads enriched with engaging content such as short films, GIFs, and images that leave a lasting impression on your audience. As one of Dubai's best Snapchat marketing agencies, our solutions are designed to resonate with a younger demographic. If your products or services target a youthful audience, allocating a portion of your digital and social media marketing budget to Snapchat is strategic.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
             </div>
+            <div className="box-style-2" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Why Snapchat Marketing?").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Snapchat has become one of the most popular platforms for sharing images and videos worldwide.  With over 186 million active users, mostly between the ages of 18 and 24, this demographic plays a significant role in contributing to the staggering daily count of 3 billion pictures shared on the platform. If your business caters to the younger generation, Snapchat is your go-to platform. It simplifies advertising and makes it cost-effective and efficient.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            </div>
+          </div>
         </div>
 
 

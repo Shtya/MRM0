@@ -83,7 +83,7 @@ const M_Signages = () => {
               <div className="boxImg hidden-img " >  <img src={ImgSection} alt="" /> </div>
               <div className="boxs " >
                   <h2 className='h1  hidden-text'> Craft Your Vision, Achieve Your Goals </h2>
-                  <h2 className='h2  hidden-text'>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE.</h2>
+                  <h2 className='h2  hidden-text'>MRM's End-to-End Custom Signage Solutions, from Concept to Installation in the UAE</h2>
                   <p className='p hidden-text'>MRM produces high-quality custom signs in the UAE using premium materials and state-of-the-art equipment to ensure your signage is truly outstanding.</p>
 
             </div>

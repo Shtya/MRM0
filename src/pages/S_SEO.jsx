@@ -77,8 +77,8 @@ const S_SEO = () => {
           <div className="container">
               <div className="boxImg hidden-img" >  <img src={Community} alt="" /> </div>
               <div className="boxs " >
-                  <h2 className="h1 hidden-text" data-aos="fade-left">Unlock the full potential of your website with SEO services.</h2>
-                  <p className="h2 hidden-text" data-aos="fade-left">Improve your website's visibility and ranking on search engines with our professional SEO solutions. </p>
+                  <h2 className="h1 hidden-text" data-aos="fade-left">Unlock the full potential of your website with SEO services</h2>
+                  <p className="h2 hidden-text" data-aos="fade-left">Improve your website's visibility and ranking on search engines with our professional SEO solutions </p>
                   <p className="p hidden-text" data-aos="fade-left"> Having a strong online presence is crucial in today's fast-paced digital world. Your website's ability to stand out and capture your audience's attention can make all the difference between success and obscurity. It's not enough to simply exist online - your website must captivate your audience and drive your business forward.</p>
             </div>
         </div>

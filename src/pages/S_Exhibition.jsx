@@ -86,8 +86,8 @@ const S_Exhibition = () => {
           <div className="container">
               <div className="boxImg hidden-img" data-aos="fade-right">  <img src={ImgSection} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-                  <h2 className='h1 hidden-text'> The Best Exhibition stands & display stand designing services in Dubai.</h2>
-                  <h2 className='h2 hidden-text'> Our exhibition and display stands are masterpieces that create lasting impressions. </h2>
+                  <h2 className='h1 hidden-text'> The Best Exhibition stands & display stand designing services in Dubai</h2>
+                  <h2 className='h2 hidden-text'> Our exhibition and display stands are masterpieces that create lasting impressions</h2>
                   <p className='p hidden-text'> With our exclusive exhibition stands in Dubai, we can help you stand out from the crowd at trade shows and events. We customize our exhibition stands according to our customers' specifications to ensure they excel at their intended purpose. Our team can design your order from scratch, maximizing the available space in any given environment.</p>
             </div>
 
@@ -107,7 +107,7 @@ const S_Exhibition = () => {
         <Divider classn="divider-left" />
       <div className="exhibition-stands">
         <Pattern3 />
-        <div className="container"> <div className="h1 clip">Take a look at our designs for exhibition stands. </div></div>
+        <div className="container"> <div className="h1 clip">Take a look at our designs for exhibition stands</div></div>
         <div className="container">
           <div className="boxs">
             {Exhibition.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
@@ -122,7 +122,7 @@ const S_Exhibition = () => {
       <Divider classn="divider" />
       <div className="Display-stands">
         <Pattern2 />
-      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands.</div></div>
+      <div className="container"><div className="h1 clip">Take a look at our designs for Display stands</div></div>
         <div className="container">
             <div className="boxs">
                 {DisplayStands.map((e,index)=> ( <div key={index} data-aos={e.animate} className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}

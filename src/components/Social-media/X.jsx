@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -70,22 +71,26 @@ const X = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("Unlocking Twitter Marketing Success with MRM With over 353 million active users, Twitter is a powerful social media platform with immense potential for business growth. Recent studies reveal that 79% of Twitter users recommend businesses and brands they follow. To fully utilize Twitter's advertising capabilities, it is vital to take necessary measures., it's crucial to reach the right audience.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Transform Your Business with our Expert X Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
 
         </div>
       </div>
       
-
+      
       <Divider classn="divider" />
       <div className="quotation">
         <Pattern3 />
-            <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("MRM, the leading Twitter marketing agency in Dubai, is committed to crafting your brand identity, driving growth, and ensuring your business's success through our ad campaigns. Our Twitter advertising services enable you to connect with the right audience, amplify brand visibility, enhance engagement rates, and extend your online presence. Partner with us, and you'll be on the path to unlocking the full potential of Twitter marketing.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
+        <div className="container" >
+        <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlocking X Marketing Success With MRM ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("X is a powerful social media platform with immense potential for business growth, boasting over 353 million active users. Recent studies reveal that 79% of X users recommend businesses and brands they follow, making it an excellent tool for advertising. To fully utilize X's advertising capabilities, taking necessary measures and reaching the right audience is vital.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+        </div>
+        <div className="box-style-2" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM - Your Partner for Successful X Marketing in Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("We are dedicated to creating a unique brand identity, promoting growth, and ensuring the success of your business through our advertising campaigns.Our X advertising services allow you to connect with the right audience, increase brand visibility, improve engagement rates, and expand your online presence. By partnering with us, you can unlock the full potential of X marketing.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+        </div>
             </div>
         </div>
 

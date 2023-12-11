@@ -7,8 +7,8 @@ import { Pattern2, Pattern3, Pattern5} from "./patterns/Pattern1";
 var settings = {
   dots: false,
   infinite: true,
-  speed: 600,
-  autoplaySpeed: 900 ,
+  speed: 1000,
+  autoplaySpeed: 2000 ,
   slidesToShow: 6,
   slidesToScroll: 2 , 
   autoplay:true ,

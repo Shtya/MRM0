@@ -34,12 +34,12 @@ const SocialMedia = [
   ]
 
 const Approach = [
-    { img:Icon_1 , title:"Understanding Your Business:" , desc:"We begin by getting to know your business, industry, and target audience. This knowledge forms the foundation of our web development strategy."},
-    { img:Icon_2 , title:"Custom Design:"               , desc:"Every business is unique, and your website should reflect that. Our design team creates custom website layouts tailored to your brand identity and goals."},
-    { img:Icon_3 , title:"Responsive Design:"           , desc:"With the increasing use of mobile devices, having a responsive website is non-negotiable. We ensure your site looks and functions flawlessly on all screen sizes."},
-    { img:Icon_4 , title:"SEO Integration:"             , desc:"Our web development team collaborates closely with our SEO specialists to ensure your site is optimized for search engines from the ground up. This includes keyword research, on-page SEO, and technical SEO enhancements."},
-    { img:Icon_5 , title:"Content Management:"          , desc:"We empower you to manage your website easily. Our content management systems (CMS) make it simple to update content, add new pages, and keep your site fresh."},
-    { img:Icon_6 , title:"E-commerce Solutions:"        , desc:"If you're in the business of selling products online, we can create a secure and efficient e-commerce platform tailored to your needs."},
+    { img:Icon_1 , title:"Understanding Your Business" , desc:"We begin by getting to know your business, industry, and target audience. This knowledge forms the foundation of our web development strategy."},
+    { img:Icon_2 , title:"Custom Design"               , desc:"Every business is unique, and your website should reflect that. Our design team creates custom website layouts tailored to your brand identity and goals."},
+    { img:Icon_3 , title:"Responsive Design"           , desc:"With the increasing use of mobile devices, having a responsive website is non-negotiable. We ensure your site looks and functions flawlessly on all screen sizes."},
+    { img:Icon_4 , title:"SEO Integration"             , desc:"Our web development team collaborates closely with our SEO specialists to ensure your site is optimized for search engines from the ground up. This includes keyword research, on-page SEO, and technical SEO enhancements."},
+    { img:Icon_5 , title:"Content Management"          , desc:"We empower you to manage your website easily. Our content management systems (CMS) make it simple to update content, add new pages, and keep your site fresh."},
+    { img:Icon_6 , title:"E-commerce Solutions"        , desc:"If you're in the business of selling products online, we can create a secure and efficient e-commerce platform tailored to your needs."},
     { img:Icon_7 , title:"Testing and Quality Assurance", desc:"Before launch, we rigorously test your website to ensure  it functions flawlessly and is free of any bugs or issues."},
     { img:Icon_8 , title:"Launch and Beyond"            , desc:" Once your website is live, our support doesn't end. We provide ongoing maintenance, updates, and support to ensure your site continues to perform optimally."},
 ]

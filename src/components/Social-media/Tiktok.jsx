@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -64,23 +65,27 @@ const Tiktok = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("TikTok is a powerful platform purpose-built for sharing short videos and music. It started as a creative outlet for young adults and teenagers to express themselves through acting, singing, dancing, and comedy. However, TikTok's impact has exceeded generational boundaries, becoming a hub for entertaining, informative, and engaging short videos. TikTok presents a unique opportunity for businesses to connect with a younger audience, using demographics as a potent marketing tool. Interested? Let's dive deeper.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Engagement and Build Your Brand with Our TikTok Marketing Strategies").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
-
         </div>
       </div>
+      
       
 
       <Divider classn="divider" />
       <div className="quotation">
         <Pattern3 />
-            <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("TikTok marketing is a dynamic force in the ever-evolving landscape of digital advertising. At MRM Agency, our unwavering commitment to delivering tangible results, innovative problem-solving, and relentless focus on your success set us apart. We invite you to embark on a journey of digital growth and triumph, where your brand's story isn't just heard and celebrated globally. ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
-            </div>
+        <div className="container" >
+          <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Get Ahead of the Competition with MRM's Effective TikTok Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM Agency, we are dedicated to providing you with tangible results through innovative problem-solving and a relentless focus on your success. Our commitment sets us apart, and we invite you to join us on a journey of digital growth and triumph where your brand's story is not only heard but celebrated globally.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+          </div>
+          <div className="box-style-2" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("The Power of TikTok Marketing for Businesses").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("TikTok is a social media platform designed for sharing short videos and music.  Originally created as a creative outlet for young adults and teenagers to showcase their talents in acting, singing, dancing, and comedy,  TikTok has expanded its impact beyond generational boundaries. It has become a hub for entertaining, informative, and engaging videos.  For businesses, TikTok presents a unique opportunity to connect with a younger audience and use demographics as a potent marketing tool. TikTok marketing is a dynamic force in the ever-evolving landscape of digital advertising. If you're interested, let's dive deeper.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+          </div>
+          </div>
         </div>
 
 

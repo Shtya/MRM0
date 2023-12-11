@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Slider_1_Img from './Slide/Slider_1_Img';
 import { Pattern2, Pattern3 } from './patterns/Pattern1';
-
-import BlogImg1 from "../assets/blog/blog1.webp"
-import BlogImg2 from "../assets/blog/blog4.jpeg"
-import BlogImg3 from "../assets/blog/blog5.webp"
-import BlogImg4 from "../assets/blog/blog6.jpeg"
+import BlogImg1 from "../assets/blog/blog1.jpg"
+import BlogImg2 from "../assets/blog/blog2.jpg"
+import BlogImg3 from "../assets/blog/blog3.jpg"
+import BlogImg4 from "../assets/blog/blog4.jpg"
 import BlogImg5 from "../assets/blog/blog7.webp"
 
 var settings = {

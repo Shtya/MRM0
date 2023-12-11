@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 
 import Animation from '../../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../../components/patterns/Pattern1'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -78,11 +79,9 @@ const Facebook = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("Facebook has long been a leader in digital marketing, especially in the UAE, where almost the entire population is active on the platform. Utilizing Facebook for advertising can provide significant brand exposure, engage potential customers, increase brand recognition, and generate valuable leads.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Unlock Your Business Potential with Our Expert Facebook Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
-
         </div>
       </div>
 
@@ -90,10 +89,13 @@ const Facebook = () => {
       <div className="quotation">
         <Pattern3 />
             <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from(" MRM, recognized as a top Facebook advertising agency in Dubai, excels in creating engaging campaigns that allow businesses to precisely target their audience based on various criteria such as location, age, gender, interests, and demographics. We leverage this capability by conducting thorough research on your brand and offerings, enabling us to create and implement effective digital and social media marketing campaigns tailored to your business, capturing the attention of your target audience and converting them into loyal customers.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
+            <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Harnessing the Power of Facebook Marketing  ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Facebook has been a leader in digital marketing for a long time. Utilizing Facebook for advertising can provide significant brand exposure, engage potential customers, increase brand recognition, and generate valuable leads. ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
             </div>
+            <div className="box-style-2" data-aos="fade-up"><motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Boost Your Business Growth with MRM's Trusted Facebook Marketing Partnership in Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM is a well-known and one of the best Facebook advertising agencies based in Dubai.  We specialize in developing engaging campaigns that allow businesses to target their audience based on various criteria, such as location, age, gender, interests, and demographics.  MRM team conducts thorough research on your brand and offerings to create and implement effective digital and social media marketing campaigns tailored to your business.  This helps capture the attention of your target audience and convert them into loyal customers.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            </div></div>
         </div>
 
 

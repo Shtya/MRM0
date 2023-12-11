@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -67,9 +68,8 @@ const Linkedin = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("LinkedIn, the world's largest and most widely utilized professional networking site, with over 1.5 billion active users, presents a powerful avenue for businesses and brands to connect directly with professionals across the globe. It is a tool for enhancing your professional influence and expanding your social network. Prism has successfully provided LinkedIn marketing services to over 180 firms, making it the cornerstone of every exceptional B2B social media marketing and communication strategy.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Grow Your Business with Our Comprehensive LinkedIn Marketing Solutions").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
 
         </div>
@@ -79,10 +79,15 @@ const Linkedin = () => {
       <Divider classn="divider" />
       <div className="quotation">
         <Pattern3 />
-            <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("At MRM, we go above and beyond to captivate and engage your audience on LinkedIn. Our team specializes in creating bespoke ads enriched with compelling content, such as short videos, gifs, and images. As the leading social media agency in Dubai, our solutions are meticulously optimized and custom-crafted to align with your objectives and resonate with your target audiences. We excel at pinpointing the right audience and monitoring conversations about your brand on social media. LinkedIn's powerful targeting capabilities allow us to reach individuals based on their occupation, job title, corporate position, location, and more, making it the ideal platform for B2B clients to generate high-quality leads.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
+        <div className="container" >
+        <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Partner with MRM for Results-Driven LinkedIn Marketing in Dubai ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM, we strive to captivate and engage your audience on LinkedIn by going above and beyond. Our team specializes in creating custom ads featuring compelling content, such as short videos, GIFs, and images. As the leading social media agency in Dubai, our solutions are meticulously optimized and tailored to meet your objectives and connect with your target audiences. We excel at identifying the right audience and monitoring brand conversations on social media. LinkedIn's powerful targeting capabilities enable us to reach individuals based on their occupation, job title, corporate position, location, and more, making it an ideal platform for B2B clients to generate high-quality leads.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+</div>
+<div className="box-style-2" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("The Power of LinkedIn Marketing for Businesses").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("LinkedIn is certainly a great platform for professionals to connect with each other from all over the world. With over 1.5 billion active users, it provides a unique opportunity to enhance personal brand and professional influence. By using LinkedIn, you can enhance your professional influence and expand your social network.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+</div>
             </div>
         </div>
 

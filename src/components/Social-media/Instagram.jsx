@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 
 import Animation from '../helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../patterns/Pattern1'
+import SocialLanding from '../SocialLanding'
 
 
 
@@ -59,9 +60,8 @@ const Instagram = () => {
           <div className="container">
               <div className="boxImg hidden-img"  >  <img src={FacebookCover} alt="" /> </div>
               <div className="boxs" data-aos="fade-left" >
-              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("Instagram Marketing with MRM Your Gateway to Success MRM  your premier choice for Instagram marketing services in Dubai. In a world where social media dominates the digital landscape, Instagram stands out as a powerhouse platform for businesses to showcase their products and services. At MRM, we take pride in being the best in Dubai when it comes to providing top-notch Instagram marketing services. ").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              } </motion.p>
+              <motion.p  className="h2 hidden-text" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Maximize Your Reach and Engagement with Our Instagram Marketing Services").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))} </motion.p>
+              <SocialLanding />
             </div>
 
         </div>
@@ -70,10 +70,16 @@ const Instagram = () => {
       <Divider classn="divider-left" />
       <div className="quotation">
         <Pattern3 />
-            <div className="container" >
-            <motion.p  className="h3" variants={Divvariant} initial="hidden" whileInView="visible" >{
-                Array.from("We invite business owners to join hands with MRM and experience the unparalleled potential of Instagram marketing. Our services are designed to help you connect with your audience, promote your brand, and boost your sales. Let's create a successful Instagram marketing strategy together.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))
-              }</motion.p>
+        <div className="container" >
+        <div className="box-style" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("MRM Your Premier Choice for Instagram Marketing Services In Dubai").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 div" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("At MRM, we are proud to be known as the best in Dubai for providing top-notch Instagram marketing services. We invite business owners to partner with us and experience the unparalleled potential of Instagram marketing. Our services help you connect with your audience, promote your brand, and increase sales.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+        </div>
+
+        <div className="box-style-2" data-aos="fade-up">
+            <motion.p  className="h2" variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("Instagram Marketing with MRM Your Gateway To Success").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+            <motion.p  className="h3 " variants={Divvariant} initial="hidden" whileInView="visible" >{ Array.from("In today's digital landscape, social media has become a dominant force in the marketing world. Among all the social media platforms, Instagram is a powerful tool for businesses to showcase their products and services to a wider audience. With its visual focus and engaged user base, Instagram offers a unique opportunity for businesses to connect with their customers and build their brands.").map((e,index)=>(<motion.span variants={Pvariant}   key={index}>{e}</motion.span>))}</motion.p>
+        </div>
             </div>
         </div>
 
