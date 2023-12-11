@@ -30,12 +30,12 @@ const Why = () => {
       <div className="container">
               <div className="boxs"  >
                   {choose.map((e,idx)=> (
-                    <div className="box" data-aos={e.animate} key={idx} >
+                    <div className="box" data-aos="fade-right" key={idx} >
                       <div className="group" >
-                          <i  className={e.icon}></i>
-                          <h3 className='h2 clip' > {e.title}  </h3>
+                          <i  className={`${e.icon} hidden-img`}></i>
+                          <h3 className='h2 hidden-text' > {e.title}  </h3>
                       </div>
-                      <span className={` p`}>{e.desc}</span>
+                      <span className={` p hidden-text`}>{e.desc}</span>
                     </div>
                   ))}
               </div>

@@ -5,7 +5,6 @@ import BlogImg1 from "../assets/blog/blog1.jpg"
 import BlogImg2 from "../assets/blog/blog2.jpg"
 import BlogImg3 from "../assets/blog/blog3.jpg"
 import BlogImg4 from "../assets/blog/blog4.jpg"
-import BlogImg5 from "../assets/blog/blog7.webp"
 
 var settings = {
   dots: true,
@@ -48,12 +47,9 @@ var settings = {
 const Blog = () => {
   let blogs = [
     {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
-    {img:BlogImg5 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
     {img:BlogImg2 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
     {img:BlogImg3 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
     {img:BlogImg4 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
-    {img:BlogImg5 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
-    {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem . "},
   ]
 
   return (

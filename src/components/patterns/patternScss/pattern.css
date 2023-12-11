@@ -12,14 +12,14 @@
 .pattern1::after {
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.94);
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0;
   opacity: 0.81;
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 .pattern1 .screen0 .pattern1::after {
   content: "";
