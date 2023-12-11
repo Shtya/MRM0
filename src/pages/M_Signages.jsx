@@ -46,9 +46,10 @@ const settings = {
   dots: true,
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   autoplay:true  ,
-  speed: 1000,
+  speed: 2000,
+  autoplaySpeed: 2000 ,
   cssEase: "linear" ,
   responsive: [
     {breakpoint: 1000,
@@ -94,8 +95,8 @@ const M_Signages = () => {
       <div className="quotation">
         <Pattern1 />
             <div className="container">
-                <div className="h2 hidden-text" data-aos="fade-left">MRM is Your Partner in Web Development and Design in Dubai, UAE</div>
-                <div className="h3" data-aos="fade-left">MRM Agency is committed to delivering outstanding web design and development services in Dubai, UAE. Our services are carefully customized to meet the specific requirements of businesses. Whether you're a startup seeking to make a strong online impression or an established business looking to revitalize your digital presence, we're here to turn your vision into a captivating reality.</div>
+                <div className="h2 hidden-text" data-aos="fade-left">MRM promises excellence in signage installation, blending your vision with our expertise</div>
+                <div className="h3" data-aos="fade-left">MRM's team of experts specializes in developing custom sign designs based on clients' requirements. we take care of every project aspect, from the concept and design phase to production and installation. MRM is committed to delivering quality service and ensuring customer satisfaction. Clients can trust MRM to handle everything related to their custom signage installation.</div>
             </div>
         </div>
 
@@ -109,10 +110,9 @@ const M_Signages = () => {
           <div className="outdoor">
               <div className="header1 header2">
                   <li className='p active'> LED Signages </li>
-                  <li className='p'> Building Wra </li>
+                  <li className='p'> Building Wrap </li>
                   <li className='p'> Lamp Post Signs</li>
                   <li className='p'> Unipole Signs </li>
-                  <li className='p'>  Branded Signag </li>
               </div>
               <Slider_2_Imgs data={data} settings={settings} />
           </div>
@@ -137,7 +137,7 @@ const M_Signages = () => {
         <Pattern3 />
             <div className="container">
                 <div className="h1 hidden-text clip" data-aos="fade-left">Signage creation process</div>
-                <div className="phead hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish.</div>
+                <div className="phead hidden-text" data-aos="fade-left"> Our custom signages captures attention and gives every project  an elegant and professional finish</div>
                 <div className="timeline">
                   {
                     process.map((e,index)=>(

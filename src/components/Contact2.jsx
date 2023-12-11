@@ -31,7 +31,7 @@ const Contact2 = () => {
               </div>
 
               <div className="box">
-              <p className='h1 clip'>Contact Us</p>
+              <p className='h1 clip'>Reach Out And Let's Talk</p>
               <form action="">
                   <input type="text" name="" placeholder='Your Name' id="" />
                   <input type="Email" name="" placeholder='Email address' id="" />

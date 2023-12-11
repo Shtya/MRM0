@@ -119,7 +119,7 @@ const X = () => {
 
         <Divider classn="divider" />
         <div className="process2">
-        <div className="h2 clip"> Our Twitter Marketing Process</div>
+        <div className="h2 clip"> Our Twitter Marketing Businesses</div>
         <div className="phead"> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
           <Pattern1 />
           <ul class="timeline">

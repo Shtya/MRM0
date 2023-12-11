@@ -137,14 +137,13 @@ const Linkedin = () => {
       <div className="box-style-1">
         <Pattern2 />
             <div className="container">
-                <div className="h2 clip">Why We Excel in LinkedIn Marketing </div>
-                <div className="phead">MRM's LinkedIn Advertising Process</div>
+                <div className="h2 hidden-text">MRM's LinkedIn Advertising Process</div>
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (
                       <div className="box" key={index} data-aos="fade-up" >
                           <div className="text">
-                              <div className="h3 clip hidden-text" >{e.title} </div>
+                              <div className="h3 hidden-text" >{e.title} </div>
                               <div className="p hidden-text" >{e.desc} </div>
                           </div>
                       </div>

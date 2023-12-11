@@ -70,7 +70,7 @@ const S_WebDesign = () => {
 
               <ul className="box box-2">
                 <li className='li hidden-text' data-aos="fade-left">WordPress Development </li>
-                <li className='li hidden-text' data-aos="fade-left">E-commerce Development Services </li>
+                <li className='li hidden-text' data-aos="fade-left">E-commerce Development </li>
               </ul>
 
             </div>

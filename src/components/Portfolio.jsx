@@ -39,7 +39,7 @@ var settings = {
 
 
 
-const Portfolio = ({header  , typeGallery }) => {
+const Portfolio = ({header  , typeGallery  }) => {
   const headers = [ "all" , "Signages", "Stands", "Exhibition", "branding", "photography", "Web design",]
 
   const Imgs = ImgsPortfolio(headers)

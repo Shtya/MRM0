@@ -10,6 +10,7 @@ import BlogImg1 from "../assets/blog/blog1.jpg"
 import BlogImg2 from "../assets/blog/blog2.jpg"
 import BlogImg3 from "../assets/blog/blog3.jpg"
 import BlogImg4 from "../assets/blog/blog4.jpg"
+import Animation from '../components/helpers/Animation';
 
 let blogs = [
   {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
@@ -50,11 +51,20 @@ const Blogs = () => {
 
   return (
     <div className='blog-page'>
+      <Animation />
       <div className="container"> <Navbar /></div>
 
         <div className="coverImg"> <img src={IntroImg} alt="" /></div>
 
         <Divider classn="divider divider-top" />
+      <div className="quotation">
+        <Pattern1 />
+        <div className="container">
+              <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
+        </div>
+        </div>
+
+        <Divider classn="divider " />
         <OneBlog onHere={true} classn="blog-1" name="Digital Marketing News" settings={settings}  blogs={blogs} />
         <Divider classn="divider-left" />
         <OneBlog onHere={false} classn="blog-2" name="Latest Updates & Insights" settings={settings}  blogs={blogs} />

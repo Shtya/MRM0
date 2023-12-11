@@ -7,8 +7,8 @@ const ContactUs = () => {
   return (
     <div className='contact-us'>
       <div className="container"> <Navbar /> </div>
-      <Contact2 />
-      <Footer />
+      <Contact2  />
+      <Footer appear={false} />
     </div>
   )
 }

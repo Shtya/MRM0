@@ -20,8 +20,8 @@ const Contact = ({title , desc , onHere}) => {
         </div>
 
         <div   className="box" data-aos="fade-left" >
-          <h2 className='h1 clip hidden-text'>{title || "We're here to help you."}</h2> 
-          <p className='h2'>{desc ? "" : "Reach Out and Let's Talk."} </p>
+          <h2 className='h1 clip hidden-text'>{title || "We're here to help you"}</h2> 
+          <p className='h2'>{desc ? "" : "Reach Out and Let's Talk"} </p>
           <form action="">
             {/* <div className="group"> */}
               <input type="text" name="" placeholder='Your Name' id="" />

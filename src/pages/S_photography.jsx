@@ -31,11 +31,21 @@ import Videography9 from "../assets/gallery/videography/(9).jpg" ;
 
 import Animation from "../components/helpers/Animation";
 import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pattern1";
-
+const images = [
+{img : Videography1},
+{img : Videography2},
+{img : Videography3},
+{img : Videography4},
+{img : Videography5},
+{img : Videography6},
+{img : Videography7},
+{img : Videography8},
+{img : Videography9},
+]
 const SERVICES = [
   { animate:"fade-up", img:Photography_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
   { animate:"fade-up", img:Photography_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
-  { animate:"fade-up", img:Photography_3 , title:"Fashion Photography" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { animate:"fade-up", img:Photography_3 , title:"Fashion" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
   { animate:"fade-up", img:Photography_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
   { animate:"fade-up", img:Photography_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
   { animate:"fade-up", img:Photography_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
@@ -143,7 +153,7 @@ const S_photography = () => {
       </div>
 
 
-      {/* <Divider classn="divider-left" />
+      <Divider classn="divider-left" />
       <div className="exhibition-stands">
       <Pattern3 />
         <div className="header1">
@@ -158,14 +168,14 @@ const S_photography = () => {
           
         <div className="container">
           <div className="boxs">
-            {images.map((e,index)=> ( <div key={index} data-aos={e.animate}  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
+            {images.map((e,index)=> ( <div key={index} data-aos="fade-up"  className="coverImg"> <i onClick={_=> setImg(e.img)} className="fa-solid fa-compress"></i> <img src={e.img} /> </div> ))}
             {Img && <div className="show-img"> 
               <img src={Img} alt="" /> 
               <i onClick={_=>setImg("")} className="fa-regular fa-circle-xmark"></i>
             </div>}
           </div>
         </div>
-      </div> */}
+      </div>
 
 
 <Divider classn="divider-left" />

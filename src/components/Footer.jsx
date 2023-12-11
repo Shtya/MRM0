@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import { Divider, Pattern2, Pattern3, Pattern5, Pattern6, Pattern7, Pattern8 } from './patterns/Pattern1'
 import QuickContact from './QuickContact'
 
-const Footer = () => {
+const Footer = ({appear}) => {
   return (
     <>
     <Divider classn="divider-left" />
     {/* <Divider classn='divider-left' /> */}
     <footer>
     <Pattern8 />
-    <QuickContact />
+    {appear != false &&<QuickContact  />}
       <div className="container">
       <div className="top">
         <img src={Logo} alt="" />

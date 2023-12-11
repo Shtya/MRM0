@@ -136,7 +136,7 @@ const Snapchat = () => {
       <div className="box-style-1">
         <Pattern2 />
             <div className="container">
-                <div className="h2 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You</div>
+                <div className="h2 clip"> What MRM, a Premier Snapchat Marketing Agency, Can Do for You? </div>
                 <div className="boxs" >
                   {
                     SERVICES1.map((e,index)=> (

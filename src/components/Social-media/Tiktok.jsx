@@ -93,7 +93,7 @@ const Tiktok = () => {
       <div className="impact">
         <Pattern2 />
             <div className="container">
-                <div className="h2 clip"> What Types of TikTok Ads we offer? </div>
+                <div className="h2 clip"> Types of TikTok Ads we offer</div>
                 <div className="phead">TikTok's advertising landscape offers diverse options tailored to your unique marketing objectives. MRM agency specializes in executing these TikTok ad types to elevate your brand's visibility and engagement. </div>
                 <div className="boxs" >
                   {

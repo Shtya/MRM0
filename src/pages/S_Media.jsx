@@ -35,7 +35,7 @@ import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
 
 
-const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising",]
+const li = [ "Google Ads Campaigns","Facebook Advertising","Instagram Advertising","LinkedIn Advertising","Snapchat Advertising","Twitter Advertising", "Tiktok Advertising"]
 const Paid = [ 
   {classn: "hidden hidden-left"  ,img: X , path:"/x" ,title:"X (Twitter) Advertising" , desc:"Boost your brand on Twitter with our expert campaigns. Tailored to your needs, we'll help you engage, generate leads and drive sales."},
   {classn: "hidden hidden-left"  ,img: F , path:"/facebook" ,title:"Facebook Advertising" , desc:"Connect with your target audience on one of their most frequented platforms. Our in-depth expertise leverages Facebook's detailed targeting capabilities to engage the most receptive consumers."},
@@ -77,19 +77,20 @@ const S_Media = () => {
             <div className="boxs" >
                 <h2 className='h1 hidden-text' data-aos="fade-left"> Boost your brand's presence and supercharge your online growth with MRM's paid advertising expertise</h2>
                 <h2 className='h2 hidden-text' data-aos="fade-left">Transform your social platforms into full revenue drivers and maximize your return on investment </h2>
-                <div className="inner-boxs" data-aos="fade-left" >
-                  <div className="box">
-                      <li className='p hidden-text'> {li[0]} </li>
-                      <li className='p hidden-text'> {li[1]} </li>
-                      <li className='p hidden-text'> {li[2]} </li>
-                    </div>
-                  
-                  <div className="box box-2">
-                    <li className='p hidden-text'> {li[3]} </li>
-                    <li className='p hidden-text'> {li[4]} </li>
-                    <li className='p hidden-text'> {li[5]} </li>
-                  </div>
-          </div>
+                <div className="inner-boxs" >
+              <ul className="box">
+                <li className='li hidden-text' data-aos="fade-left"> {li[0]} </li>
+                <li className='li hidden-text' data-aos="fade-left"> {li[1]} </li>
+                <li className='li hidden-text' data-aos="fade-left"> {li[2]} </li>
+                <li className='li hidden-text' data-aos="fade-left"> {li[3]} </li>
+              </ul>
+
+              <ul className="box box-2">
+                <li className='li hidden-text' data-aos="fade-left"> {li[4]} </li>
+                <li className='li hidden-text' data-aos="fade-left"> {li[5]} </li>
+                <li className='li hidden-text' data-aos="fade-left"> {li[6]} </li>
+              </ul>
+            </div>
           </div>
       </div>
       </div>
@@ -107,7 +108,7 @@ const S_Media = () => {
         <div className="social-media">
         <Pattern3 />
         <div className="container">
-            <h3 className='h1'>We offer standout paid campaigns for your business.</h3>
+            <h3 className='h1'>We offer standout paid campaigns for your business</h3>
             <div className="boxs">
             {
                 Paid.map((e,index)=> ( <OneSocial key={index} Img={e.img} title={e.title} desc={e.desc} path={e.path} classn={e.classn} /> ))

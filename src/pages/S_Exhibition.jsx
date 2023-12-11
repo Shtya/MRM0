@@ -11,9 +11,11 @@ import ImgSection from "../assets/Exhibition/cover.jpg"
 
 
 import Icon_1 from "../assets/S_gifts/offer1.png" ;
-import Icon_2 from "../assets/S_gifts/offer2.png" ;
-import Icon_3 from "../assets/S_gifts/offer3.png" ;
-import Icon_4 from "../assets/S_gifts/offer4.png" ;
+import Icon_2 from "../assets/S_gifts/offer4.png" ;
+import Icon_3 from "../assets/S_gifts/  (4).png" ;
+import Icon_4 from "../assets/S_gifts/  (6).png" ;
+import Icon_5 from "../assets/S_gifts/  (7).png" ;
+import Icon_6 from "../assets/S_gifts/offer3.png" ;
 
 import Exhibition1 from "../assets/gallery/exhibition stand/(1).jpg" ;
 import Exhibition2 from "../assets/gallery/exhibition stand/(2).jpg" ;
@@ -41,11 +43,14 @@ import Pattern1, { Divider, Pattern2, Pattern3 } from "../components/patterns/Pa
 
 
 const BRANDING_SERVICES = [
-  { img:Icon_1 , title:"Full Customization",                     desc:"Unique, on-brand gifts that stand out. Our complimentary in-house design services will help bring your vision to life."},
-  { img:Icon_2 , title:"We consider every budget", desc:"We understand that every client has different needs. We offer multiple gifting options to fit any budget and deadline."},
-  { img:Icon_3 , title:"Satisfaction Guaranteed"               , desc:"You're our top priority! We guarantee a smooth and enjoyable experience, no matter the size of your order. If you're not happy, we'll make it right!"},
-  { img:Icon_4 , title:"Quality Craftsmanship"                , desc:"Our gifts and trophies are created with great care, using only top-quality materials and paying close attention to every detail. We take pride in meeting the highest standards to ensure that each piece is of the utmost quality."},
+  { img:Icon_1 , title:"Customized Designs" , desc:"We create unique stands that reflect your brand identity and marketing goals. Our stands can have a modern or traditional design to meet your preferences."},
+  { img:Icon_2 , title:"Quality Craftsmanship" , desc:"We take pride in delivering exhibition stands of the highest quality. Our stands are not just visually appealing but also durable and sturdy, ensuring they serve you for multiple exhibitions and events."},
+  { img:Icon_3 , title:"Innovative Concepts" , desc:"Our designers are known for their creativity. They will work closely with you to develop innovative concepts that make your stand a focal point of any exhibition. We integrate the latest trends and technologies to ensure your order is on the cutting edge."},
+  { img:Icon_4 , title:"Turnkey Solutions" , desc:"We provide end-to-end solutions, managing design, production, and installation so you can focus on your exhibition goals. Our expert team ensures a stress-free experience."},
+  { img:Icon_5 , title:"On-Time Delivery" , desc:"We understand the importance of deadlines. You can count on us to deliver your exhibition stand on time, allowing you to plan and prepare effectively for your upcoming event."},
+  { img:Icon_6 , title:"Cost-Effective Options" , desc:"We offer a range of options to suit your budget. We aim to provide cost-effective solutions without compromising on quality."},
   ]
+
 
 const S_Exhibition = () => {
   const DisplayStands = [

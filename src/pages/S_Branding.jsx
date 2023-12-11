@@ -88,7 +88,7 @@ const S_Branding = ({header =true}) => {
     ]
   };
 
-  const headers = [ "all" ,  "LED Signages ", "Building Wra ", "Lamp Post Signs", "Unipole Signs ", "Branded Signag " ]
+  const headers = [ "all" ,  "Logo Design","Web Design","Social Media Design","Packaging","Graphic Design","Vehicle Branding","Staff Uniform","Stationery" ]
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)
@@ -146,7 +146,7 @@ const S_Branding = ({header =true}) => {
       <div className="signages">
         <Pattern2 />
           <div className="container">
-            <div className="h1 clip">Signages We Offer </div>
+            <div className="h1 hidden-text">OUR WORKS</div>
           </div>
 
           <div className="outdoor">
@@ -167,6 +167,7 @@ const S_Branding = ({header =true}) => {
               <div className="coverImg "> <img src={Grid1} alt="" /> </div>
 
               <div className="boxs">
+                <h1 className='h1 hidden-text'>Why Choose Us</h1>
               {Approach.map((e,index)=>(
                 <div key={index}>
                   <h3 className='h2 hidden-text'>{e.title}</h3>

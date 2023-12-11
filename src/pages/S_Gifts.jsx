@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import ImgIntro from "../assets/S_gifts/intro.jpg"
@@ -15,6 +15,9 @@ import gifts_2 from "../assets/S_gifts/gifts2.png" ;
 import gifts_3 from "../assets/S_gifts/gifts3.png" ;
 import Animation from '../components/helpers/Animation'
 import Pattern1, { Divider, Pattern2, Pattern3 } from '../components/patterns/Pattern1'
+import Portfolio from '../components/Portfolio'
+import { ImgsPortfolio } from '../components/Images'
+import Slider_2_Imgs from '../components/Slide/Slider_2_Imgs'
 
 
 const Approach = [
@@ -31,6 +34,56 @@ const BRANDING_SERVICES = [
   ]
 
 const S_Gifts = () => {
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1 , 
+    autoplay:true ,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 1 ,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1 ,
+          dots: false,
+        }
+      }
+    ]
+  };
+
+  const headers = [ "all" ,  "ONE" , "TWO" , "THREE" ]
+
+  const Imgs = ImgsPortfolio(headers)
+  const [data , setdata ] = useState(Imgs)
+  const [type , settype ] =useState( "all") ;
+
+  const handleHeaders = (ele)=>{
+    setdata( Imgs.filter(e =>{
+      settype(ele)
+      return e.type.includes(ele)
+    }) ) 
+  }
 
   return (
     <div className="S_Gifts landing">
@@ -50,7 +103,7 @@ const S_Gifts = () => {
         </div>
       </div>
 
-      <Divider classn="divider" />
+      <Divider classn="divider-left" />
       <div className="quotation">
         <Pattern1 />
             <div className="container" >
@@ -76,8 +129,22 @@ const S_Gifts = () => {
       </div>
 
       <Divider classn="divider" />
-      <div className="impact">
+      <div className="signages">
         <Pattern2 />
+          <div className="outdoor">
+            <div className="header1 header2">{
+          headers.map((e,index)=> (
+          <li className={type == e ? "active p" : "p"} key={index} onClick={_=> handleHeaders(e)} > {e} </li>
+        ))}</div>
+              <Slider_2_Imgs data={data} settings={settings} />
+          </div>
+
+
+      </div>
+
+      <Divider classn="divider-left" />
+      <div className="impact">
+        <Pattern3 />
             <div className="container">
                 <div className="h1 clip hidden-text" data-aos="fade-up">Why Choose Us for Your Corporate Gifting Needs?</div>
                 <div className="boxs">
