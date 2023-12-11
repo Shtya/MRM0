@@ -561,7 +561,6 @@ header section .video video {
 .Navbar1 nav .navbar .links li:hover .htmlCss-sub-menu,
 .Navbar1 nav .navbar .links li:hover .js-sub-menu {
   display: block;
-  top: 70px;
 }
 .Navbar1 .navbar .links li .sub-menu li {
   padding: 0 22px;
