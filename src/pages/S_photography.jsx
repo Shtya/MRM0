@@ -43,26 +43,26 @@ const images = [
 {img : Videography9},
 ]
 const SERVICES = [
-  { animate:"fade-up", img:Photography_1 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
-  { animate:"fade-up", img:Photography_2 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
-  { animate:"fade-up", img:Photography_3 , title:"Fashion" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
-  { animate:"fade-up", img:Photography_4 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
-  { animate:"fade-up", img:Photography_5 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
-  { animate:"fade-up", img:Photography_6 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
-  { animate:"fade-up", img:Photography_7 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
-  { animate:"fade-up", img:Photography_8 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
-  { animate:"fade-up", img:Photography_9 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
+  { animate:"fade-up", img:Photography_2 , title:"Events" , desc:"From corporate gatherings to unique celebrations, we capture the essence of your events, ensuring that every moment is preserved."},
+  { animate:"fade-up", img:Photography_4 , title:"Exhibitions and Trade Shows" , desc:"Our photography services are tailored to showcase your presence at exhibitions, conferences, and trade shows, highlighting your brand's participation."},
+  { animate:"fade-up", img:Photography_5 , title:"Fashion" , desc:"Our fashion photography services offer high-quality images that showcase your products or the latest trends. We use advanced techniques to emphasize the style and elegance of your clothing, accessories, or lifestyle shots."},
+  { animate:"fade-up", img:Photography_6 , title:"Business Portraits & Headshots" , desc:"Make a lasting impression with professional headshots and portraits that reflect the essence of your business."},
+  { animate:"fade-up", img:Photography_7 , title:"Food" , desc:"Showcase your culinary creations with mouthwatering food photography that entices your audience."},
+  { animate:"fade-up", img:Photography_8 , title:"Product" , desc:"Highlight the details and features of your products with our product photography services."},
+  { animate:"fade-up", img:Photography_9 , title:"Automotive" , desc:"From sleek cars to rugged vehicles, our automotive photography captures the beauty and power of automobiles."},
+  { animate:"fade-up", img:Photography_1 , title:"Hospitality" , desc:"Create an inviting atmosphere with hospitality photography that showcases your venue's charm."},
+  { animate:"fade-up", img:Photography_3 , title:"Real Estate" , desc:"Document the progress of construction projects, showcase real estate listings, and capture the essence of the lifestyle your brand represents."},
 ]
 const SERVICES2 = [
-  { animate:"fade-up", img:Videography1 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
-  { animate:"fade-up", img:Videography2 , title:"Corporate Films" , desc:"Tell your brand's story with compelling corporate videos that resonate with your audience."},
-  { animate:"fade-up", img:Videography3 , title:"Event Filming" , desc:"Preserve the memories of your events with event filming that captures every significant moment."},
-  { animate:"fade-up", img:Videography4 , title:"Behind-the-Scene Videos" , desc:"Offer your audience an exclusive look at your brand's inner workings with behind-the-scenes videos."},
-  { animate:"fade-up", img:Videography5 , title:"Fashion Videography" , desc:" Our high-quality videos capture the essence of your clothing, accessories, or lifestyle shots with advanced cinematic techniques. Let us create a visual story that sets your brand apart."},
-  { animate:"fade-up", img:Videography6 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
+  { animate:"fade-up", img:Videography5 , title:"Exhibitions, Conference & Trade Show Filming" , desc:"Showcase your participation in industry events with professionally filmed videos."},
+  { animate:"fade-up", img:Videography3 , title:"Corporate Films" , desc:"Tell your brand's story with compelling corporate videos that resonate with your audience."},
+  { animate:"fade-up", img:Videography6 , title:"Event Filming" , desc:"Preserve the memories of your events with event filming that captures every significant moment."},
+  { animate:"fade-up", img:Videography2 , title:"Behind-the-Scene Videos" , desc:"Offer your audience an exclusive look at your brand's inner workings with behind-the-scenes videos."},
+  { animate:"fade-up", img:Videography9 , title:"Fashion Videography" , desc:" Our high-quality videos capture the essence of your clothing, accessories, or lifestyle shots with advanced cinematic techniques. Let us create a visual story that sets your brand apart."},
+  { animate:"fade-up", img:Videography8 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
   { animate:"fade-up", img:Videography7 , title:"YouTube/Facebook/Instagram Short Ads" , desc:"Create short, impactful social media ads that engage your audience."},
-  { animate:"fade-up", img:Videography8 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."} ,
-  { animate:"fade-up", img:Videography9 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
+  { animate:"fade-up", img:Videography4 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."} ,
+  { animate:"fade-up", img:Videography1 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
 ]
 
 const WHY = [

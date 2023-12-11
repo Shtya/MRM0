@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import { ImgsClients } from '../components/Images';
 import IntroImg from "../assets/blog/intro.jpg"
 import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
@@ -10,14 +9,20 @@ import BlogImg1 from "../assets/blog/blog1.jpg"
 import BlogImg2 from "../assets/blog/blog2.jpg"
 import BlogImg3 from "../assets/blog/blog3.jpg"
 import BlogImg4 from "../assets/blog/blog4.jpg"
+import BlogImg5 from "../assets/blog/blog5.jpg"
 import Animation from '../components/helpers/Animation';
 
 let blogs = [
-  {img:BlogImg1 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:BlogImg2 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:BlogImg3 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
-  {img:BlogImg4 , title:"Emoji" , date : "April 2,2000" , desc:"SketChing a love letter to nature Lorem, ipsum dolor. "},
+  {img:BlogImg1 , type:"1" , title:"10 Proven Strategies to Boost Your Online Business Growth" , date : " November 9, 2023" },
+  {img:BlogImg2 , type:"2" , title:"15 Key Local SEO Statistics to Boost Your Local Business" , date : " November 9, 2023" },
+  {img:BlogImg3 , type:"3" , title:"Guide to Branding: Crafting Your Business Identity" , date : " November 9, 2023" },
+  {img:BlogImg4 , type:"4" , title:"Emoji Title For test" , date : " November 9, 2023" },
+  {img:BlogImg5 , type:"5" , title:"How to Use SEO in E-commerce to Drive Traffic and Boost Sales" , date : " November 9, 2023" },
 ]
+
+
+
+
 
 
 const Blogs = () => {
@@ -28,7 +33,7 @@ const Blogs = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1 , 
-    autoplay:true ,
+    // autoplay:true ,
     responsive: [
       {
         breakpoint: 1000,
@@ -53,16 +58,14 @@ const Blogs = () => {
     <div className='blog-page'>
       <Animation />
       <div className="container"> <Navbar /></div>
-
         <div className="coverImg"> <img src={IntroImg} alt="" /></div>
-
         <Divider classn="divider divider-top" />
-      <div className="quotation">
-        <Pattern1 />
-        <div className="container">
-              <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
-        </div>
-        </div>
+        <div className="quotation">
+          <Pattern1 />
+          <div className="container">
+                <p className="h3 " data-aos="fade-up">Stay updated with our latest news, strategies, and tactics to succeed in your business.</p>
+          </div>
+          </div>
 
         <Divider classn="divider " />
         <OneBlog onHere={true} classn="blog-1" name="Digital Marketing News" settings={settings}  blogs={blogs} />

@@ -28,6 +28,7 @@ import Tiktok from './components/Social-media/Tiktok'
 import X from './components/Social-media/X'
 import S_SocialMediaMarketing from './pages/S_SocialMediaMarketing'
 import SlideNav from './components/SlideNav'
+import BlogDetails from './components/BlogDetails'
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -68,6 +69,7 @@ const App = () => {
         <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/blog' element={<Blogs />} /> 
+        <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/terms' element={<Terms />} />
@@ -91,6 +93,7 @@ const App = () => {
         <Route path='/x' element={<X />} />
         <Route path='/linkedin' element={<Linkedin />} />
         <Route path='/tiktok' element={<Tiktok />} />
+
 
       </Routes>
       {/* </AnimatePresence> */}

@@ -72,7 +72,7 @@ const S_Gifts = () => {
     ]
   };
 
-  const headers = [ "all" ,  "ONE" , "TWO" , "THREE" ]
+  const headers = [ "all" , "Corporate Gifts", "Customized Gift Items", "Trophies"]
 
   const Imgs = ImgsPortfolio(headers)
   const [data , setdata ] = useState(Imgs)

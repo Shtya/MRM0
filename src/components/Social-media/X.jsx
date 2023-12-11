@@ -141,7 +141,7 @@ const X = () => {
       <div className="box-style-1">
         <Pattern2 />
             <div className="container">
-                <div className="h2 clip">How Twitter Marketing Helps Bossines</div>
+                <div className="h2 clip">How Twitter Marketing Helps Businesses</div>
                 <div className="phead">Twitter marketing plays a pivotal role in driving business success. Here's how it can benefit your brand</div>
                 <div className="boxs" >
                   {
