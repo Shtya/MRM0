@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const SlideNav = () => {
+const SlideNav = ({share , whats}) => {
 
   // UP
   const [top , settop] = useState(false)
@@ -12,7 +12,8 @@ const SlideNav = () => {
 
   return (
     <div className='slidenav' style={{display : `${top ? "flex" : "none"}`}}>
-      <a target='_black' href="https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!" className='active'> <i  className={`fa-brands fa-whatsapp whatsapp ${top ? "show-btn":""}`}></i></a>
+      <a style={{display:whats ? "none" : "flex" }} target='_black' href="https://api.whatsapp.com/send?phone=+971561384496&text=Hello%2C%20world!" className='active'> <i  className={`fa-brands fa-whatsapp whatsapp ${top ? "show-btn":""}`}></i></a>
+      {share && <a   > <i  className={`fa-solid fa-share-nodes floatIcon `}></i> </a> }
       <a   > <i onClick={handleScroll} className={`fa-solid fa-chevron-up floatIcon ${top ? "show-btn":""}`}></i> </a>
     </div>
   )

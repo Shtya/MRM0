@@ -5,6 +5,7 @@ import Navbar from './Navbar1';
 import Animation from './helpers/Animation';
 import Footer from './Footer';
 import Navbar1 from './Navbar';
+import SlideNav from './SlideNav';
 
 
 const BlogDetails = () => {
@@ -17,6 +18,7 @@ const BlogDetails = () => {
     <div className='blog-details'>
       <div className="container"> <Navbar1 /> </div>
       <Animation />
+      <SlideNav share={true} whats={true} />
       <div className="coverIntro "> </div>
 
       <div className="home">
@@ -36,11 +38,12 @@ const BlogDetails = () => {
       </div>
       
       <div className="interactive">
-        <div className="coverImg"><img src={data?.ImgCover} alt="" /></div>
         <div className="reacted">
           <span> <i class="fa-solid fa-share-nodes"></i>  Like  </span>
-          <span> <i class="fa-solid fa-comment"></i>  Comment  </span>
-          <span> <i class="fa-solid fa-share-nodes"></i> Share  </span>
+          <span> 
+            <input type="text" placeholder='Leave a reply' />  
+            <i class="bt2 fa-solid fa-paper-plane"></i>
+          </span>
         </div>
       </div>
       <Footer />

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar1 = () => {
-
+  const Navigate = useNavigate()
   const [top , settop] = useState(false)
   useEffect(_=>{
     const handelScroll =  _=> window.scrollY > 50 ? settop("black") : settop("")
@@ -33,12 +33,13 @@ navLinks.style.left = "-100%";
 }
 
 
-// sidebar submenu open close js code
 let htmlcssArrow = document.querySelector(".Navbar1 .htmlcss-arrow");
 htmlcssArrow.onclick = function() {
  navLinks.classList.toggle("show1");
 }
   } ,[])
+
+
   return (
   <div className="Navbar1" >
     <nav>
@@ -53,15 +54,15 @@ htmlcssArrow.onclick = function() {
             <li><Link >Services</Link>
               <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul class="htmlCss-sub-menu sub-menu">
-                <li><Link to="/web-design"> web design & Development </Link></li>
-                <li><Link to="/photography"> photography & videography </Link></li>
-                <li><Link to="/exhibition"> exhibition & display stands</Link></li>
-                <li><Link to="/signages"> indoor & outdoor signages </Link></li>
-                <li><Link to="/portfolio"> social media marketing</Link></li>
-                <li><Link to="/gifts">cooperated gifts </Link></li>
-                <li><Link to="/media">media buying </Link></li>
-                <li><Link to="/branding">Branding </Link></li>
-                <li><Link to="/seo">SEO </Link></li>
+                <li onclick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
+                <li onclick={_=> Navigate("/photography")}><Link to="/photography"> photography & videography </Link></li>
+                <li onclick={_=> Navigate("/exhibition")}><Link to="/exhibition"> exhibition & display stands</Link></li>
+                <li onclick={_=> Navigate("/signages")}><Link to="/signages"> indoor & outdoor signages </Link></li>
+                <li onclick={_=> Navigate("/portfolio")}><Link to="/portfolio"> social media marketing</Link></li>
+                <li onclick={_=> Navigate("/gifts")}><Link to="/gifts">cooperated gifts </Link></li>
+                <li onclick={_=> Navigate("/media")}><Link to="/media">media buying </Link></li>
+                <li onclick={_=> Navigate("/branding")}><Link to="/branding">Branding </Link></li>
+                <li onclick={_=> Navigate("/seo")}><Link to="/seo">SEO </Link></li>
               </ul>
             </li>
 

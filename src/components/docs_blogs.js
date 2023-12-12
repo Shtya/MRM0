@@ -1,9 +1,9 @@
-import Img1 from "../assets/blog/blog-details/  (3).jpg"
+import Img1 from "../assets/blog/blog-details/  (1).jpg"
 import Img2 from "../assets/blog/blog-details/  (2).jpg"
-import Img3 from "../assets/blog/blog-details/  (4).jpg"
-import Img4 from "../assets/blog/blog-details/  (5).jpg"
-import Img5 from "../assets/blog/blog-details/  (6).jpg"
-import Img6 from "../assets/blog/blog-details/  (1).jpg"
+import Img3 from "../assets/blog/blog-details/  (3).jpg"
+import Img4 from "../assets/blog/blog-details/  (4).jpg"
+import Img5 from "../assets/blog/blog-details/  (5).jpg"
+import Img6 from "../assets/blog/blog-details/  (6).jpg"
 
 import ImgCover1 from "../assets/blog/blog1.jpg"
 import ImgCover2 from "../assets/blog/blog2.jpg"
@@ -17,7 +17,7 @@ export let blogs = [
   {img:ImgCover1, type:1 , title:"10 Proven Strategies to Boost Your Online Business Growth" , date : " November 9, 2023" },
   {img:ImgCover2, type:2 , title:"15 Key Local SEO Statistics to Boost Your Local Business" , date : " November 9, 2023" },
   {img:ImgCover3, type:3 , title:"Guide to Branding: Crafting Your Business Identity" , date : " November 9, 2023" },
-  {img:ImgCover4, type:4 , title:"Meta Launches Roll-Out of End-To-End Encryption by Default on Messenger" , date : " November 9, 2023" },
+  {img:ImgCover4, type:4 , title:"Stay up-to-date on the latest digital marketing news and trends worldwide with our weekly roundup " , date : " November 9, 2023" },
   {img:ImgCover5, type:5 , title:"How to Use SEO in E-commerce to Drive Traffic and Boost Sales" , date : " November 9, 2023" },
 ]
 
@@ -177,19 +177,39 @@ export let DocsBlogs = [
 
   `} ,
 
-  {num:4 , date:"November 9, 2023" , ImgCover:ImgCover4 , title:"Meta Launches Roll-Out of End-To-End Encryption by Default on Messenger" , data:` 
-  <h2>   Meta Launches Roll-Out of End-To-End Encryption by Default on Messenger </h2>
-  <img src="${Img1}" />
-  <h2> Meta Adds More Generative AI Elements, Including Post Prompts and Image Creation In-Stream </h2>
-  <img src="${Img2}" />
-  <h2> Instagram Launches New ‘Close Friends Only’ Podcast to Showcase Celebrity Users Instagram Tests New ‘Hype’ Option To Encourage Engagement With Stories </h2>
-  <img src="${Img3}" />
-  <h2> Snapchat Launches Snapchat+ Gift Memberships for Christmas </h2>
-  <img src="${Img4}" />
-  <h2> LinkedIn Rolls Out New Updates for Newsletters, Including Improved Creation and Customization Tools </h2>
-  <img src="${Img5}" />
-  <h2> Google introduces Gemini, their largest and most capable AI model, marking a significant advance in AI technology. </h2>
-  <img src="${Img6}" />`} ,
+  {num:4 , date:"November 9, 2023" , ImgCover:ImgCover4 , title:"Stay up-to-date on the latest digital marketing news and trends worldwide with our weekly roundup" ,
+  data:` 
+  
+<h2>Stay up-to-date on the latest digital marketing news and trends worldwide with our weekly roundup covering the hottest AI progress and platform updates of the week</h2>
+
+<h4>Google introduced Gemini, their most prominent and capable AI model, marking a significant advancement in AI technology.</h4>
+<p>Google has recently developed Gemini, its latest AI model with advanced multimodal capabilities. Gemini excels in efficiently processing text, code, audio, image, and video. It has native multimodality, personalized user experience understanding, and supports multimodal prompting, which enhances pattern recognition and reasoning skills. Gemini has gradually integrated into Google products and platforms and is accessible to developers and enterprise customers through Google AI Studio and Google Cloud Vertex AI.</p>
+<img src='${Img1}' />
+
+<h4>Meta Launches Roll out of End-To-End Encryption by Default on Messenger</h4>
+<p>Meta has finally completed a nearly five-year-long project to roll out end-to-end encryption (E2E) as the default in Messenger.This update addresses privacy concerns and ensures that messages and calls are protected from the sender's device to the recipient's device. As a result, no one, not even Meta, can access the content. This move aligns Messenger more closely with WhatsApp and is part of Meta's plan to integrate messaging tools for cross-app communication. The update also brings new features like message editing, disappearing messages that last for 24 hours, improved read receipt controls, and enhanced visual display options. However, the shift towards encryption has faced scrutiny due to concerns about potential misuse and hindrance to law enforcement efforts.</p>
+<img src='${Img2}' />
+
+<h4>Meta Adds More Generative AI Elements, Including Post Prompts and Image Creation In-Stream </h4>
+<p> Meta has recently announced new generative AI features for the holidays. These features include visual creation options, AI post prompts, and virtual characters which are now more widely available. Hobbyists can now use the "Imagine" text-to-image tool on imagine.meta.com, which enables them to generate images using Meta's evolving systems. Users can refine custom visuals in-stream and use the "Reimagine" functionality to create new variations of AI images in chats.Furthermore, Meta is now offering chat personas of celebrities like Kendall Jenner and Tom Brady to more users. AI systems can now highlight Reels in a chat and provide contextual options for conversations. Additionally, Meta is testing AI tools for creative composition, such as converting images from landscape to portrait orientation. To ensure greater transparency, the company is adding safeguard elements like invisible watermarking and continuously testing AI systems to mitigate "risky outputs." Despite concerns about reducing human input, Meta aims to incorporate more generative AI across Facebook and Instagram. Users can interact with these tools in Messenger, WhatsApp, or IG Direct by selecting "Create an AI chat" in chat options or typing "@MetaAI" in a group chat followed by the assistant's assistance request.Instagram Launches new 'Close Friends Only' Podcast to Showcase Celebrity Users Instagram has recently launched a podcast called "Close Friends Only," featuring celebrities like Ice Spice and Doja Cat discussing culture, memes, fashion, and more. While it may not offer practical advice, it could be a valuable source for staying updated on the latest trends and cultural shifts. The move seems strategic, possibly aimed at competing with TikTok's influence on music promotion. The success of future episodes will determine its effectiveness as a promotional vehicle for Instagram. </p>
+<img src='${Img3}' />
+
+
+
+<h4> Instagram Tests New 'Hype' Option To Encourage Engagement With Stories</h4>
+<p>  Instagram is testing a new " Hype " feature in Stories to boost interaction.Users can post comments visible to others on the Story. This move aligns with Instagram's focus on increasing direct engagement tools, recognizing the shift toward more Stories and DM usage over the main feed. The platform has introduced various features, including Collaborative Posts and Close Friends sharing, to encourage original content sharing and maintain user engagement. Expect Instagram to continue testing additional engagement options to enhance user interaction.</p>
+<img src='${Img4}' />
+
+
+
+<h4>Snapchat Launches Snapchat+ Gift Memberships for Christmas </h4>
+<p> Snapchat has introduced the option to gift Snapchat+ subscriptions, making it an ideal Christmas present for Snapchat enthusiasts.This subscription tier offers exclusive features like custom icons, in-app badges, and unique chat wallpapers. The gift cards are available for purchase on Amazon, allowing users to easily sign up for Snapchat's premium features. With over five million monthly subscribers, Snapchat+ has proven popular, offering a more intimate and customizable experience for users. This gifting option could lead to a significant increase in Snapchat+ memberships, providing a unique and trendy gift for the holiday season. </p>
+<img src='${Img5}' />
+
+<h4> LinkedIn Rolls Out New Updates for Newsletters, Including Improved Creation and Customization Tools </h4>
+<p>  LinkedIn newsletters have experienced significant growth this year, with readership increasing threefold, surpassing 500 million total subscriptions. LinkedIn has introduced new features to enhance the newsletter creation, including duplicate draft templates for easier formatting consistency. Moreover, improved analytics provide insights into content consumption trends and subscriber demographics. These updates, enhanced article preview and author-switching functions, make LinkedIn newsletters a valuable consideration for your 2024 content strategy. </p>
+<img src='${Img6}' />
+  `} ,
 
 
   {num:5 , date:"November 9, 2023" , ImgCover:ImgCover5 , title:"How to Use SEO in E-commerce to Drive Traffic and Boost Sales" , 
@@ -289,3 +309,6 @@ export let DocsBlogs = [
   `} ,
 
 ]
+
+
+

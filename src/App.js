@@ -59,9 +59,7 @@ const App = () => {
 
         </div>
       </div>
-      <SlideNav />
-      
-
+      <SlideNav whats={false} />
       
       <Routes>
         <Route index element={<Home />} />

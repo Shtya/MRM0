@@ -18,8 +18,8 @@ const OneBlog = ({classn ,blogs , settings , name , onHere}) => {
             {blogs.map((e,index)=>(
                   <div  key={index} className="coverImg">
                       <img src={e.img} alt=""  />
-                      <div className="date">{e.date} </div>
-                      <p className='h2'>{e.title}</p>
+                      <div className="date" onClick={_=> navigate(`/blog/${e.type}`)} >{e.date} </div>
+                      <p className='h2' onClick={_=> navigate(`/blog/${e.type}`)} >{e.title}</p>
                       <button className='bt' onClick={_=> navigate(`/blog/${e.type}`)}> <i className="fa-solid fa-angle-right"></i> </button>
                   </div>
               ))}
