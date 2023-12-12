@@ -16,7 +16,7 @@ const BlogDetails = () => {
 
   return (
     <div className='blog-details'>
-      <div className="container"> <Navbar1 /> </div>
+      <div className="container container3"> <Navbar1 /> </div>
       <Animation />
       <SlideNav share={true} whats={true} />
       <div className="coverIntro "> </div>
@@ -38,12 +38,18 @@ const BlogDetails = () => {
       </div>
       
       <div className="interactive">
+        <div className="container">
         <div className="reacted">
-          <span> <i class="fa-solid fa-share-nodes"></i>  Like  </span>
-          <span> 
-            <input type="text" placeholder='Leave a reply' />  
-            <i class="bt2 fa-solid fa-paper-plane"></i>
-          </span>
+            <span className='icons'><i class="fa-solid fa-thumbs-up"></i></span>
+            <span> 
+              <input type="text" placeholder='Leave a reply' />  
+              <i class="bt2 fa-solid fa-paper-plane"></i>
+            </span>
+            <span className='icons'><i class="fa-brands fa-linkedin"></i> </span>
+            <span className='icons'><i class="fa-brands fa-x-twitter"></i> </span>
+            <span className='icons'><i class="fa-brands fa-facebook-f"></i> </span>
+
+          </div>
         </div>
       </div>
       <Footer />

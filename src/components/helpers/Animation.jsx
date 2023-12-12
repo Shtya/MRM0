@@ -8,7 +8,7 @@ const Animation = () => {
   const {pathname} = useLocation() ;
   useEffect(() => {
     AOS.init({
-      offset: 0,
+      offset: -100,
       duration: 100,
       easing: 'ease-in-out',
       delay: 100,

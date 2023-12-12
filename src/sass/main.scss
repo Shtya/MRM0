@@ -3033,10 +3033,26 @@ footer{
 }
 
 
+.container3{position: relative; z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;}
 .blog-details{
   color: white;
   background-color: var(--third-bg);
   width: 100%;
+  background-image: url("../assets/Socialmedia/bg-1.webp");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000072;
+    z-index: 0;
+    backdrop-filter: blur(10px);
+}
   .h2.clip{text-align: center;}
   .coverIntro{
     position: absolute;
@@ -3118,7 +3134,10 @@ footer{
             padding: 5px 0;
             backdrop-filter: blur(10px);
             text-transform: uppercase;
-            font-size: 45px;
+            font-size: 55px;
+            @media (max-width:800px) {
+              font-size: 40px;
+            }
           }
         }
         .phead{
@@ -3185,13 +3204,16 @@ footer{
     }
 
   }
+  .container{position: relative; z-index: 1;}
   .blog-detail{
     width:90%;
+    position: relative;
+    padding: 20px 10px ;
+
     @media (max-width:900px) {
       width:100% ;
     }
     margin: auto;
-    padding: 0 0  50px 0;
     h2{
       text-align: left;
       line-height: 1.2;
@@ -3199,21 +3221,21 @@ footer{
       color: var(--text-color);
       text-transform: none!important;
       font-weight: 600;
-      font-size: 38px;
+      font-size: 35px;
       margin: 50px 0;
       padding: 0;
       box-sizing: border-box;
     }
     img{
       width: 80%;
-      @media (max-width:1200px){width:100% ; margin: 0 0 40px 0;}
-      object-fit: fill;
-      height: 500px;
-      margin: auto;
-      border: 2px solid #aaa;
-      outline: 2px solid #eee;
-      margin-bottom: 40px;
-      margin: 0 10% 40px 10%;
+    object-fit: contain;
+    height: 100vh;
+    margin: auto;
+    border: 2px solid #aaaaaa30;
+    margin-bottom: 40px;
+    margin: 0 10% 40px 10%;
+    background: black;
+    box-shadow: 0 0 1000px #181818 inset;
     }
 
     h4 {
@@ -3223,13 +3245,13 @@ footer{
       color: white;
       text-transform: none!important;
       font-weight: 600;
-      font-size: 30px;
-      margin: 0;
+      font-size: 28px;
+      margin: 0 0 10px;
       padding: 0;
       box-sizing: border-box;
     }
     p , h5{
-      color: white;
+      color: #d8d8d8;
       font-family: Roboto,sans-serif;
       font-weight: 400;
       font-size: 20px;
@@ -3239,12 +3261,13 @@ footer{
       margin-top: 0;
       line-height: 1.5;
       margin-bottom: 48px;
-      text-wrap:pretty ;
+      letter-spacing: 1px;
     }
 
     h5{
-      font-size: 20px;
+      font-size: 22px;
       line-height: 1.5;
+      font-weight: normal ;
     }
   }
 
@@ -3265,7 +3288,9 @@ footer{
       display: flex;
       align-items: center;
       justify-content: space-around;
-
+      width: 80%;
+      @media(max-width: 700px){width:100%}
+      margin: auto;
       span{
         width: 100%;
         cursor: pointer;
@@ -3280,7 +3305,6 @@ footer{
         font-family: "Overlock", Arial;
         transition: 0.3s;
         color: white;
-        flex: 3 ;
         box-shadow: 0 0 10px #000 inset, 0 0 20px #2222 inset, 0 0 10px #333 inset;
         i{
           height: 100%;
@@ -3289,8 +3313,16 @@ footer{
         }
       }
 
-      span:nth-child(1){
-        flex: 1 !important ;
+      .icons{
+        height: 80%;
+        width: 45px;
+        background: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        box-shadow: none;
+        margin-left: 5px;
         &:hover{
           background: #181818;
         }
