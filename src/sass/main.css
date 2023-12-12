@@ -3335,7 +3335,7 @@ footer .container .bottom .last a {
 }
 .blog-details .container3 {
   position: fixed;
-  z-index: 1000000000000000000000 !important;
+  z-index: 10000000 !important;
 }
 .blog-details::after {
   content: "";
