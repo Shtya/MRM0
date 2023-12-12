@@ -3033,8 +3033,8 @@ footer{
 }
 
 
-.container3{position: relative; z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;}
 .blog-details{
+  .container3{position: fixed; z-index: 1000000000000000000000 !important;}
   color: white;
   background-color: var(--third-bg);
   width: 100%;

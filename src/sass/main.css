@@ -3324,11 +3324,6 @@ footer .container .bottom .last a {
   }
 }
 
-.container3 {
-  position: relative;
-  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
-}
-
 .blog-details {
   color: white;
   background-color: var(--third-bg);
@@ -3337,6 +3332,10 @@ footer .container .bottom .last a {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+.blog-details .container3 {
+  position: fixed;
+  z-index: 1000000000000000000000 !important;
 }
 .blog-details::after {
   content: "";
