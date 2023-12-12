@@ -5,25 +5,9 @@ import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
-import BlogImg1 from "../assets/blog/blog1.jpg"
-import BlogImg2 from "../assets/blog/blog2.jpg"
-import BlogImg3 from "../assets/blog/blog3.jpg"
-import BlogImg4 from "../assets/blog/blog4.jpg"
-import BlogImg5 from "../assets/blog/blog5.jpg"
+import { blogs } from '../components/docs_blogs';
+
 import Animation from '../components/helpers/Animation';
-
-let blogs = [
-  {img:BlogImg1 , type:"1" , title:"10 Proven Strategies to Boost Your Online Business Growth" , date : " November 9, 2023" },
-  {img:BlogImg2 , type:"2" , title:"15 Key Local SEO Statistics to Boost Your Local Business" , date : " November 9, 2023" },
-  {img:BlogImg3 , type:"3" , title:"Guide to Branding: Crafting Your Business Identity" , date : " November 9, 2023" },
-  {img:BlogImg4 , type:"4" , title:"Emoji Title For test" , date : " November 9, 2023" },
-  {img:BlogImg5 , type:"5" , title:"How to Use SEO in E-commerce to Drive Traffic and Boost Sales" , date : " November 9, 2023" },
-]
-
-
-
-
-
 
 const Blogs = () => {
 
@@ -33,10 +17,10 @@ const Blogs = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1 , 
-    // autoplay:true ,
+    autoplay:true ,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -45,7 +29,7 @@ const Blogs = () => {
         }
       },
       {
-        breakpoint: 580,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1 ,
@@ -74,17 +58,6 @@ const Blogs = () => {
         <Divider classn="divider" />
         <OneBlog onHere={true} classn="blog-3" name="Tips & Strategies" settings={settings}  blogs={blogs} />
         
-        {/* <div className="subscribe">
-        <div className="container">
-          <div className="h1">Subscribe to Our Newsletter</div>
-          <p> for Exclusive Updates, Insights, and Offers</p>
-          <div className="subscribe-box">
-            <input type="email" name="" placeholder='Type your email address' id="" />
-            <button className='bt'>Subscribe</button>
-          </div>
-        </div>
-        </div> */}
-
       <Footer />
     </div>
   )

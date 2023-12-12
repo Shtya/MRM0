@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Grid1 from "../assets/S_branding/why.jpg" ;
+import Grid1 from "../assets/S_photography/Why.jpg" ;
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -62,7 +62,7 @@ const SERVICES2 = [
   { animate:"fade-up", img:Videography8 , title:"Promotional Videos for Product & Brand" , desc:"Promote your products and brand with videos that leave a lasting impact."},
   { animate:"fade-up", img:Videography7 , title:"YouTube/Facebook/Instagram Short Ads" , desc:"Create short, impactful social media ads that engage your audience."},
   { animate:"fade-up", img:Videography4 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."} ,
-  { animate:"fade-up", img:Videography1 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
+  // { animate:"fade-up", img:Videography1 , title:"Real Estate Product Demo" , desc:"Showcase real estate properties with product demonstration videos that provide a virtual tour."}
 ]
 
 const WHY = [
@@ -74,19 +74,6 @@ const WHY = [
 ]
 
 const S_photography = () => {
-  // const images = [
-  //   {img:Outdoor_1, animate:"fade-up" } ,
-  //   {img:Outdoor_2, animate:"fade-up" } ,
-  //   {img:Outdoor_3, animate:"fade-up" } ,
-  //   {img:Outdoor_4, animate:"fade-up" } ,
-  //   {img:Outdoor_5, animate:"fade-up" } ,
-  //   {img:Outdoor_6, animate:"fade-up" } ,
-  //   {img:Outdoor_7, animate:"fade-up" } ,
-  //   {img:Outdoor_8, animate:"fade-up" } ,
-  //   {img:Outdoor_5 , animate:"fade-up" } ,
-  // ]
-  
-
   const [Img , setImg] = useState()
 
   return (

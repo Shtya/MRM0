@@ -9,11 +9,7 @@ const Navbar1 = () => {
     const handelScroll =  _=> window.scrollY > 50 ? settop("black") : settop("")
     window.addEventListener("scroll" , handelScroll)
     return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
-
-
-
   useEffect(_=>{
-// search-box open close js code
 let navbar = document.querySelector(".Navbar1 .navbar");
 let searchBox = document.querySelector(".Navbar1 .search-box .bx-search");
 
@@ -42,16 +38,6 @@ let htmlcssArrow = document.querySelector(".Navbar1 .htmlcss-arrow");
 htmlcssArrow.onclick = function() {
  navLinks.classList.toggle("show1");
 }
-// let moreArrow = document.querySelector(".Navbar1 .more-arrow");
-// moreArrow.onclick = function() {
-//  navLinks.classList.toggle("show2");
-// }
-// let jsArrow = document.querySelector(".Navbar1 .js-arrow");
-// jsArrow.onclick = function() {
-//  navLinks.classList.toggle("show3");
-// }
-
-
   } ,[])
   return (
   <div className="Navbar1" >
