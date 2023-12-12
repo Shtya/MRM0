@@ -4,6 +4,7 @@ import { useLocation, useParams } from 'react-router-dom'
 import Navbar from './Navbar1';
 import Animation from './helpers/Animation';
 import Footer from './Footer';
+import Navbar1 from './Navbar';
 
 
 const BlogDetails = () => {
@@ -14,7 +15,7 @@ const BlogDetails = () => {
 
   return (
     <div className='blog-details'>
-      <div className="container"> <Navbar /> </div>
+      <div className="container"> <Navbar1 /> </div>
       <Animation />
       <div className="coverIntro "> </div>
 
