@@ -2741,6 +2741,17 @@ footer .container .bottom .last a {
   width: calc(100% - 70px);
   margin: 0 35px;
   color: #eee;
+  font-size: 35px;
+}
+@media (max-width: 1000px) {
+  .blog-page .quotation .h3 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 700px) {
+  .blog-page .quotation .h3 {
+    font-size: 20px !important;
+  }
 }
 @media (max-width: 850px) {
   .blog-page .quotation .h3 {
@@ -4034,6 +4045,7 @@ footer .container .bottom .last a {
     transform: translateX(-50%);
     bottom: 30px;
     text-align: center;
+    background: transparent !important;
   }
   .landing .home .container .boxs .h1, .landing .home .container .boxs .h3, .landing .home .container .boxs .h2 {
     text-align: center !important;
@@ -4050,10 +4062,10 @@ footer .container .bottom .last a {
 }
 @media (max-width: 650px) {
   .landing .home .container .boxImg {
-    height: 300px !important;
+    height: 400px !important;
+    width: 400px !important;
     top: -10px;
     left: 50%;
-    width: 300px !important;
   }
   .landing .home .container .boxs {
     width: 400px;
@@ -4077,9 +4089,11 @@ footer .container .bottom .last a {
     width: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
     top: 50%;
     text-align: center;
+    padding: 20px 10px;
   }
   .landing .home .container .boxs .h2 {
     text-align: left !important;
@@ -4107,18 +4121,40 @@ footer .container .bottom .last a {
   text-align: left;
   margin-bottom: 0;
   text-wrap: balance;
+  font-size: 40px;
+}
+@media (max-width: 1000px) {
+  .landing .home .container .boxs .h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 700px) {
+  .landing .home .container .boxs .h1 {
+    font-size: 25px !important;
+  }
 }
 .landing .home .container .boxs .h2, .landing .home .container .boxs .h3 {
   text-align: left;
   margin-bottom: 0;
   color: var(--text-color) !important;
   text-wrap: pretty;
-  font-size: 1.4rem;
   text-wrap: balance;
   letter-spacing: 0.6px;
   font-family: "Montserrat", Arial;
   font-weight: 500;
   letter-spacing: 0;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px var(--text-color);
+}
+@media (max-width: 1000px) {
+  .landing .home .container .boxs .h2, .landing .home .container .boxs .h3 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 700px) {
+  .landing .home .container .boxs .h2, .landing .home .container .boxs .h3 {
+    font-size: 20px !important;
+  }
 }
 .landing .home .container .boxs .p {
   font-size: 1.3rem;

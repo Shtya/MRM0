@@ -64,7 +64,7 @@ const Landing = () => {
                 <li className='li hidden-text'>Social media strategy development</li>
                 <li className='li hidden-text'>Content creation</li>
                 <li className='li hidden-text'>Social media advertising</li>
-                <li className='li hidden-text'>Social media management</li>
+                <li className='li hidden-text'>Social media Marketing</li>
               </ul>
 
               <ul className="box box-2">
@@ -112,7 +112,7 @@ const Landing = () => {
       <div className="social-media  ">
         <Pattern3 />
         <div className="container">
-          <h3 className='h1 hidden-text clip'>Our Social Media Management Services</h3>
+          <h3 className='h1 hidden-text clip'>Our Social Media Marketing Services</h3>
           <div className="boxs">
             {
               SocialMedia.map((e,index)=> ( <OneSocial  key={index} Img={e.img} title={e.title} desc={e.desc} classn={e.classn} />))

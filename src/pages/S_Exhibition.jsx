@@ -144,7 +144,7 @@ const S_Exhibition = () => {
       <div className="impact">
         <Pattern3 />
             <div className="container">
-            <div className="container"><div className="h1 clip">Why Choose Us for Your Corporate Gifting Needs?</div></div>
+            <div className="container"><div className="h1 clip">Why Choose Us for Your Exhibition & Display Stands Needs?</div></div>
                 <div className="boxs">
                   {
                     BRANDING_SERVICES.map((e,index)=> (

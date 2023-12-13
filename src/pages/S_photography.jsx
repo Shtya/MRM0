@@ -88,7 +88,7 @@ const S_photography = () => {
               <div className="boxs" data-aos="fade-left" >
                   <h2 className='h1 hidden-text'>Capture your brand's story with our professional visual storytelling.</h2>
                   <h2 className='h2 hidden-text'>We turn moments into memories and transform your brand's essence into a compelling narrative. </h2>
-                  <p className='p hidden-text'> We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates.  </p>
+                  {/* <p className='p hidden-text'>   </p> */}
             </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ const S_photography = () => {
       <div className="quotation">
         <Pattern1 />
             <div className="container">
-            <p className='h3'> Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
+            <p className='h3'> We specialize in capturing moments that tell a compelling story and creating visually engaging content. At MRM, we offer a wide range of high-quality photography and videography services to enhance your brand and narrative. Whether you need product photography, event coverage, or promotional videos, we have the expertise to deliver content that captivates and communicates. Our core belief is that every brand, product, and event has a unique story that deserves to be told. We use a delicate balance of light and shadow, the subtleties of expression, and the seamless integration of creativity and technology to bring to life the enchanting essence of your narrative.  </p>
             </div>
         </div>
 

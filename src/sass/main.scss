@@ -2489,6 +2489,9 @@ footer{
       width: calc(100% - 70px);
       margin: 0 35px;
       color: #eee;
+      font-size: 35px;
+      @media (max-width:1000px) { font-size: 25px !important; }
+      @media (max-width:700px) { font-size: 20px !important; }
       @media (max-width:850px){
         width: calc(100% - 50px );
         margin: 0 auto !important;
@@ -3776,6 +3779,7 @@ footer{
             transform: translateX(-50%);
             bottom: 30px;
             text-align: center;
+            background:transparent !important ;
             .h1 , .h3 , .h2{text-align: center !important; font-size: 1.2rem !important;}
             .inner-boxs{
               width: 60%;
@@ -3789,10 +3793,10 @@ footer{
         }
         @media (max-width:650px) {
           .boxImg{
-            height: 300px !important;
+            height: 400px !important;
+            width: 400px !important;
             top: -10px;
             left: 50%;
-            width: 300px !important;
           }
           .boxs{
             width: 400px;
@@ -3812,10 +3816,11 @@ footer{
           .boxs{
             width: 300px;
             left: 50%;
-            transform: translate(-50% ,-50%);
-            height: 80%;
+            transform: translate(-50%, -50%);
+            height: fit-content;
             top: 50%;
             text-align: center;
+            padding: 20px 10px;
             .h2{text-align: left !important;}
           }
         }
@@ -3834,17 +3839,23 @@ footer{
         .h1{
           text-align: left; margin-bottom: 0;
           text-wrap: balance;
+          font-size: 40px;
+          @media (max-width:1000px) { font-size: 30px !important; }
+          @media (max-width:700px) { font-size: 25px !important; }
         }
         .h2 , .h3{
           text-align: left ; margin-bottom: 0;
           color: var(--text-color) !important;
           text-wrap: pretty;
-          font-size: 1.4rem;
           text-wrap: balance;
           letter-spacing: .6px;
           font-family: 'Montserrat' , Arial;
           font-weight: 500;
           letter-spacing: 0;
+          font-size: 30px;
+          -webkit-text-stroke: .5px var(--text-color);
+          @media (max-width:1000px) { font-size: 25px !important; }
+          @media (max-width:700px) { font-size: 20px !important; }
         }
         .p{
           font-size: 1.3rem;
