@@ -1,54 +1,65 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from "../assets/Logo1.png"
-import { Link , Location, useLocation } from 'react-router-dom'
-import {motion} from "framer-motion" ;
+import { Link, useNavigate } from 'react-router-dom';
+
+const Alt_Navbar = () => {
+  const Navigate = useNavigate()
+  const [top , settop] = useState(false)
+  useEffect(_=>{
+    const handelScroll =  _=> window.scrollY > 50 ? settop("black") : settop("")
+    window.addEventListener("scroll" , handelScroll)
+    return _=> window.removeEventListener("scroll" , handelScroll)} ,[ window])
+
+    
+  useEffect(_=>{
+    let navbar = document.querySelector(".Navbar1 .navbar");
+    let searchBox = document.querySelector(".Navbar1 .search-box .bx-search");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+let navLinks = document.querySelector(" .Navbar1 .nav-links");
+let menuOpenBtn = document.querySelector(" .Navbar1 .navbar .bx-menu");
+let menuCloseBtn = document.querySelector(" .Navbar1 .nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+  } ,[])
 
 
-
-const Navbar = ()=>{
-  // <i class="fa-solid fa-xmark"></i>
-  const [shownav , setshownav] = useState("")
-    const routes = [
-    {path:"/" , route:"Home"}, {path:"/about-us" , route:"About Us"},
-
-    {Icon:<i class={`fa-solid fa-angle-down`}></i> ,path1:"/landing" , route:"Services" , 
-      nestedRoute:[
-        {N_route:"web design & Development "    , N_path:"/web-design"},
-        {N_route:"photography & videography "   , N_path:"/photography"},
-        {N_route:"indoor & outdoor signages "  , N_path:"/signages"},
-        {N_route:"exhibition display stands"    , N_path:"/exhibition"},
-        {N_route:"social media marketing"       , N_path:"/social"},
-        {N_route:"cooperated gifts"            , N_path:"/gifts"},
-        {N_route:"media buying"                 , N_path:"/media"},
-        {N_route:"Branding "                    , N_path:"/branding"},
-        {N_route:"SEO "                         , N_path:"/seo"},
-      ]},
-        
-        {path:"/portfolio" , route:"Portfolio"},{path:"/blog" , route:"Blog"},{path:"/contact-us" , route:"Contact Us"},
-  ]
-
-  return(
-    <div className="navbar"> <Link to="/" className="logo"> <img src={Logo} alt="" /></Link> <nav> <ul className={`${shownav}`}> {routes.map((e,index) => ( 
-
-            <li key={index} className={e.path1 == "/landing" ? "service" : ""}> 
-              
-              <Link  to={e.path}> {e.route} {e.Icon}
-                
-                {e.path1 === "/landing" &&
-                  <ul className='ul-services'>
-                    {e.nestedRoute.map((ele , idx) => (
-                      <li> <Link to={ele.N_path}> {ele.N_route} </Link> </li>
-                    ))}
-                  </ul>
-                  }
-              </Link> 
-
-            </li> 
-          ))}
-        </ul>
-      </nav>
-      <i  className={`fa-solid ${shownav == "active_nav" ? "fa-xmark" :"fa-bars"} close`} onClick={_=> setshownav(pre=> pre == "active_nav" ?"" : "active_nav")}></i>
-    </div>
+  return (
+  <div className="Navbar1" >
+    <nav>
+      <div class="navbar" style={{background:top}}>
+        <i class='bx bx-menu'></i>
+        <div class="logo"><Link to="/"> <img src={Logo} alt="" /></Link></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">   <span class="logo-name"><img src={Logo} alt="" /></span>   <i class='bx bx-x' ></i> </div>
+          
+          <ul class="links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/all-blogs" > ALL Blogs</Link></li>
+            <li><Link to="/dashboard">Create blog</Link></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box"> <input type="text" placeholder="Search..."/>  </div>
+        </div>
+      </div>
+    </nav>
+  </div>
   )
 }
-export default Navbar
+
+export default Alt_Navbar

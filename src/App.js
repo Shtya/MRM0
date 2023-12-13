@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {Routes , Route, useLocation} from "react-router-dom"
 import "./sass/main.css"
 import "./sass/sass-main/second.css" 
+import "./blog/sass/blog.css"
+
 import Sitemap from "./Sitemap.xml"
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -26,9 +28,16 @@ import Snapchat from './components/Social-media/Snapchat'
 import Linkedin from './components/Social-media/Linkedin'
 import Tiktok from './components/Social-media/Tiktok'
 import X from './components/Social-media/X'
-import S_SocialMediaMarketing from './pages/S_SocialMediaMarketing'
 import SlideNav from './components/SlideNav'
+
+
 import BlogDetails from './components/BlogDetails'
+import Dashboard from './blog/Dashboard'
+import axios from 'axios'
+import BlogsAll from './blog/BlogsAll'
+import E_post from './blog/E_post'
+
+
 
 const App = () => {
   const [Done , setDone] = useState(true)
@@ -62,12 +71,16 @@ const App = () => {
       <SlideNav whats={false} />
       
       <Routes>
+        <Route path="/dashboard" element={<Dashboard />} /> 
+        <Route path="/all-blogs" element={<BlogsAll />} /> 
+        <Route path="/edite-blog/:id" element={<E_post />} /> 
+        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path='/blog' element={<Blogs />} /> 
+
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
         <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/blog' element={<Blogs />} /> 
-        <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/terms' element={<Terms />} />

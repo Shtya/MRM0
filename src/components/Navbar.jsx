@@ -51,7 +51,7 @@ htmlcssArrow.onclick = function() {
           
           <ul class="links">
             <li><Link to="/">Home</Link></li>
-            <li><Link >Services</Link>
+            <li><Link  >Services</Link>
               <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul class="htmlCss-sub-menu sub-menu">
                 <li onclick={_=> Navigate("/web-design")}><Link to="/web-design"> web design & Development </Link></li>
@@ -66,7 +66,7 @@ htmlcssArrow.onclick = function() {
               </ul>
             </li>
 
-            <li><Link > Portfolio</Link></li>
+            <li><Link to="/dashboard" > Portfolio</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/contact-us"> Contact Us</Link></li>

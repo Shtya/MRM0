@@ -5,12 +5,16 @@ import OneBlog from '../components/helpers/OneBlog';
 import Footer from '../components/Footer';
 import Pattern1, { Divider } from '../components/patterns/Pattern1';
 
-import { blogs } from '../components/docs_blogs';
+// import { blogs } from '../components/docs_blogs';
 
 import Animation from '../components/helpers/Animation';
+import baseURL from '../API/API';
 
 const Blogs = () => {
-
+  const [blogs , setblogs] = useState([])
+  const [customTitle , setcustomTitle] = useState([])
+  useEffect(_=>{ baseURL.get("").then(res => { setblogs(res.data.data) } )} ,[])
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -57,7 +61,7 @@ const Blogs = () => {
         <OneBlog onHere={false} classn="blog-2" name="Latest Updates & Insights" settings={settings}  blogs={blogs} />
         <Divider classn="divider" />
         <OneBlog onHere={true} classn="blog-3" name="Tips & Strategies" settings={settings}  blogs={blogs} />
-        
+
       <Footer />
     </div>
   )

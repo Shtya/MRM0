@@ -3541,16 +3541,22 @@ footer .container .bottom .last a {
   box-sizing: border-box;
 }
 .blog-details .blog-detail img {
-  width: 80%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 100vh;
+  height: 60vh;
   margin: auto;
   border: 2px solid rgba(170, 170, 170, 0.1882352941);
   margin-bottom: 40px;
-  margin: 0 10% 40px 10%;
-  background: black;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0.7019607843);
   box-shadow: 0 0 1000px #181818 inset;
+}
+@media (max-width: 600px) {
+  .blog-details .blog-detail img {
+    height: auto;
+    margin: 10px 0 !important;
+  }
 }
 .blog-details .blog-detail h4 {
   text-align: left;
@@ -3661,6 +3667,282 @@ footer .container .bottom .last a {
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+}
+.blog-details .related {
+  padding: 40px 0;
+}
+.blog-details .related .h1 {
+  margin-bottom: 30px;
+}
+.blog-details .related .Related {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog-details .related .Related .container {
+  position: relative;
+  height: 90vh;
+}
+.blog-details .related .Related .container .coverImg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  flex: 500px 0 0;
+  height: 83vh;
+}
+.blog-details .related .Related .container .coverImg p {
+  margin: 0;
+  text-align: center;
+}
+.blog-details .related .Related .container .coverImg .date {
+  margin: 20px 0 5px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+.blog-details .related .Related .container .coverImg img {
+  width: 100%;
+  height: 72vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  border: 1px solid var(--alt-alt-main);
+  cursor: pointer;
+}
+.blog-details .related .Related .container .slick-dots {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  bottom: 18px;
+}
+.blog-details .related .Related .container .slick-dots .slick-active button::before {
+  font-size: 15px !important;
+}
+.blog-details .related .Related .container .slick-dots button::before {
+  font-size: 10px;
+  color: gold;
+}
+.blog-details .related .Related .container .slick-arrow::before {
+  font-size: 30px !important;
+}
+.blog-details .related .Related .container .slick-arrow {
+  right: -5px !important;
+  z-index: 1000;
+}
+.blog-details .related .Related .slick-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  display: none !important;
+  align-items: center;
+  justify-content: center;
+  top: calc(100% - 32px);
+  z-index: 1000;
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(1) {
+  left: calc(100% - 99px);
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(2) {
+  right: 0px;
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(2)::before {
+  content: "\f061" !important;
+}
+.blog-details .related .Related .slick-arrow::before {
+  content: "\f060" !important;
+  color: var(--alt-alt-main);
+  font-family: "FontAwesome", system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px !important;
+  position: relative;
+  top: 0;
+  font-size: 20px !important;
+  border: 1px solid var(--alt-alt-main);
+  width: 40px;
+  height: 40px;
+}
+.blog-details .related .Related {
+  position: relative;
+  padding: 50px 0;
+}
+.blog-details .related .Related.blog-1 {
+  margin-top: 0;
+}
+.blog-details .related .Related.blog-3 {
+  padding: 50px 0 100px;
+  background-color: var(--third-bg);
+  z-index: 105;
+  position: relative;
+}
+.blog-details .related .Related.blog-3::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -25%;
+  top: 0;
+  z-index: -1;
+  display: block;
+  height: 45px;
+  background-size: 40px 100%;
+  background-image: linear-gradient(135deg, var(--second-bg) 25%, transparent 25%), linear-gradient(225deg, var(--second-bg) 25%, transparent 25%);
+  background-position: 0 0;
+  background-color: var(--third-bg);
+}
+.blog-details .related .Related.blog-2 {
+  padding: 50px 0 20px;
+  background-color: var(--second-bg);
+  z-index: 105;
+  position: relative;
+}
+.blog-details .related .Related.blog-2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -25%;
+  top: 0;
+  z-index: -1;
+  display: block;
+  height: 45px;
+  background-size: 40px 100%;
+  background-image: linear-gradient(135deg, var(--third-bg) 25%, transparent 25%), linear-gradient(225deg, var(--third-bg) 25%, transparent 25%);
+  background-position: 0 0;
+  background-color: var(--second-bg);
+}
+.blog-details .related .Related .container {
+  position: relative;
+  height: 80vh !important;
+}
+.blog-details .related .Related .container .coverImg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  height: 70vh;
+  background: linear-gradient(to right, rgba(10, 7, 11, 0.35), rgba(39, 36, 41, 0.54), rgba(19, 15, 20, 0.64));
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  outline: 2px solid #181818;
+  border: 1px solid var(--text-color);
+  box-shadow: 0 0 4px var(--text-color);
+  width: 95% !important;
+  margin-left: 3%;
+  border-radius: 2px;
+  padding: 0;
+}
+.blog-details .related .Related .container .coverImg img {
+  width: 100%;
+  height: 57vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  border: 1px solid var(--alt-alt-main);
+  cursor: pointer;
+}
+.blog-details .related .Related .container .coverImg .date {
+  margin: 5px !important;
+  cursor: pointer;
+}
+.blog-details .related .Related .container .coverImg .h2 {
+  font-family: "Noto Sans";
+  font-size: 18px !important;
+  width: 100%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.blog-details .related .Related .container .coverImg .bt {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  background: rgba(206, 166, 19, 0.9764705882);
+  color: white;
+  transition: 0.3s;
+  font-family: "Montserrat", system-ui;
+  font-size: 1.5rem;
+  position: absolute;
+  width: 30px !important;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5px;
+  bottom: 5px;
+  z-index: 10000000000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(34, 34, 34, 0.4156862745), inset 0 0 10px rgba(34, 34, 34, 0.4156862745);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+.blog-details .related .Related .container .slick-dots {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  bottom: 18px;
+}
+.blog-details .related .Related .container .slick-dots .slick-active button::before {
+  font-size: 15px !important;
+}
+.blog-details .related .Related .container .slick-dots button::before {
+  font-size: 10px;
+  color: gold;
+}
+.blog-details .related .Related .container .slick-arrow::before {
+  font-size: 30px !important;
+}
+.blog-details .related .Related .container .slick-arrow {
+  right: -5px !important;
+  z-index: 1000;
+}
+.blog-details .related .Related .slick-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  display: none !important;
+  align-items: center;
+  justify-content: center;
+  top: calc(100% - 32px);
+  z-index: 1000;
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(1) {
+  left: calc(100% - 99px);
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(2) {
+  right: 0px;
+}
+.blog-details .related .Related .slick-arrow:nth-of-type(2)::before {
+  content: "\f061" !important;
+}
+.blog-details .related .Related .slick-arrow::before {
+  content: "\f060" !important;
+  color: var(--alt-alt-main);
+  font-family: "FontAwesome", system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px !important;
+  position: relative;
+  top: 0;
+  font-size: 20px !important;
+  border: 1px solid var(--alt-alt-main);
+  width: 40px;
+  height: 40px;
 }
 
 /*================================= LANDING_PAGE ================================*/
