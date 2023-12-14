@@ -4,7 +4,7 @@ import "./sass/main.css"
 import "./sass/sass-main/second.css" 
 import "./blog/sass/blog.css"
 
-import Sitemap from "./Sitemap.xml"
+
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -79,7 +79,6 @@ const App = () => {
 
         <Route index element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} /> 
-        <Route path='/sitemap' element={Sitemap} /> 
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='*' element={<Error />} />
         <Route path='/privacy' element={<Privacy />} />
