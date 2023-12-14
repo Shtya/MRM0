@@ -111,7 +111,32 @@ const Tiktok = () => {
         </div>
 
 
+
         <Divider classn="divider" />
+        <div className="box-style-4">
+          <Pattern3 />
+          <div className="container">
+            <div className="h1" style={{marginBottom:""}}>Why Choose TikTok Marketing?</div>
+            <div className="phead" style={{marginBottom:"40px"}}>Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
+            <div className="boxs">
+            {
+              SERVICES.map((e,index)=> (
+                <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                    <h3 className='h2'>{e.title}</h3>
+                    <p className='p'>{e.desc}</p>
+                  </div>
+                </div>
+              </div>            
+              ))
+            }
+            </div>
+          </div>
+        </div>
+
+        {/* <Divider classn="divider" />
         <div className="process2">
         <div className="h2 clip">Why Choose TikTok Marketing?</div>
         <div className="phead">Still trying to convince you about the power of TikTok for your marketing strategy? Let's explore eight key benefits</div>
@@ -129,7 +154,7 @@ const Tiktok = () => {
             }
 
           </ul>
-        </div>
+        </div> */}
 
 
       <Footer />

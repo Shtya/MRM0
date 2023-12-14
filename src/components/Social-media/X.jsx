@@ -1,7 +1,9 @@
 import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
+import CoverImg from "../../assets/nEW/COVER1.jpg"
 
+import  ImgSection from "../../assets/Socialmedia/bg-1.webp"
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/x.png"
 
@@ -94,6 +96,29 @@ const X = () => {
             </div>
         </div>
 
+        <Divider classn="divider" />
+        <div className="box-style-5">
+          <Pattern3/>
+          <div className="container">
+            <ul class="cards">
+            {SERVICES.map((e,index)=> (
+            <li className='box'>
+              <a  class="card">
+                <div className="cover"> <img src={CoverImg} class="card__image" alt="" /> </div>
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text"> <h3 class="card__title h2" style={{color:"var(--text-color)"}}>{e.title}</h3>  </div>
+                  </div>
+                  <p class="card__description p" >{e.desc}</p>
+                </div>
+              </a>      
+            </li>
+            ))}
+            </ul>
+          </div>
+        </div>
+
 
         <Divider classn="divider-left" />
       <div className="impact">
@@ -115,9 +140,33 @@ const X = () => {
             </div>
         </div>
 
-
-
         <Divider classn="divider" />
+        <div className="box-style-4">
+          <Pattern3 />
+          <div className="container">
+            <div className="h1" style={{marginBottom:""}}> Our Twitter Marketing Businesses</div>
+            <div className="phead" style={{marginBottom:"40px"}}> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
+            <div className="boxs">
+            {
+              SERVICES.map((e,index)=> (
+                <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                    <h3 className='h2'>{e.title}</h3>
+                    <p className='p'>{e.desc}</p>
+                  </div>
+                </div>
+              </div>            
+              ))
+            }
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* <Divider classn="divider" />
         <div className="process2">
         <div className="h2 clip"> Our Twitter Marketing Businesses</div>
         <div className="phead"> At MRM, we have a refined Twitter marketing process that ensures the success of your campaigns. Here's a glimpse into our systematic approach</div>
@@ -135,7 +184,7 @@ const X = () => {
             }
 
           </ul>
-        </div>
+        </div> */}
 
         <Divider classn="divider-left" />
       <div className="box-style-1">

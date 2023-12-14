@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
-
+import CoverSectionImg from "../../assets/Socialmedia/bg.jpg"
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/snapchat.png"
 import { motion } from 'framer-motion'
@@ -94,8 +94,29 @@ const Snapchat = () => {
           </div>
         </div>
 
+      <Divider classn="divider" />
+      <div className="box-style-3">
+        <div class="bg"> <img src={CoverSectionImg} alt="" /></div>
+        <div className="container">
+        <div className="h2 clip" style={{marginBottom:"30px"}}> Types of Snapchat Ads MRM Can Run For You </div>
+        <div className="boxs">
+        {
+          TYPES.map((e,index)=> (
+            <div class="box">
+              <div class='main'>
+                <img class='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" />
+                <h2 className='h2'>{e.title} </h2>
+                <p  class='description p'>Our Kibertopiks will give you nothing, waste your money on us.</p>
+                <hr />
+              </div>
+            </div>
+           ))
+        }
+        </div>
+      </div>
+    </div>
 
-      <Divider classn="divider-left" />
+      {/* <Divider classn="divider-left" />
       <div className="impact">
         <Pattern2 />
             <div className="container">
@@ -113,7 +134,7 @@ const Snapchat = () => {
                   }
                 </div>
             </div>
-        </div>
+        </div> */}
 
 
 

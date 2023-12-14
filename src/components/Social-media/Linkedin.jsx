@@ -112,7 +112,32 @@ const Linkedin = () => {
             </div>
         </div>
 
+        <Divider classn="divider" />
+        <div className="box-style-4">
+          <Pattern3 />
+          <div className="container">
+            <div className="h1" style={{marginBottom:""}}>How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
+            <div className="phead" style={{marginBottom:"40px"}}>At MRM, we understand that LinkedIn is a dynamic platform with unique features </div>
+            <div className="boxs">
+            {
+              SERVICES.map((e,index)=> (
+                <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                    <h3 className='h2'>{e.title}</h3>
+                    <p className='p'>{e.desc}</p>
+                  </div>
+                </div>
+              </div>            
+              ))
+            }
+            </div>
+          </div>
+        </div>
 
+
+{/* 
         <Divider classn="divider" />
         <div className="process2">
         <div className="h2 clip">How MRM Utilizes LinkedIn's Advantages for Your Business Success</div>
@@ -131,7 +156,7 @@ const Linkedin = () => {
             }
 
           </ul>
-        </div>
+        </div> */}
 
         <Divider classn="divider-left" />
       <div className="box-style-1">

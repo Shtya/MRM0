@@ -66,7 +66,7 @@ htmlcssArrow.onclick = function() {
               </ul>
             </li>
 
-            <li><Link to="/dashboard" > Portfolio</Link></li>
+            <li><Link  > Portfolio</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/contact-us"> Contact Us</Link></li>

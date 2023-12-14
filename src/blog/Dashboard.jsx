@@ -1,21 +1,20 @@
-import React , {useEffect, useState} from 'react'
-import { Link, useNavigate, useNavigation, useParams } from 'react-router-dom'
+import React , { useEffect, useRef, useState} from 'react'
+import {  useNavigate, useParams } from 'react-router-dom'
 import Navbar1 from '../components/Navbar'
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import JoditEditor from 'jodit-react';
 import baseURL from '../API/API';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Alt_Navbar from '../components/Navbar1';
-const config = {headers : { "Content-Type":"multipart/form-data"}}
-const modules = {  toolbar :[ [{ 'header' : [1, 2, 3 , 4 , 5 , 6 , false] }], ['bold', 'italic', 'underline', 'strike', 'blockquote'] ,[{'list' : 'ordered'}, {'list' : 'bullet'}, {'indent' : '-1'}, {'indent' : '+1'}],['link' , "image"],['clean']] }
-const formats = [ 'header', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'indent', 'link' , "image" ]
+const config = {headers : { "Content-Type":"multipart/form-data" , "Cache-Control": "no-cache"} , theme:"dark" }
 const Section = ["Digital Marketing News" ,"Latest Updates & Insights" , "Tips & Strategies" ]
 
 
 
 const E_post = () => {
-  
+  const editor = useRef(null);
+  const [OnePost , setOnePost] = useState()
   const navigate = useNavigate();
   const [isload , setisload] = useState(false)
   const [Img, setImg] = useState("");
@@ -24,25 +23,22 @@ const E_post = () => {
   const [category, setCategory] = useState();
   
 
-  
-
-  // 1 ) Img 
   const handleImg = (e) => { if (e.target.files && e.target.files[0]) { setImg(e.target.files[0]) } }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
-
+    console.log( Des )
+      if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the field!")
+    var form = new FormData();
+    form.append( 'title', title );
+    form.append( 'description', Des);
+    form.append( 'category', category );
+    form.append( 'thumbnail', Img );
     setisload(true)
-    await baseURL.post( "" , {title , category , description:Des , thumbnail:Img} , config).then(res => console.log(res))
+    await baseURL.post("" , form , config)
     setisload(false)
-    settitle("")
-    setDes("")
-    setCategory("")
-    setImg("")
-    navigate("/all-blogs")
+    navigate("/MRM")
   }
-
 
   return (
     <div className='Dashboard-blog'>
@@ -55,8 +51,16 @@ const E_post = () => {
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />
               <select name=""                        value={category} onChange={e=> setCategory(e.target.value)}> {Section.map((e,index)=> ( <option value={e}>{e}</option> ))} </select>
               <input type="file"                  value={Img[0]}    onChange={handleImg} autoFocus />
-              <ReactQuill placeholder='Description' theme="snow" modules={modules} formats={formats} value={Des} onChange={setDes} />
-              <button className='bt' style={{opacity: !isload ? "1":".7"}}  onClick={handleSubmit} > 
+
+              <JoditEditor
+                  ref={editor}
+                  value={Des}
+                  config={config}
+                  tabIndex={1} // tabIndex of textarea
+                  onChange={setDes}
+                />
+
+              <button className='bt' style={{opacity: !isload ? "1":".7" }}  onClick={handleSubmit} > 
                 {
                   !isload ? "Create" 
                   :  <div className="LoadingAnimate"> <div class="load-wrapp"> <div class="load-3"> <div class="line"></div> <div class="line"></div> <div class="line"></div> </div> </div></div>

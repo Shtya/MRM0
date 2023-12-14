@@ -48,8 +48,8 @@ navLinks.style.left = "-100%";
           
           <ul class="links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/all-blogs" > ALL Blogs</Link></li>
-            <li><Link to="/dashboard">Create blog</Link></li>
+            <li><Link to="/MRM" >Blogs</Link></li>
+            <li><Link to="/dashboard">Create</Link></li>
           </ul>
         </div>
         <div class="search-box">

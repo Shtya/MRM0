@@ -6,6 +6,7 @@ import JoditEditor from 'jodit-react';
 import baseURL from '../API/API';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Alt_Navbar from '../components/Navbar1';
 const config = {headers : { "Content-Type":"multipart/form-data" , "Cache-Control": "no-cache"} , theme:"dark" }
 const Section = ["Digital Marketing News" ,"Latest Updates & Insights" , "Tips & Strategies" ]
 
@@ -33,7 +34,7 @@ const E_post = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    // if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
+    if(Img == "" || title == ""  || Des == ""  || category == "" ) return toast.error("Please fill in all the fields!")
     var form = new FormData();
     form.append( 'title', title );
     form.append( 'description', Des);
@@ -47,15 +48,15 @@ const E_post = () => {
     setDes("")
     setCategory("")
     setImg("")
-    navigate("/all-blogs")
+    navigate("/MRM")
   }
 
   return (
     <div className='Dashboard-blog'>
-      <div className="container"> <Navbar1 /> </div>
+      <div className="container"> <Alt_Navbar /> </div>
         <section className="create-post">
           <div className="container">
-            <h2 className="h1">Edite Your blog</h2>
+            <h2 className="h1">Edite blog</h2>
             <form className="form create-post_form">
               <p className="error-message"> THis is an error message </p>
               <input type="text" placeholder='title'  value={title}    onChange={e=> settitle(e.target.value)}  />

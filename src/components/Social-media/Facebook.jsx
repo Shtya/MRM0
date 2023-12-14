@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar'
 
 import FacebookIntro from "../../assets/Socialmedia/bg-social.jpg"
 import FacebookCover from "../../assets/Socialmedia/facebook.png"
-
+import ImgSection from "../../assets/Socialmedia/bg-2.webp"
 
 import { motion } from 'framer-motion'
 
@@ -121,8 +121,31 @@ const Facebook = () => {
         </div>
 
 
-
         <Divider classn="divider" />
+        <div className="box-style-4">
+          <Pattern3 />
+          <div className="container">
+            <div className="h1" style={{marginBottom:"40px"}}>Our Facebook advertising services include</div>
+            <div className="boxs">
+            {
+              SERVICES.map((e,index)=> (
+                <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2>{index+1 >= 10 ?"":"0"}{index+1}</h2>
+                    <h3 className='h2'>{e.title}</h3>
+                    <p className='p'>{e.desc}</p>
+                  </div>
+                </div>
+              </div>            
+              ))
+            }
+            </div>
+          </div>
+        </div>
+
+
+        {/* <Divider classn="divider" />
         <div className="process2">
         <div className="h2 clip"> Our Facebook advertising services include</div>
           <Pattern1 />
@@ -139,7 +162,7 @@ const Facebook = () => {
             }
 
           </ul>
-        </div>
+        </div> */}
 
       <Footer />
       </div>

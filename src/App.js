@@ -72,7 +72,7 @@ const App = () => {
       
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} /> 
-        <Route path="/all-blogs" element={<BlogsAll />} /> 
+        <Route path="/MRM" element={<BlogsAll />} /> 
         <Route path="/edite-blog/:id" element={<E_post />} /> 
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path='/blog' element={<Blogs />} /> 
