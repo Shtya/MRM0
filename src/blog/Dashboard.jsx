@@ -1,7 +1,6 @@
 import React , { useEffect, useRef, useState} from 'react'
 import {  useNavigate, useParams } from 'react-router-dom'
-import Navbar1 from '../components/Navbar'
-import 'react-quill/dist/quill.snow.css';
+
 import JoditEditor from 'jodit-react';
 import baseURL from '../API/API';
 import { ToastContainer, toast } from 'react-toastify';

@@ -26,9 +26,7 @@ import ImpactImg1 from "../assets/S_media/impact1.png" ;
 import ImpactImg2 from "../assets/S_media/impact2.png" ;
 import ImpactImg3 from "../assets/S_media/impact3.png" ;
 import ImpactImg4 from "../assets/S_media/impact4.png" ;
-import Plx from "react-plx";
-import Clients from '../components/Clients'
-import Contact from '../components/Contact'
+
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Animation from '../components/helpers/Animation'
